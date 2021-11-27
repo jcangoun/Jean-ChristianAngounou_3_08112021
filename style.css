@@ -1,0 +1,51 @@
+
+body {
+display: flex;
+flex-direction: column;
+width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+main {
+
+}
+
+.location {
+    text-align: center;
+}
+
+.location__icon {
+
+}
+
+.location__city {
+
+}
+
+.explore, .explore--border {
+    text-align: center;
+    background-color: rgb(196, 196, 196);
+}
+
+.explore__title {
+
+}
+
+.explore__description {
+
+}
+
+.explore__button {
+
+}
+footer {
+
+}
+
+
+ /*   Ici se termine la partie de breakpoints mobile  et en bas on passe au desktop */
