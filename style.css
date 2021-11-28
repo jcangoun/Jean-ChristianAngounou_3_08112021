@@ -58,21 +58,69 @@ main {
 /* debt gamme Fontionnement */
 
 .fonctionnement {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 
 }
 
 .fonctionnement__titre {
-
+    margin: 20px;
 }
 
 .fonctionnement__choixresto {
-
+    
 }
 
 
 .fonctionnement__iconemobile {
-    
+width: 15%;
 }
+
+.fonctionnement__phrasechoixresto {
+
+}
+
+.fonctionnement__composemenu {
+
+}
+
+.fonctionnement__iconeburger {
+
+}
+
+.fonctionnement__phrasechoixmenu {
+
+}
+
+.fonctionnement__degustresto {
+
+}
+
+.fonctionnement__iconeresto {
+
+}
+
+.fonctionnement__phrasechoixdegustresto {
+
+}
+
+
+
+.fonctionnement__choixresto, .fonctionnement__composemenu, .fonctionnement__degustresto {
+    display: flex;
+    flex: 80%;
+    flex-direction: row;
+    text-align: center;
+    width: 80%;
+    border: 1px;
+    border:1px solid grey;
+    border-radius: 20px;
+    margin: 10px;
+    background-color: rgb(220, 220, 220);
+}
+
+
 
 /* Fin Fonctionnement*/
 
