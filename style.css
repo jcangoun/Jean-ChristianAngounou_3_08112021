@@ -3,6 +3,7 @@ body {
 display: flex;
 flex-direction: column;
 width: 100%;
+margin: 0%;
 }
 
 header {
@@ -17,6 +18,7 @@ main {
 
 .location {
     text-align: center;
+    background-color: rgb(196, 196, 196);
 }
 
 .location__icon {
@@ -29,7 +31,7 @@ main {
 
 .explore, .explore--border {
     text-align: center;
-    background-color: rgb(196, 196, 196);
+    background-color: rgb(230, 230, 230);
 }
 
 .explore__title {
