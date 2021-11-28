@@ -32,6 +32,8 @@ main {
 .explore, .explore--border {
     text-align: center;
     background-color: rgb(230, 230, 230);
+    
+    padding: 20px;
 }
 
 .explore__title {
@@ -39,15 +41,57 @@ main {
 }
 
 .explore__description {
-
+    margin: 10px;
 }
 
 .explore__button {
+    background-color: #FF79DA;
+    border-radius: 30px;
+    color: white;
+    margin: 20px;
+    padding: 20px;
 
 }
+
+
+
+/* debt gamme Fontionnement */
+
+.fonctionnement {
+
+}
+
+.fonctionnement__titre {
+
+}
+
+.fonctionnement__choixresto {
+
+}
+
+
+.fonctionnement__iconemobile {
+    
+}
+
+/* Fin Fonctionnement*/
+
+
+
+
+
+ /* debut la gamme ".restaurant" */
+
+
+
+ /* Fini la gamme ".restaurant" */
+
+
 footer {
 
 }
 
 
  /*   Ici se termine la partie de breakpoints mobile  et en bas on passe au desktop */
+
+ 
