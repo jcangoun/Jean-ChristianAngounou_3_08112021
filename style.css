@@ -169,6 +169,64 @@ footer {
 
 }
 
+.contaktpartner {
+    display: flex;
+    flex-direction: column;
+    background-color: #393939;
+    color: white;
+    padding: 20px;
+}
+
+.logo {
+
+    margin: 20px 5px;
+}
+
+.contaktpartner__proposition {
+    display: flex;
+    flex-direction: row;
+}
+
+.contaktpartner__couverts {
+    margin: 5px;
+}
+
+.contaktpartner__phraseproposition {
+    margin: 5px;
+}
+
+.contaktpartner__bepartner {
+    display: flex;
+    flex-direction: row;
+}
+
+.contaktpartner__serremain {
+   margin: 5px;
+}
+
+.contaktpartner__phrasebepartner {
+    margin: 5px;
+}
+
+.contaktpartner__legal {
+    display: flex;
+    margin: 5px;
+}
+
+.contaktpartner__phraselegale {
+    
+}
+
+.contaktpartner__contact {
+    display: flex;
+    margin: 5px;
+}
+
+.contaktpartner__phrasecontakt {
+    
+}
+
+
 
  /*   Ici se termine la partie de breakpoints mobile  et en bas on passe au desktop */
 
