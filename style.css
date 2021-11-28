@@ -29,7 +29,7 @@ main {
 
 }
 
-.explore, .explore--border {
+.explore {
     text-align: center;
     background-color: rgb(230, 230, 230);
     
@@ -50,10 +50,12 @@ main {
     color: white;
     margin: 20px;
     padding: 20px;
-
+    border: none;
 }
 
+.explore--border {
 
+}
 
 /* debt gamme Fontionnement */
 
@@ -75,10 +77,11 @@ main {
 
 .fonctionnement__iconemobile {
 width: 15%;
+margin: 10px;
 }
 
 .fonctionnement__phrasechoixresto {
-
+    margin: 10px;
 }
 
 .fonctionnement__composemenu {
@@ -86,11 +89,12 @@ width: 15%;
 }
 
 .fonctionnement__iconeburger {
-
+    width: 15%;
+    margin: 10px;
 }
 
 .fonctionnement__phrasechoixmenu {
-
+    margin: 10px;
 }
 
 .fonctionnement__degustresto {
@@ -98,11 +102,12 @@ width: 15%;
 }
 
 .fonctionnement__iconeresto {
-
+    width: 15%;
+    margin: 10px;
 }
 
 .fonctionnement__phrasechoixdegustresto {
-
+    margin: 10px;
 }
 
 
@@ -112,12 +117,14 @@ width: 15%;
     flex: 80%;
     flex-direction: row;
     text-align: center;
+    text-align-last: start;
     width: 80%;
-    border: 1px;
-    border:1px solid grey;
     border-radius: 20px;
-    margin: 10px;
-    background-color: rgb(220, 220, 220);
+    margin: 15px;
+    padding: 20px;
+    background-color: rgb(230, 230, 230);
+    box-shadow: 0px 0px 9px 0px grey;
+
 }
 
 
