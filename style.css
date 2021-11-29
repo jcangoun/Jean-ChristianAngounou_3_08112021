@@ -140,12 +140,34 @@ margin: 10px;
     flex-direction: column;
 }
 
+figure {
+    border: 1px solid red; 
+    border-radius: 20px;
+}
+
 .restaurants__phrase {
     margin: 20px;
 }
 
-.restaurants__lapalette {
+.restaurants__vitrine {
 
+        
+}
+
+.restaurants__lapalette {
+    display: flex;
+    flex: 100%;
+    min-height: 225px;
+    border: 1px solid green;
+    border-radius: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.restaurants__lapalette img {
+    flex: 100%;
+    height: 175px;
+    border-radius: 20px 20px 0 0;
 }
 
 .restaurants__lanote {
@@ -219,7 +241,7 @@ footer {
 
 .contaktpartner__contact {
     display: flex;
-    margin: 5px;
+    margin: 5px 5px 25px 5px;
 }
 
 .contaktpartner__phrasecontakt {
