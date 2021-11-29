@@ -49,7 +49,7 @@ main {
     border-radius: 30px;
     color: white;
     margin: 10px 20px;
-    padding: 20px;
+    padding: 15px 20px;
     border: none;
 }
 
@@ -138,10 +138,10 @@ margin: 10px;
     flex-direction: column;
 }
 
-figure {
+/* figure {
     border: 1px solid red; 
     border-radius: 20px;
-}
+} */
 
 figcaption {
     
@@ -152,10 +152,11 @@ figcaption {
     min-height: 65px;
     background-color: white;
     border-radius: 0 0 20px 20px;
+    padding: 10px;
 }
 
 .caption__iconecoeur {
-
+    margin: 5px;
 }
 
 .restaurants__phrase {
@@ -179,7 +180,6 @@ figcaption {
     flex: 100%;
     flex-direction: column;
     min-height: 225px;
-    border: 1px solid green;
     border-radius: 20px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -200,10 +200,10 @@ figcaption {
 }
 
 .caption__lapalettenom {
-
+    margin: 5px;
 }
 .caption__lapaletteville {
-
+    margin: 5px;
 }
 
 
@@ -212,16 +212,13 @@ figcaption {
     flex: 100%;
     flex-direction: column;
     min-height: 225px;
-    border: 1px solid green;
     border-radius: 20px;
     background-size: cover;
     background-repeat: no-repeat;
     margin: 20px;
 }
 
-.caption__lanotetextes {
 
-}
 .restaurants__lanote img {
     display: flex;
     /* flex: 100%; */
@@ -230,11 +227,17 @@ figcaption {
     border-radius:  20px 20px 0 0;
 }
 
+/* .caption__boite {     element a utiliser pour tester des figcaption a propos de est que lle surligneur est du a <figcaption> ou a autre et est qu'il marche bien
+
+} */
+.caption__lanotetextes {
+
+}
 .caption__lanotenom {
-    margin: 10px;
+    margin: 5px;
 }
 .caption__lanoteville {
-
+    margin: 5px;
 }
 
 .restaurants__lafrançaise {
@@ -242,7 +245,7 @@ figcaption {
     flex: 100%;
     flex-direction: column;
     min-height: 225px;
-    border: 1px solid green;
+    
     border-radius: 20px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -257,12 +260,23 @@ figcaption {
     border-radius: 20px 20px 0 0;
 }
 
+.caption__lafrançaisetextes {
+
+}
+
+.caption__lafrançaisenom {
+
+}
+
+.caption__lafrançaiseville {
+
+}
+
 .restaurants__ledelice {
     display: flex;
     flex: 100%;
     flex-direction: column;
     min-height: 225px;
-    border: 1px solid green;
     border-radius: 20px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -275,6 +289,17 @@ figcaption {
     height: 175px;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
+}
+
+.caption__ledelicetextes {
+
+}
+.caption__ledelicenom {
+
+}
+
+.caption__ledeliceville {
+
 }
 
  /* Fini la gamme ".restaurant" */
