@@ -48,7 +48,7 @@ main {
     background-color: #FF79DA;
     border-radius: 30px;
     color: white;
-    margin: 20px;
+    margin: 10px 20px;
     padding: 20px;
     border: none;
 }
@@ -130,13 +130,7 @@ margin: 10px;
 
 }
 
-/* Fin Fonctionnement*/
 
-
-
-
-
- /* debut la gamme ".restaurant" */
 
 .restaurants {
     background-color: rgb(230, 230, 230);
