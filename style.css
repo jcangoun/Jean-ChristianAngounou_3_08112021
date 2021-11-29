@@ -145,6 +145,16 @@ figure {
     border-radius: 20px;
 }
 
+figcaption {
+    
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex: 100%;
+    background-color: white;
+    border-radius: 0 0 20px 20px;
+}
+
 .restaurants__phrase {
     margin: 20px;
 }
@@ -157,6 +167,7 @@ figure {
 .restaurants__lapalette {
     display: flex;
     flex: 100%;
+    flex-direction: column;
     min-height: 225px;
     border: 1px solid green;
     border-radius: 20px;
@@ -170,10 +181,34 @@ figure {
     border-radius: 20px 20px 0 0;
 }
 
-.restaurants__lanote {
+
+.caption__lapalettetextes {
 
 }
 
+.caption__lapalettenom {
+
+}
+.caption__lapaletteville {
+
+}
+
+
+.restaurants__lanote {
+    display: flex;
+    flex: 100%;
+    flex-direction: column;
+    min-height: 225px;
+    border: 1px solid green;
+    border-radius: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.restaurants__lanote img {
+    height: 175px;
+    object-fit: cover;
+}
 .restaurants__lafrançaise {
 
 }
