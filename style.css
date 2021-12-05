@@ -79,53 +79,53 @@ main {
     margin: 20px;
 }
 
-.fonctionnement__choixresto {
+.fonctionnement__choix {
     
 }
 
 
-.fonctionnement__iconemobile {
+.fonctionnement__mobile {
 width: 15%;
 margin: 10px;
 }
 
-.fonctionnement__phrasechoixresto {
+.fonctionnement__description {
     margin: 10px;
 }
 
-.fonctionnement__composemenu {
+.fonctionnement__menu {
 
 }
 
-.fonctionnement__iconepoints {
+.fonctionnement__trois-points {
 
 }
 
-.fonctionnement__iconeburger {
+.fonctionnement__icone-burger {
     width: 15%;
     margin: 10px;
 }
 
-.fonctionnement__phrasechoixmenu {
+.fonctionnement__choix-menu {
     margin: 10px;
 }
 
-.fonctionnement__degustresto {
+.fonctionnement__degustez {
 
 }
 
-.fonctionnement__iconeresto {
+.fonctionnement__i-resto {
     width: 15%;
     margin: 10px;
 }
 
-.fonctionnement__phrasechoixdegustresto {
+.fonctionnement__phrase-degustez {
     margin: 10px;
 }
 
 
 
-.fonctionnement__choixresto, .fonctionnement__composemenu, .fonctionnement__degustresto {
+.fonctionnement__choix, .fonctionnement__menu, .fonctionnement__degustez {
     display: flex;
     flex: 80%;
     flex-direction: row;
@@ -168,7 +168,7 @@ figcaption {
     margin: 5px;
 }
 
-.restaurants__phrase {
+.restaurants__titre {
     margin: 20px;
 }
 
@@ -184,7 +184,7 @@ figcaption {
         
 } */
 /*    Il n'ya que le resto lanote qui a presque toutes ses classes il faut remplir le reste.*/
-.restaurants__lapalette {
+.restaurants__nom {
     display: flex;
     flex: 100%;
     flex-direction: column;
@@ -196,7 +196,7 @@ figcaption {
 
 }
 
-.restaurants__lapalette img {
+.restaurants__nom img {
     display: flex;
     /* flex: 100%; */
     height: 175px;
@@ -204,14 +204,14 @@ figcaption {
 }
 
 
-.caption__lapalettetextes {
+.caption__nom-textes {
 
 }
 
-.caption__lapalettenom {
+.caption__nom-nom {
     margin: 5px;
 }
-.caption__lapaletteville {
+.caption__nom-ville {
     margin: 5px;
 }
 
