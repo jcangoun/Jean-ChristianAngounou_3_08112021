@@ -41,10 +41,10 @@ main {
 
 
 .photo-affiche img {
-    display: flex;
-    /* flex: 100%; */
+    
+    width: 100%;
     object-fit: cover;
-    max-height: 275px;
+    
     border: 1px dotted red;
 }
 
