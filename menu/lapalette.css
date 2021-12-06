@@ -1,4 +1,72 @@
-.entree__titre {
+
+body {
+margin: 0;
+}
+
+header {
+
+}
+
+nav {
+
+}
+
+.fleche {
+    flex: 10%;
+    float: left;
+}
+
+
+
+main {
+    flex-direction: column;
+}
+.nom-menu
+
+
+.photo-affiche {
+    display: flex;
+    flex: 100%;
+    height: 275px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+
+}
+ 
+
+
+.photo-affiche img {
+    display: flex;
+    object-fit: cover;
+
+    border: 1px dotted red;
+}
+
+.presentation {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.nom__presentation {
+
+}
+
+.nom__titre {
+    margin: 20px;
+}
+
+.icone-coeur {
+
+}
+
+
+.ensemble__entree {
+
+}
+
+.ensemble__titre {
     
     border: 1px solid#99E2D0;
 }
