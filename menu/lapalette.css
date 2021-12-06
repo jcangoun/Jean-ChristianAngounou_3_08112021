@@ -1,7 +1,7 @@
 
 body {
-margin: 0;
-}
+    margin: 0;
+  }
 
 header {
 
@@ -43,6 +43,11 @@ main {
     border: 1px dotted red;
 }
 
+.menu {
+    padding: 10px;
+    background-color: rgb(240, 240, 240);
+}
+
 .presentation {
     display: flex;
     justify-content: space-between;
@@ -58,15 +63,53 @@ main {
 }
 
 .icone-coeur {
-
+    margin: 20px 10px;
 }
 
 
-.ensemble__entree {
+.entree {
 
 }
 
-.ensemble__titre {
+.entree__titre {
     
     border: 1px solid#99E2D0;
 }
+
+.entree__groupe {
+
+}
+
+.entree__choix {
+
+}
+
+.choix__plat {
+
+}
+
+.choix__accompagnement {
+
+}
+
+
+.plat {
+
+}
+
+.plat__titre {
+
+}
+
+.plat__groupe {
+
+}
+
+
+.dessert {
+    
+}
+
+
+
+
