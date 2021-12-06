@@ -8,15 +8,19 @@ header {
 }
 
 nav {
+    display: flex;
+    flex: 100%;
 
 }
 
 .fleche {
     flex: 10%;
-    float: left;
+    /* float: left; */
 }
 
-
+.test {
+    flex: 55%;
+}
 
 main {
     flex-direction: column;
@@ -154,13 +158,83 @@ main {
     margin: 0 5px;
 }
 
-
+.bouton {
+    display: flex;
+    justify-content: center;
+}
 .bouton-commander {
     background: linear-gradient(0deg, #9356DC, transparent);
     background-color: #FF79DA;
     border-radius: 30px;
     color: white;
     margin: 10px 20px;
-    padding: 15px 20px;
+    padding: 20px 50px;
     border: none;
 }
+
+
+
+footer {
+
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #393939;
+    color: white;
+    padding: 10px 20px;
+}
+
+.footer__logo {
+
+    margin: 20px 5px;
+    font-family: 'Shrikhand', 'cursive', 'Cambria';
+}
+
+.footer__proposition {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer__couverts {
+    margin: 5px;
+}
+
+.footer__phrase-proposition {
+    margin: 5px;
+}
+
+.footer__bepartner {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer__serremain {
+   margin: 5px;
+}
+
+.footer__item {
+    margin: 5px;
+}
+
+.footer__legal {
+    display: flex;
+    margin: 5px;
+}
+
+.footer__phraselegale {
+    
+}
+
+.footer__contact {
+    display: flex;
+    margin: 5px 5px 25px 5px;
+}
+
+.footer__phrasecontakt {
+    
+}
+
+
+ /*   Ici se termine la partie de breakpoints mobile  et en bas on passe au desktop */
