@@ -14,12 +14,14 @@ nav {
 }
 
 .fleche {
-    flex: 10%;
-    /* float: left; */
+    /* flex: 10%; */
+    
+    margin: 25px;
 }
 
-.test {
+.logo {
     flex: 55%;
+    padding: 15px;
 }
 
 main {
@@ -88,20 +90,37 @@ main {
 
 }
 
-.entree__choix {
+/* entree__composition à la fin va prendre le nom en bas de entree__choix et inversement */
+.entree__composition {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
     margin: 10px;
+    background-color: white;
+    /* padding: 10px; */
+    border-radius: 15px;
+}
+.entree__choix {
+    /* margin: 10px;
     background-color: white;
     padding: 10px;
     margin: 10px;
-    border-radius: 20px;
+    border-radius: 20px; */
 }
-
+.gras {
+    font-weight: 900;
+}
 .choix__assiette {
-    margin: 0 5px;
+    margin: 5px;
 }
 
 .choix__accompagnement {
-    margin: 0 5px;
+    margin: 5px;
+}
+.prix {
+    display: flex;
+    align-items: flex-end;
+    margin: 0 15px 10px 0;
 }
 
 
@@ -121,15 +140,15 @@ main {
 .plat__choix {
     margin: 10px;
     background-color: white;
-    padding: 10px;
+    /* padding: 10px; */
     margin: 10px;
     border-radius: 20px;
 }
 .plat__assiette {
-    margin: 0 5px;
+    margin: 5px;
 }
 .plat__accompagnement {
-    margin: 0 5px;
+    margin: 5px;
 }
 
 .dessert {
@@ -148,15 +167,15 @@ main {
 .dessert__choix {
     margin: 10px;
     background-color: white;
-    padding: 10px;
+    /* padding: 10px; */
     margin: 10px;
     border-radius: 20px;
 }
 .dessert__assiette {
-    margin: 0 5px;
+    margin: 5px;
 }
 .dessert__accompagnement {
-    margin: 0 5px;
+    margin: 5px;
 }
 
 .bouton {

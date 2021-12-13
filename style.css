@@ -88,7 +88,7 @@ main {
     color: white;
     margin: 10px;
     position: relative;
-    margin-left: -30px;
+    margin-left: -25px;
     background-color: #9356DC;
     padding: 5px 10px;
     border-radius: 20px;
@@ -103,8 +103,9 @@ main {
 }
 
 .fonctionnement__description {
-    margin: 10px;
+    margin: 10px 80px 10px 0;
     padding: 5px;
+    
 
 }
 
