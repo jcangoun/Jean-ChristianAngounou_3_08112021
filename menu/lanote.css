@@ -1,0 +1,264 @@
+
+body {
+    margin: 0;
+    font-family: 'Roboto';
+ 
+  }
+
+header {
+
+}
+
+nav {
+    display: flex;
+    flex: 100%;
+
+}
+
+.fleche {
+    /* flex: 10%; */
+    
+    margin: 25px;
+}
+
+.logo {
+    flex: 55%;
+    padding: 20px;
+}
+
+main {
+    flex-direction: column;
+}
+.nom-menu
+
+
+.photo-affiche {
+    display: flex;
+    flex: 100%;
+    height: 275px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+
+}
+ 
+
+
+.photo-affiche img {
+    
+    width: 100%;
+    object-fit: cover;
+}
+
+.menu {
+    /* padding: 10px; */
+    background-color: rgb(240, 240, 240);
+    position: relative;
+    margin-top: -65px;
+    padding: 0 5px;
+    border-radius: 40px 40px 0 0;
+}
+
+.presentation {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 10px;
+}
+
+.nom__presentation {
+
+}
+
+.nom__titre {
+
+    font-size: 30px;
+}
+
+.icone-coeur {
+    margin: 10px;
+    display: flex;
+    font-size: 20px;
+}
+
+
+.entree {
+
+}
+
+.entree__titre {
+    
+    border: 1px solid#99E2D0;
+    margin: 10px;
+}
+
+.entree__groupe {
+
+}
+
+/* entree__composition à la fin va prendre le nom en bas de entree__choix et inversement */
+.entree__composition {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 15px;
+    background-color: white;
+    /* padding: 10px; */
+    border-radius: 15px;
+}
+.entree__choix {
+     margin: 5px;
+   /* background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px; */
+}
+.gras {
+    font-weight: 900;
+}
+.choix__assiette {
+    margin: 5px;
+}
+
+.choix__accompagnement {
+    margin: 5px;
+}
+.prix {
+    display: flex;
+    align-items: flex-end;
+    margin: 0 15px 10px 0;
+}
+
+
+.plat {
+
+}
+
+.plat__titre {
+    border: 1px solid#99E2D0;
+    margin: 10px;
+}
+
+.plat__groupe {
+
+}
+
+.plat__choix {
+    margin: 10px;
+    background-color: white;
+    /* padding: 10px; */
+    margin: 10px;
+    border-radius: 20px;
+}
+.plat__assiette {
+    margin: 5px;
+}
+.plat__accompagnement {
+    margin: 5px;
+}
+
+.dessert {
+
+}
+
+.dessert__titre {
+    border: 1px solid#99E2D0;
+    margin: 10px;
+}
+
+.dessert__groue {
+
+}
+
+.dessert__choix {
+    margin: 10px;
+    background-color: white;
+    /* padding: 10px; */
+    margin: 10px;
+    border-radius: 20px;
+}
+.dessert__assiette {
+    margin: 5px;
+}
+.dessert__accompagnement {
+    margin: 5px;
+}
+
+.bouton {
+    display: flex;
+    justify-content: center;
+}
+.bouton-commander {
+    background: linear-gradient(0deg, #9356DC, transparent);
+    background-color: #FF79DA;
+    border-radius: 30px;
+    color: white;
+    margin: 10px 20px;
+    padding: 20px 50px;
+    border: none;
+}
+
+
+
+footer {
+
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #393939;
+    color: white;
+    padding: 10px 20px;
+}
+
+.footer__logo {
+
+    margin: 20px 5px;
+    font-family: 'Shrikhand', 'cursive', 'Cambria';
+}
+
+.footer__proposition {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer__couverts {
+    margin: 5px;
+}
+
+.footer__phrase-proposition {
+    margin: 5px;
+}
+
+.footer__bepartner {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer__serremain {
+   margin: 5px;
+}
+
+.footer__item {
+    margin: 5px;
+}
+
+.footer__legal {
+    display: flex;
+    margin: 5px;
+}
+
+.footer__phraselegale {
+    
+}
+
+.footer__contact {
+    display: flex;
+    margin: 5px 5px 25px 5px;
+}
+
+.footer__phrasecontakt {
+    
+}
+
