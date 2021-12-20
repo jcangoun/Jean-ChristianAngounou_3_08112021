@@ -113,9 +113,9 @@ main {
     margin: 10px;
     border-radius: 20px; */
 }
-.gras {
+/* .gras {
     font-weight: 900;
-}
+}            la on remplace le selecteur là pour celui qui va faire le gras ici .gras est là pour rappeler le weight 900  */
 .choix__assiette {
     margin: 5px;
 }
@@ -216,6 +216,7 @@ footer {
 
     margin: 20px 5px;
     font-family: 'Shrikhand', 'cursive', 'Cambria';
+    font-weight: bold;
 }
 
 .footer__proposition {

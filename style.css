@@ -8,7 +8,7 @@ font-family: 'Roboto', 'Courier', 'monospace';
 }
 
 .shrikhand {
-    font-family: '';
+    font-family: 'Shrikhand';
 }
 a {
     text-decoration: none;
@@ -16,11 +16,18 @@ a {
                                 /* je cherche ou est la place de ce <a> vu qu'il est ddissimilé un peur partout. */
 }
 
+
 header {
     display: flex;
     justify-content: center;
     flex: 100%;
     margin: 20px;
+}
+.logo {
+    font-size: 30px;
+}
+.shrikhand {
+    font-family: 'Shrikhand';
 }
 
 main {
@@ -43,6 +50,10 @@ main {
     margin: 10px;
 }
 
+.gras {
+    font-weight: 600;
+}
+
 .explore {
     text-align: center;
     background-color: rgb(240, 240, 240);
@@ -51,7 +62,7 @@ main {
 }
 
 .explore__title {
-
+    font-size: 25px;
 }
 
 .explore__description {
@@ -83,7 +94,10 @@ main {
 
 .fonctionnement__titre {
     margin: 20px;
+    font-size: 20px;
 }
+
+/* ici on met le selecteur pour le gras */
 
 .fonctionnement__choix {
     
@@ -108,14 +122,14 @@ main {
 }
 
 .fonctionnement__description {
-    margin: 15px 60px 10px 0;
+    margin: 15px 45px 10px 0;
     padding: 5px;
     
 
 }
 
 .fonctionnement__menu {
-
+    
 }
 
 .fonctionnement__trois-points {
@@ -137,12 +151,12 @@ align-items: center;
 }
 
 .fonctionnement__degustez {
-
+    
 }
 
 .fonctionnement__i-resto {
     width: 15%;
-    margin: 10px;
+    margin: 15px 0px;
 }
 
 .fonctionnement__phrase-degustez {
@@ -161,7 +175,7 @@ align-items: center;
     margin: 15px;
     padding: 15px;
     background-color: rgb(240, 240, 240);
-    box-shadow: 0px 0px 9px 0px grey;
+    box-shadow:0px 0px 14px -4px grey;
 
 }
 
@@ -187,15 +201,20 @@ figcaption {
     min-height: 65px;
     background-color: white;
     border-radius: 0 0 20px 20px;
-    padding: 10px;
+    /* padding: 10px; */
 }
 
 .caption__iconecoeur {
-    margin: 5px;
+    
+    display: flex;
+    margin: 5px 15px;
+    align-items: center;
+    font-size: 23px;
 }
 
 .restaurants__titre {
-    margin: 20px;
+    margin: 60px 20px 20px 20px;
+    font-size: 25px;
 }
 
 /* .restaurants__vitrine {
@@ -235,10 +254,12 @@ figcaption {
 }
 
 .restaurant__nom {
-    margin: 5px;
+    font-size: 18px;
+    margin: 15px 0 5px 15px;
 }
 .restaurant__lieu {
-    margin: 5px;
+    margin: 5px 0 15px 15px;
+    font-size: 18px;
 }
 
 /*  ci dessous les noms LANOTE doit devenir apres  " restaurants__nom" */
@@ -359,8 +380,9 @@ footer {
 
 .footer__logo {
 
-    margin: 20px 5px;
-    font-family: 'Shrikhand', 'cursive', 'Cambria';
+    margin: 20px 0;
+    font-weight: 100;
+    font-size: 18px;
 }
 
 .footer__proposition {
