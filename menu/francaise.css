@@ -87,7 +87,15 @@ main {
     font-size: 23px;
 }
 
+.active:hover {
+     content: " \f004";
+     color: #9356DC;
+}
 
+.active:active {
+    content: " \f004";
+    color: #9356DC;
+}
 .entree {
 
 }
