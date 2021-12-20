@@ -120,6 +120,25 @@ main {
     padding: 5px;
 
 }
+/* Voici les animations de fonctionnement choix ci-dessous*/
+.fonctionnement__choix:hover {
+    background-color: #ece3f7;
+}
+
+.fonctionnement__choix:active {
+    background-color: #FF79DA;
+}
+
+.fonctionnement__choix:visited {
+    background-color: #9356DC ;
+}
+
+
+
+
+
+
+
 
 .fonctionnement__description {
     margin: 15px 45px 10px 0;
@@ -150,6 +169,22 @@ align-items: center;
     margin: 10px;
 }
 
+/* Debut partie animation  fonctionnemenent__menu*/
+
+.fonctionnement__menu:hover {
+    background-color: #ece3f7;
+}
+
+.fonctionnement__menu:active {
+    background-color: #FF79DA;
+}
+
+.fonctionnement__menu:visited {
+    background-color: #9356DC ;
+}
+/*Fin anim fonctionxx__menu*/
+
+
 .fonctionnement__degustez {
     
 }
@@ -162,6 +197,24 @@ align-items: center;
 .fonctionnement__phrase-degustez {
     margin: 10px;
 }
+
+
+/* Dbt anim fonctionnement__degustez*/
+
+.fonctionnement__degustez:hover {
+    background-color: #ece3f7;
+}
+
+.fonctionnement__degustez:active {
+    background-color: #FF79DA;
+}
+
+.fonctionnement__degustez:visited {
+    background-color: #9356DC ;
+}
+
+
+/* Fin anim degustez*/
 
 
 
