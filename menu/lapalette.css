@@ -23,7 +23,11 @@ nav {
 
 .logo {
     flex: 55%;
-    padding: 20px;
+    font-size: 30px;
+    padding: 30px;
+}
+.shrikhand {
+    font-family: 'Shrikhand';
 }
 
 main {
@@ -72,13 +76,13 @@ main {
 
 .nom__titre {
 
-    font-size: 30px;
+    font-size: 28px;
 }
 
 .icone-coeur {
-    margin: 10px;
+    margin: 10px 0;
     display: flex;
-    font-size: 20px;
+    font-size: 23px;
 }
 
 
@@ -113,15 +117,18 @@ main {
     margin: 10px;
     border-radius: 20px; */
 }
-/* .gras {
-    font-weight: 900;
-}            la on remplace le selecteur là pour celui qui va faire le gras ici .gras est là pour rappeler le weight 900  */
+
 .choix__assiette {
     margin: 5px;
+    font-size: 18px;
+}
+.gras {
+    font-weight: 600;
 }
 
 .choix__accompagnement {
     margin: 5px;
+    font-size: 15px;
 }
 .prix {
     display: flex;
@@ -152,9 +159,11 @@ main {
 }
 .plat__assiette {
     margin: 5px;
+    font-size: 18px;
 }
 .plat__accompagnement {
     margin: 5px;
+    font-size: 15px;
 }
 
 .dessert {
@@ -193,15 +202,16 @@ main {
     background-color: #FF79DA;
     border-radius: 30px;
     color: white;
-    margin: 10px 20px;
+    margin: 35px 20px;
     padding: 20px 50px;
     border: none;
+    font-size: 17px;
 }
 
 
 
 footer {
-
+   
 }
 
 .footer {
@@ -209,14 +219,14 @@ footer {
     flex-direction: column;
     background-color: #393939;
     color: white;
-    padding: 10px 20px;
+    padding: 10px 20px; 
+    margin: 0;
 }
 
 .footer__logo {
-
-    margin: 20px 5px;
     font-family: 'Shrikhand', 'cursive', 'Cambria';
-    font-weight: bold;
+    margin: 20px 5px; 
+    font-size: 18px;
 }
 
 .footer__proposition {
