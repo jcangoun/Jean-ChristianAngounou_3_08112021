@@ -103,6 +103,13 @@ main {
     
 }
 
+.fonctionnement__mobile {
+    display: flex;
+    flex: 5%;
+    align-items: center;
+    padding: 5px;
+
+}
 .fonctionnement__numero-choix {
     color: white;
     margin: 10px;
@@ -112,14 +119,11 @@ main {
     padding: 5px 10px;
     border-radius: 20px;
 }
-
-.fonctionnement__mobile {
-    display: flex;
-    flex: 5%;
-    align-items: center;
-    padding: 5px;
-
+.phone {
+    color: grey;
+    font-size: 20px;
 }
+
 /* Voici les animations de fonctionnement choix ci-dessous*/
 .fonctionnement__choix:hover {
     background-color: #ece3f7;
@@ -154,6 +158,9 @@ main {
 .fonctionnement__trois-points {
 display: flex;
 align-items: center;
+font-size: 17px;
+color: grey;
+margin: 0 3px;
 }
 
 .fonctionnement__icone-burger {
@@ -161,6 +168,8 @@ align-items: center;
     align-items: center;
     width: 15%;
     margin: 0;
+    font-size: 17px;
+    color: grey;
 }
 
 .fonctionnement__choix-menu {
@@ -191,7 +200,8 @@ align-items: center;
 
 .fonctionnement__i-resto {
     width: 15%;
-    margin: 15px 0px;
+    margin: 15px 0px 15px 10px;
+    color: grey;
 }
 
 .fonctionnement__phrase-degustez {
