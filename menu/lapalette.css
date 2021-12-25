@@ -12,26 +12,31 @@ header {
 nav {
     display: flex;
     flex: 100%;
+    align-items: center;
 
 }
 
 .fleche {
-    /* flex: 10%; */
-    
-    margin: 25px;
+    flex: 10%;
+    padding: 0 25px;
+    /* margin: 25px; */
+    font-size: 20px;
 }
 
 .logo {
     display: flex;
-    justify-content: center;
-    flex: 55%;
+    
+    flex: 65%;
     font-size: 30px;
-    padding: 20px;
+    padding: 20px 0;
+    
 }
 .shrikhand {
     font-family: 'Shrikhand';
 }
-
+.super-gras {
+    font-weight: 600;
+}
 main {
     flex-direction: column;
 }
@@ -94,8 +99,9 @@ main {
 
 .entree__titre {
     
-    border: 1px solid#99E2D0;
+    border-bottom: 3px solid#99E2D0;
     margin: 10px;
+    width: 40px;
 }
 
 .entree__groupe {
@@ -125,7 +131,7 @@ main {
     font-size: 18px;
 }
 .gras {
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .choix__accompagnement {
@@ -135,7 +141,7 @@ main {
 .prix {
     display: flex;
     align-items: flex-end;
-    margin: 0 15px 10px 0;
+    margin: 0 20px 10px 0;
 }
 
 
@@ -144,8 +150,9 @@ main {
 }
 
 .plat__titre {
-    border: 1px solid#99E2D0;
+    border-bottom: 3px solid#99E2D0;
     margin: 10px;
+    width: 40px;
 }
 
 .plat__groupe {
@@ -173,11 +180,12 @@ main {
 }
 
 .dessert__titre {
-    border: 1px solid#99E2D0;
+    border-bottom: 3px solid#99E2D0;
     margin: 10px;
+    width: 40px;
 }
 
-.dessert__groue {
+.dessert__groupe {
 
 }
 
@@ -229,16 +237,19 @@ footer {
     /* font-family: 'Shrikhand', 'cursive', 'Cambria'; */
     margin: 20px 5px; 
     font-size: 18px;
+    list-style: none;
 }
 
 .footer__proposition {
     display: flex;
     flex-direction: row;
 }
-
-.footer__couverts {
+.footer__icone {
     margin: 5px;
 }
+/* .footer__couverts {
+    margin: 5px;
+} */
 
 .footer__phrase-proposition {
     margin: 5px;
@@ -247,10 +258,6 @@ footer {
 .footer__bepartner {
     display: flex;
     flex-direction: row;
-}
-
-.footer__serremain {
-   margin: 5px;
 }
 
 .footer__item {

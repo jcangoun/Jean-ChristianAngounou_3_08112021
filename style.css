@@ -450,6 +450,7 @@ footer {
     margin: 20px 0;
     font-weight: 100;
     font-size: 18px;
+    list-style: none;
 }
 
 .footer-logo::before {
@@ -498,6 +499,12 @@ footer {
 .footer__phrasecontakt {
     
 }
+
+/* menu mettre lapalette.css*/
+
+
+
+
 
 
  /*   Ici se termine la partie de breakpoints mobile  et en bas on passe au desktop */
