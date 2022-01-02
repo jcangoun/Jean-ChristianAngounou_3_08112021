@@ -222,10 +222,20 @@ margin: 0 3px;
 
 .fonctionnement__degustez:active {
     background-color: #FF79DA;
+    opacity: 0.6;
 }
 
 .fonctionnement__degustez:visited {
     background-color: #9356DC;
+}
+
+/* ici c est :hover pour les petits icones enfants ihover des menus*/
+
+.fonctionnement__i-resto :hover {
+    color: #9356DC;
+}
+.fonctionnement__icone-burger:hover .ihover {
+    color: #9356DC;
 }
 
 .fonctionnement__degustez:hover .ihover {
