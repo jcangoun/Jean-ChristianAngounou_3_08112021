@@ -69,16 +69,19 @@ main {
 }
 .explore__description {
     margin: 10px;
+    font-size: 17px;
 }
 
 .explore__button {
     background: linear-gradient(0deg, #9356DC, transparent);
     background-color: #FF79DA;
+    /* ici la couleur que je vais mettre après le clic du explore__button signé .explore__button:active */
     border-radius: 30px;
     color: white;
     margin: 10px 20px;
     padding: 15px 20px;
     border: none;
+    box-shadow: 0px 2px 8px grey;
 }
 
 .explore--border {
@@ -225,6 +228,9 @@ margin: 0 3px;
     background-color: #9356DC;
 }
 
+.fonctionnement__degustez:hover .ihover {
+    color: #9356DC;
+}
 
 /* Fin anim degustez*/
 
@@ -233,6 +239,7 @@ margin: 0 3px;
 .fonctionnement__choix, .fonctionnement__menu, .fonctionnement__degustez {
     display: flex;
     flex: 80%;
+    align-items: center;
     flex-direction: row;
     text-align: center;
     text-align-last: start;
@@ -240,7 +247,7 @@ margin: 0 3px;
     margin: 15px;
     padding: 15px;
     background-color: rgb(240, 240, 240);
-    box-shadow:0px 0px 14px -4px grey;
+    box-shadow:0px 5px 13px -4px #c1c1c1;
 
 }
 

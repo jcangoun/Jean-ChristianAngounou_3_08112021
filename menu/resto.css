@@ -111,6 +111,7 @@ main {
 /* entree__composition à la fin va prendre le nom en bas de entree__choix et inversement */
 .entree__composition {
     display: flex;
+    flex-grow: 4;
     justify-content: space-between;
     flex-direction: row;
     margin: 15px;
@@ -124,6 +125,7 @@ main {
     padding: 10px;
     margin: 10px;
     border-radius: 20px; */
+    flex: 75%;
 }
 
 .choix__assiette {
@@ -144,6 +146,10 @@ main {
     margin: 0 20px 10px 0;
 }
 
+.ok {
+    display: none;
+flex: 0%;
+}
 
 .plat {
 
@@ -165,6 +171,7 @@ main {
     /* padding: 10px; */
     margin: 10px;
     border-radius: 20px;
+    flex: 75%;
 }
 .plat__assiette {
     margin: 5px;
@@ -195,6 +202,7 @@ main {
     /* padding: 10px; */
     margin: 10px;
     border-radius: 20px;
+    flex: 75%;
 }
 .dessert__assiette {
     margin: 5px;
