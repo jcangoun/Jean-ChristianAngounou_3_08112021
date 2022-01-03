@@ -118,6 +118,7 @@ main {
     background-color: white;
     /* padding: 10px; */
     border-radius: 15px;
+    cursor: grab;
 }
 .entree__choix {
      margin: 5px;
@@ -148,7 +149,17 @@ main {
 
 .ok {
     display: none;
-flex: 0%;
+    flex: 0%;
+    background-color: #99E2D0;
+    border-radius: 0 10px 10px 0;
+    /*
+    position: relative;
+       attention ici en bas  les margin sont fait pour cacher le ok vert et 
+       margin left en baissant fait grandir le ".ok " et margin right fait pareil en augmentant
+    */
+    margin-left: 16px;
+    margin-right: 10px;
+
 }
 
 .plat {
@@ -284,10 +295,11 @@ footer {
 .footer__contact {
     display: flex;
     margin: 5px 5px 25px 5px;
+    
 }
 
 .footer__phrasecontakt {
-    
+    color: white;
 }
 
 

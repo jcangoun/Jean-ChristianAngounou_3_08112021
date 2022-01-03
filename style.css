@@ -523,10 +523,11 @@ footer {
 .footer__contact {
     display: flex;
     margin: 5px 5px 25px 5px;
+    
 }
 
 .footer__phrasecontakt {
-    
+    color: white;
 }
 
 /* menu mettre lapalette.css*/
