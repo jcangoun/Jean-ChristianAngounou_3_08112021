@@ -29,6 +29,7 @@ nav {
     flex: 65%;
     font-size: 30px;
     padding: 20px 0;
+    padding: 20px 0 20px 50px;
     
 }
 .shrikhand {
@@ -148,18 +149,10 @@ main {
 }
 
 .ok {
-    display: none;
-    flex: 0%;
+    
+    width: 0;
     background-color: #99E2D0;
     border-radius: 0 10px 10px 0;
-    /*
-    position: relative;
-       attention ici en bas  les margin sont fait pour cacher le ok vert et 
-       margin left en baissant fait grandir le ".ok " et margin right fait pareil en augmentant
-    */
-    margin-left: 16px;
-    margin-right: 10px;
-
 }
 
 .plat {
