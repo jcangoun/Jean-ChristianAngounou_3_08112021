@@ -88,11 +88,25 @@ main {
 }
 
 .icone-coeur {
-    margin: 10px 0;
     display: flex;
+    margin: 10px 0;
     font-size: 23px;
+
 }
 
+.active {
+
+}
+.active:hover {
+     font-weight: 600;
+     font-size: 30px;
+     color: #ca72e7;;
+}
+
+.active:active {
+    content: " \f004";
+    color: #9356DC;
+}
 
 .entree {
 
@@ -159,8 +173,22 @@ main {
     border-radius: 0 10px 10px 0;
     font-size: 20px;
     overflow: hidden;
-    /* transform: translateX(10px), rotateX(30);  ceci est une errer mais je ne voies pas a quel où.... confusion. */
+
+    transform: translateX(10%), rotateX(-30deg);
+
     transition: all 1000ms ease-in-out;
+}
+
+.ok-icone {
+    transform: rotateZ(0deg);
+    transition: all 1000ms;
+}
+
+
+.entree:hover {
+    transform: rotateZ(0deg);
+    transition-duration: 500ms;
+    
 }
 
 .prix:hover {
@@ -172,19 +200,25 @@ main {
     padding: 20px; */
     
 }
-    /* On dirait que si dessous les modificatio*/
+    /* On dirait que si dessous les modifications ne passent pas a part transition-duration*/
 
-.prix:hover + .ok{
+.prix:hover + .ok{ 
     transition-duration: 1000ms; 
-    
-  
-     transform: rotateX(85), translateX(100%) 10000ms;
+    transition: all 1000ms ease-in-out;
+     transform: rotateZ(85deg), translateX(100%) 10000ms;
     background-color: #99E2D0 1000ms;
     width: 60px;
+
+    animation-name: ok;
+    animation-duration: 1000ms;
+}
+.ok:hover .ok-icone {
+    transform: rotateZ(180deg);
 }
 
-
-
+@keyframes ok-valid {
+    
+}
 
 
 .plat {

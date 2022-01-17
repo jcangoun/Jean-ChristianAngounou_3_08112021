@@ -285,6 +285,20 @@ figcaption {
     border-radius: 0 0 20px 20px;
     /* padding: 10px; */
 }
+/*
+                    Cette petite case ecrite NOuveau est normalement apres la <img>
+.new {
+    display: flex;
+    flex: 15%;
+    justify-content: flex-end;
+    align-content: flex-start;
+    background-color: pink;
+    padding: 10px;
+    position: relative;
+    background-position-y: -100px;
+    z-index: 1;
+} */
+
 
 .caption__iconecoeur {
     
@@ -298,13 +312,21 @@ figcaption {
 
 }
 .active:hover {
-     content: " \f004";
-     color: #9356DC;
+    font-weight: 600;
+     font-size: 30px;
+    color: #ca72e7; 
 }
 
 .active:active {
     content: " \f004";
-    color: #9356DC;
+    font-weight: 600;
+     font-size: 30px;
+    color: #ca72e7;
+}
+.active:visited {
+    font-weight: 600;
+     font-size: 30px;
+    color: #ca72e7;
 }
 
 .restaurants__titre {
