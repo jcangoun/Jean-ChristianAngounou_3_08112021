@@ -95,12 +95,14 @@ main {
 }
 
 .active {
-
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
 }
 .active:hover {
      font-weight: 600;
      font-size: 30px;
-     color: #ca72e7;;
+     color: #ca72e7;
 }
 
 .active:active {
@@ -134,9 +136,8 @@ main {
     /* padding: 10px; */
     border-radius: 15px;
     cursor: grab;
-    transition: 1s;
-    animation-name: anim-entree;
-    animation: slideIn 1000ms  ease-in-out 2s;
+   transition: 1s;
+ 
 }
 .entree__choix {
      margin: 5px;
@@ -202,8 +203,8 @@ main {
 } */
 
 .entree:hover {
-    transform: rotateZ(0deg);
-    transition-duration: 500ms;
+  /*  transform: rotateZ(0deg);
+     transition-duration: 500ms; */
     
 }
 
