@@ -309,12 +309,53 @@ figcaption {
 }
 
 .active {
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  /*  background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;*/
 }
+
 .active:hover {
-    font-weight: 600;
+     font-weight: 600;
      font-size: 30px;
-    color: #ca72e7; 
+     color: #ca72e7;
+     animation: full-heart 0.2s;
+     animation-timing-function: ease-in-out; 
+}
+
+@keyframes full-heart {
+    0% {
+        opacity: 0;
+        font-size: 30px
+    }
+
+    25% {
+        transform-origin:center;
+        transform: scale(1.5);
+        opacity: 0.5;
+        font-size: 40px;
+    }
+
+    50% {
+        opacity: 1;
+        font-size: 30px;
+        transform: scale(0.8)
+    }
+
+    75% {
+        transform-origin:center;
+        transform: scale(1.5);
+        opacity: 0.5;
+        font-size: 40px;
+    }
+
+    100% {
+        opacity: 1;
+        font-size: 30px;
+    }
+
 }
 
 .active:active {

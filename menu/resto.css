@@ -95,19 +95,53 @@ main {
 }
 
 .active {
-    background-clip: text;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  /*  background-clip: text;
     -webkit-background-clip: text;
-    color: transparent;
+    color: transparent;*/
 }
 .active:hover {
      font-weight: 600;
      font-size: 30px;
      color: #ca72e7;
+     animation: full-heart 0.2s;
+     animation-timing-function: ease-in-out; 
 }
 
-.active:active {
-    content: " \f004";
-    color: #9356DC;
+@keyframes full-heart {
+    0% {
+        opacity: 0;
+        font-size: 30px
+    }
+
+    25% {
+        transform-origin:center;
+        transform: scale(1.5);
+        opacity: 0.5;
+        font-size: 40px;
+    }
+
+    50% {
+        opacity: 1;
+        font-size: 30px;
+        transform: scale(0.8)
+    }
+
+    75% {
+        transform-origin:center;
+        transform: scale(1.5);
+        opacity: 0.5;
+        font-size: 40px;
+    }
+
+    100% {
+        opacity: 1;
+        font-size: 30px;
+    }
+
+
 }
 
 .entree {
@@ -122,8 +156,34 @@ main {
 }
 
 .entree__groupe {
-
+    animation-name: appear;
+    animation-duration: 2000ms;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.3s;
+    animation-fill-mode: both;
 }
+
+
+
+@keyframes appear {
+
+    0% {
+        transform: all;
+        transform: translateY(30%);
+        opacity:0;
+    }
+
+    
+    100% {
+        transform: translateY(0%); 
+        opacity: 0.9;
+    }
+}
+
+
+
+
+
 
 /* entree__composition à la fin va prendre le nom en bas de entree__choix et inversement */
 .entree__composition {
@@ -194,38 +254,13 @@ main {
 
     /*Fin des entreees et dbut sde ses :hover entrees*/
 
-.entree__groupe:hover  .entree__composition {
-    animation-name: appear;
-    animation-duration: 2000ms;
-    animation-timing-function: ease-in-out;
-    animation-delay: 0.5s;
-    animation-fill-mode: both;
-}
-
-@keyframes appear {
-
-    0% {
-        transform: all;
-        transform: translateY(30%);
-        opacity:0;
-    }
-
-    
-    100% {
-        transform: translateY(0%); 
-        opacity: 0.9;
-    }
-}
-
 
 .entree__composition:hover > .ok{  
     transition: all 2s ease-in-out;
     animation-delay: 5s;
-     transform: rotateZ(85deg), translateX(100%) 10000ms;
     background-color: #99E2D0 1000ms;
     width: 60px;
 
-  
 }
 /*  hover d'anim tour bn ok celui revient a sa place de depart et j arrive pas encore en keyframe
 
@@ -292,8 +327,31 @@ ok version keyframes en bas on pourra ainsi choisir en securité
 }
 
 .plat__groupe {
-
+    animation-name: appear;
+    animation-duration: 2000ms;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.6s;
+    animation-fill-mode: both;
 }
+
+
+@keyframes appear {
+
+    0% {
+        transform: all;
+        transform: translateY(30%);
+        opacity:0;
+    }
+
+    
+    100% {
+        transform: translateY(0%); 
+        opacity: 0.9;
+    }
+}
+
+
+
 
 .plat__choix {
     margin: 10px;
@@ -317,34 +375,13 @@ ok version keyframes en bas on pourra ainsi choisir en securité
 
 /* Fin plats et ses debuts :hover plats*/
 
-.plat__groupe:hover  .entree__composition {
-    animation-name: appear;
-    animation-duration: 2000ms;
-    animation-timing-function: ease-in-out;
-    animation-delay: 0.5s;
-    animation-fill-mode: both;
-}
 
-@keyframes appear {
-
-    0% {
-        transform: all;
-        transform: translateY(30%);
-        opacity:0;
-    }
-
-    
-    100% {
-        transform: translateY(0%); 
-        opacity: 0.9;
-    }
-}
 
 
 .entree__composition:hover > .ok{  
     transition: all 2s ease-in-out;
     animation-delay: 5s;
-     transform: rotateZ(85deg), translateX(100%) 10000ms;
+    
     background-color: #99E2D0 1000ms;
     width: 60px;
 
@@ -370,8 +407,30 @@ ok version keyframes en bas on pourra ainsi choisir en securité
 }
 
 .dessert__groupe {
-
+    animation-name: appear;
+    animation-duration: 2000ms;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.9s;
+    animation-fill-mode: both;
 }
+
+
+@keyframes appear {
+
+    0% {
+        transform: all;
+        transform: translateY(30%);
+        opacity:0;
+    }
+
+    
+    100% {
+        transform: translateY(0%); 
+        opacity: 0.9;
+    }
+}
+
+
 
 .dessert__choix {
     margin: 10px;
@@ -394,34 +453,11 @@ ok version keyframes en bas on pourra ainsi choisir en securité
 
 /* Debut :hover dessert*/
 
-.dessert__groupe:hover  .entree__composition {
-    animation-name: appear;
-    animation-duration: 2000ms;
-    animation-timing-function: ease-in-out;
-    animation-delay: 0.5s;
-    animation-fill-mode: both;
-}
-
-@keyframes appear {
-
-    0% {
-        transform: all;
-        transform: translateY(30%);
-        opacity:0;
-    }
-
-    
-    100% {
-        transform: translateY(0%); 
-        opacity: 0.9;
-    }
-}
-
 
 .entree__composition:hover > .ok{  
     transition: all 2s ease-in-out;
     animation-delay: 5s;
-     transform: rotateZ(85deg), translateX(100%) 10000ms;
+    
     background-color: #99E2D0 1000ms;
     width: 60px;
 
