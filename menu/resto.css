@@ -234,6 +234,7 @@ main {
     align-items: center;
     width: 0;
     background-color: #99E2D0;
+    color: white;
     border-radius: 0 10px 10px 0;
     font-size: 20px;
     overflow: hidden;
@@ -262,12 +263,6 @@ main {
     width: 60px;
 
 }
-/*  hover d'anim tour bn ok celui revient a sa place de depart et j arrive pas encore en keyframe
-
-.ok:hover .ok-icone {
-    transform: rotateZ(180deg);
-
-}*/
 
 .entree__composition:hover .ok-icone {
     animation: ok-turn 1700ms ease-in-out;
@@ -294,17 +289,6 @@ main {
     }
 
 }
-
-/*   
-
-ok version keyframes en bas on pourra ainsi choisir en securité
-
-
-*/
-
-
-
-
 
 /* Fin :hover des entrees*/
 
