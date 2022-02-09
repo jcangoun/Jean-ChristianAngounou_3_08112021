@@ -1,0 +1,23 @@
+{
+  "name": "p3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": { 
+    "@comment test": "ici on va mettre l'element dans le cour qui permet de mettre en marche soit nodejs soit npm ",
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jcangoun/Jean-ChristianAngounou_3_08112021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jcangoun/Jean-ChristianAngounou_3_08112021/issues"
+  },
+  "homepage": "https://github.com/jcangoun/Jean-ChristianAngounou_3_08112021#readme",
+  "dependencies": {
+    "sass": "^1.49.7"
+  }
+}
