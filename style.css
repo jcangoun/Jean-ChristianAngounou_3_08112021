@@ -49,11 +49,11 @@ main {
 .location__city {
     margin: 10px;
 }
-
+/* ici on met le selecteur pour le gras */
 .gras {
     font-weight: 600;
 }
-
+/* fin select gras*/
 .explore {
     text-align: center;
     background-color: rgb(240, 240, 240);
@@ -84,11 +84,6 @@ main {
     box-shadow: 0px 2px 8px grey;
 }
 
-.explore--border {
-
-}
-
-
 /* debt gamme Fontionnement */
 .fonctionnement {
     display: flex;
@@ -101,19 +96,23 @@ main {
     margin: 20px;
     font-size: 20px;
 }
+/* Mettre ici fonctionnement__degustez tel quel   
+    .fonctionnement__degustez {}
+        .fonctionnement__phrase-degustez {}
+            .fonctionnement__degustez:hover {}
+            .fonctionnement__degustez:active {}
+            .fonctionnement__degustez:visited {}
+                                                    */
+/* Fin de section .fonctionnement__degustez*/
 
-/* ici on met le selecteur pour le gras */
 
-.fonctionnement__choix {
-    
-}
-
+/* le fct mobile   est peut etre de trop on veirifie apres*/
 .fonctionnement__mobile {
     display: flex;
     flex: 5%;
     align-items: center;
     padding: 5px;
-
+/* Fin fct mobile ci dessus*/
 }
 .fonctionnement__numero-choix {
     color: white;
@@ -141,12 +140,6 @@ main {
 .fonctionnement__choix:visited {
     background-color: #9356DC ;
 }
-
-
-
-
-
-
 
 
 .fonctionnement__description {
@@ -203,18 +196,11 @@ margin: 0 3px;
     
 }
 
-.fonctionnement__i-resto {
-    width: 15%;
-    margin: 15px 0px 15px 10px;
-    color: grey;
-}
 
 .fonctionnement__phrase-degustez {
     margin: 10px;
 }
 
-
-/* Dbt anim fonctionnement__degustez*/
 
 .fonctionnement__degustez:hover {
     background-color: #ece3f7;
@@ -229,7 +215,14 @@ margin: 0 3px;
     background-color: #9356DC;
 }
 
-/* ici c est :hover pour les petits icones enfants ihover des menus*/
+/* Fin anim degustez*/
+
+.fonctionnement__i-resto {
+    width: 15%;
+    margin: 15px 0px 15px 10px;
+    color: grey;
+}
+
 
 .fonctionnement__i-resto :hover {
     color: #9356DC;
@@ -242,7 +235,6 @@ margin: 0 3px;
     color: #9356DC;
 }
 
-/* Fin anim degustez*/
 
 
 
@@ -261,18 +253,46 @@ margin: 0 3px;
 
 }
 
-
-
 .restaurants {
     background-color: rgb(240, 240, 240);
     display: flex;
     flex-direction: column;
 }
 
-/* figure {
-    border: 1px solid red; 
-    border-radius: 20px;
+.restaurants__titre {
+    margin: 60px 20px 20px 20px;
+    font-size: 25px;
+}
+
+/* .restaurants__vitrine {
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        flex: 100%;
+        height: 225px;
+        background-size: cover;
+        background-repeat: no-repeat;        
 } */
+
+.restaurants__nom {
+    display: flex;
+    flex: 100%;
+    flex-direction: column;
+    min-height: 225px;
+    border-radius: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 20px;
+
+}
+
+.restaurants__nom img {
+    display: flex;
+    width: 100%;
+    height: 175px;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+}
 
 figcaption {
     
@@ -283,22 +303,8 @@ figcaption {
     min-height: 65px;
     background-color: white;
     border-radius: 0 0 20px 20px;
-    /* padding: 10px; */
+    
 }
-/*
-                    Cette petite case ecrite NOuveau est normalement apres la <img>
-.new {
-    display: flex;
-    flex: 15%;
-    justify-content: flex-end;
-    align-content: flex-start;
-    background-color: pink;
-    padding: 10px;
-    position: relative;
-    background-position-y: -100px;
-    z-index: 1;
-} */
-
 
 .caption__iconecoeur {
     
@@ -369,44 +375,6 @@ figcaption {
      font-size: 30px;
     color: #ca72e7;
 }
-
-.restaurants__titre {
-    margin: 60px 20px 20px 20px;
-    font-size: 25px;
-}
-
-/* .restaurants__vitrine {
-        margin: 20px;
-        display: flex;
-        flex-direction: column;
-        flex: 100%;
-        height: 225px;
-        background-size: cover;
-        background-repeat: no-repeat;        
-} */
-
-
-.restaurants__nom {
-    display: flex;
-    flex: 100%;
-    flex-direction: column;
-    min-height: 225px;
-    border-radius: 20px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: 20px;
-
-}
-
-.restaurants__nom img {
-    display: flex;
-    width: 100%;
-    height: 175px;
-    border-radius: 20px 20px 0 0;
-    object-fit: cover;
-}
-
-
 .restaurant__texte {
 
 }
