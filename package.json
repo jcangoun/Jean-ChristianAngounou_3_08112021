@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": { 
-    "@comment test": "ici on va mettre l'element dans le cour qui permet de mettre en marche soit nodejs soit npm ",
-    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+    "@comment test": "ici en bas on va remettre ce lien de sas enbas qui suit    sass --watch ./sass/main.scss:./public/css/style.css   apres fin resto ou apres rect du prof.. on fait d abord resto",
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css, sass --watch ./sass/resto.scss:./public/css/restau.css"
   },
   "repository": {
     "type": "git",
