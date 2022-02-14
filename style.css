@@ -306,6 +306,19 @@ figcaption {
     
 }
 
+/* .restaurant__texte {
+
+} */
+
+.restaurant__nom {
+    font-size: 18px;
+    margin: 15px 0 5px 15px;
+}
+.restaurant__lieu {
+    margin: 5px 0 15px 15px;
+    font-size: 18px;
+}
+
 .caption__iconecoeur {
     
     display: flex;
@@ -375,126 +388,13 @@ figcaption {
      font-size: 30px;
     color: #ca72e7;
 }
-.restaurant__texte {
-
-}
-
-.restaurant__nom {
-    font-size: 18px;
-    margin: 15px 0 5px 15px;
-}
-.restaurant__lieu {
-    margin: 5px 0 15px 15px;
-    font-size: 18px;
-}
-
-/*  ci dessous les noms LANOTE doit devenir apres  " restaurants__nom" */
-/* .restaurants__lanote {
-    display: flex;
-    flex: 100%;
-    flex-direction: column;
-    min-height: 225px;
-    border-radius: 20px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: 20px;
-} */
-
-/*
-.restaurants__lanote img {
-    display: flex;
-    flex: 100%;   ca c est a enlever  le flex est pour le parent de l'image
-    height: 175px;
-    object-fit: cover;
-    border-radius:  20px 20px 0 0;
-}    */
-
-
-
-/* .caption__boite {     element a utiliser pour tester des figcaption a propos de est que lle surligneur est du a <figcaption> ou a autre et est qu'il marche bien
-
-} 
-.caption__lanotetextes {
-
-}
-.caption__lanotenom {
-    margin: 5px;
-}
-.caption__lanoteville {
-    margin: 5px;
-}        */
-/*      ici finit la famille lanote mais  on doit appliquer la suppression des noms exacts sur les autres resto et mettre les meme categories qu en h aut. 
-                                             donc   $$__nom-testes, $$__nom-ville etc */
-
-
-/* .restaurants__lafrançaise {
-    display: flex;
-    flex: 100%;
-    flex-direction: column;
-    min-height: 225px;
-    
-    border-radius: 20px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: 20px;
-}
-
-.restaurants__lafrançaise img {
-    display: flex;
-
-    height: 175px;
-    object-fit: cover;
-    border-radius: 20px 20px 0 0;
-} */
-
-.caption__lafrançaisetextes {
-
-}
-
-.caption__lafrançaisenom {
-
-}
-
-.caption__lafrançaiseville {
-
-}
-
-/* .restaurants__ledelice {
-    display: flex;
-    flex: 100%;
-    flex-direction: column;
-    min-height: 225px;
-    border-radius: 20px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: 20px;
-}
-
-.restaurants__ledelice img {
-    display: flex;
-
-    height: 175px;
-    object-fit: cover;
-    border-radius: 20px 20px 0 0;
-} */
-
-.caption__ledelicetextes {
-
-}
-.caption__ledelicenom {
-
-}
-
-.caption__ledeliceville {
-
-}
 
  /* Fini la gamme ".restaurant" */
 
-
+/* 
 footer {
 
-}
+} */
 
 .footer {
     display: flex;
@@ -513,16 +413,13 @@ footer {
     list-style: none;
 }
 
-.footer-logo::before {
-
-}
 .footer__proposition {
     display: flex;
     flex-direction: row;
 }
 
-.footer__couverts {
-    margin: 5px;
+.footer__icone {
+   margin: 5px;
 }
 
 .footer__phrase-proposition {
@@ -534,9 +431,6 @@ footer {
     flex-direction: row;
 }
 
-.footer__serremain {
-   margin: 5px;
-}
 
 .footer__item {
     margin: 5px;
@@ -547,9 +441,9 @@ footer {
     margin: 5px;
 }
 
-.footer__phraselegale {
+/* .footer__phraselegale {
     
-}
+} */
 
 .footer__contact {
     display: flex;

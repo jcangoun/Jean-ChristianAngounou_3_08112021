@@ -1,4 +1,4 @@
-
+/* ici cest CSS .. modele pour constituer la vraie et nouvelle page resto.scss*/
 body {
     margin: 0;
     font-family: 'Roboto';
@@ -35,8 +35,8 @@ nav {
 .shrikhand {
     font-family: 'Shrikhand';
 }
-.super-gras {
-    font-weight: 600;
+.gras {
+    font-weight: 500;
 }
 main {
     flex-direction: column;
@@ -213,8 +213,8 @@ main {
     margin: 5px;
     font-size: 18px;
 }
-.gras {
-    font-weight: 500;
+.super-gras {
+    font-weight: 600;
 }
 
 .choix__accompagnement {
