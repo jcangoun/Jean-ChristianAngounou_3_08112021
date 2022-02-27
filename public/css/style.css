@@ -1,3 +1,7 @@
+@charset "UTF-8";
+/* en haut les variables pour index*/
+/* en bas les mixin pour index*/
+/* Fin des mixin en haut*/
 body {
   display: flex;
   flex-direction: column;
@@ -17,6 +21,12 @@ body header .logo {
 body header .logo .shrikhand {
   font-family: "Shrikhand";
 }
+body main {
+  /* debt gamme Fontionnement */
+  /* Ici on aura 3fois le ".fonctionnement deguster" donc je je ferai une mixin en @include icic les trois fois avec la propriété de degustez*/
+  /* ne pas depasser ce commentaire, 
+  le guillemet en bas est la toute fin, le body*/
+}
 body main .location {
   display: flex;
   justify-content: center;
@@ -29,9 +39,51 @@ body main .location .location__icon {
 }
 body main .location .location__city {
   margin: 10px;
-}
-body main .location .location__city .gras {
   font-weight: 600;
+}
+body main .explore {
+  text-align: center;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+body main .explore .explore__title {
+  font-size: 25px;
+  font-weight: 600;
+}
+body main .explore .explore__description {
+  margin: 10px;
+  font-size: 17px;
+}
+body main .explore .explore__button {
+  background: linear-gradient(0deg, #9356DC, transparent);
+  background-color: #FF79DA;
+  /* ici la couleur que je vais mettre après le clic du explore__button signé .explore__button:active */
+  border-radius: 30px;
+  color: white;
+  margin: 10px 20px;
+  padding: 15px 20px;
+  border: none;
+  box-shadow: 0px 2px 8px grey;
+  font-weight: 600;
+}
+body main .fonctionnement {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+body main .fonctionnement .fonctionnement__titre {
+  margin: 20px;
+  font-size: 20px;
+  font-weight: 600;
+}
+body main .fonctionnement__degustez .fonctionnement__numero-choix {
+  color: white;
+  margin: 10px;
+  position: relative;
+  margin-left: -25px;
+  background-color: #9356DC;
+  padding: 5px 10px;
+  border-radius: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

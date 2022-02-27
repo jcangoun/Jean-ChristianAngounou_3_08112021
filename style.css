@@ -7,16 +7,6 @@ margin: 0%;
 font-family: 'Roboto', 'Courier', 'monospace';                            
 }
 
-.shrikhand {
-    font-family: 'Shrikhand';
-}
-a {
-    text-decoration: none;
-    color: black;
-                                /* je cherche ou est la place de ce <a> vu qu'il est ddissimilé un peur partout. */
-}
-
-
 header {
     display: flex;
     justify-content: center;
@@ -274,6 +264,11 @@ margin: 0 3px;
         background-repeat: no-repeat;        
 } */
 
+a {
+    text-decoration: none;
+    color: black;
+                                /* je cherche ou est la place de ce <a> vu qu'il est ddissimilé un peur partout. */
+}
 .restaurants__nom {
     display: flex;
     flex: 100%;
