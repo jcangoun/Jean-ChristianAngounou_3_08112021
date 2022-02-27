@@ -70,7 +70,8 @@ main {
     padding: 0 5px;
     border-radius: 40px 40px 0 0;
 }
-
+/* Pour sass on s est arrete ici en bas a presentation a mettre dans le bon bloc sass
+C est a continuer au plus vite */
 .presentation {
     display: flex;
     justify-content: space-between;
@@ -98,17 +99,19 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    
   /*  background-clip: text;
     -webkit-background-clip: text;
     color: transparent;*/
 }
-.active:hover {
+/* .active:hover {
      font-weight: 600;
      font-size: 30px;
      color: #ca72e7;
      animation: full-heart 0.2s;
      animation-timing-function: ease-in-out; 
-}
+     
+} 
 
 @keyframes full-heart {
     0% {
@@ -141,9 +144,59 @@ main {
         font-size: 30px;
     }
 
+}
+
+*/
+
+/* ici en bas le test anim coeur commence :D */
+
+.active:active {
+    font-weight: 600;
+    font-size: 30px;
+    color: #ca72e7;
+    animation: full-heart 2.2s;
+    animation-timing-function: ease-in-out; 
+    
+} 
+
+@keyframes full-heart {
+   0% {
+       transform-origin:center;
+       
+   }
+   1% {
+       transform-origin: bottom;
+       transform:translateY(-50px)
+   }
+   25% {
+       transform: translateY(0px);
+       
+       
+       
+   }
+
+   50% {
+       opacity: 1;
+       font-size: 30px;
+       
+   }
+
+   75% {
+       transform-origin:bottom;
+       
+       
+       font-size: 40px;
+   }
+
+   100% {
+       opacity: 1;
+       font-size: 30px;
+   }
 
 }
 
+
+/* Fin du test anim coeur*/
 .entree {
 
 }

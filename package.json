@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": { 
-    "@comment test": "ici en bas on va remettre ce lien de sas enbas qui suit    sass --watch ./sass/main.scss:./public/css/style.css   apres fin resto ou apres rect du prof.. on fait d abord resto",
-    "sass": "sass --watch ./sass/main.scss:./public/css/style.css, sass --watch ./sass/resto.scss:./public/css/restau.css"
+    "@comment test": "ici en bas on va remettre ce lien de sas enbas qui suit    sass --watch ./sass/main.scss:./public/css/style.css apres fin resto ou apres rect du prof.. on fait d abord resto",
+    "sass": "sass --watch ./sass/style.scss:./public/css/style.css"
   },
   "repository": {
     "type": "git",
