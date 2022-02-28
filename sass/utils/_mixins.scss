@@ -1,203 +1,237 @@
-
-
-
-/* Fin de code index ici*/
-
-// @mixin heading-shadow($colour:lightness-shift($colour-primary), $offset: $heading-shadow-size){
-//     text-shadow: $offset $offset $colour;
-// }
-
-// @mixin border($colour:$colour-primary) {
-//     border: .1rem solid $colour;
-// }
-
-// @mixin img-ratio {
-//     width: 100%;
-//         display: block;
-//         overflow: hidden;
-//         padding-top: 56.25%;
-//         position: relative;
-//         & img {
-//             position: absolute;
-//             top: 50%;
-//             left: 50%;
-//             width: 100%;
-//             transform: translate(-50%, -50%);
-//         }
-// }
-
-// @mixin btn {
-//     padding: $grid-gutter;
-//     @include border;
-//     color: $colour-primary;
-//     background: $colour-secondary;
-//     cursor: pointer;
-//     &:hover{
-//         background: $colour-primary;
-//         color: $colour-accent;
-//     }
-//     &--full-width {
-//         width: 100%;
-//         margin: 0 auto;
-//     }
-// }
-
-@mixin nav {
-    nav {
-        display: flex;
-        flex: 100%;
-        align-items: center;
-        .fleche {
-            flex: 10%;
-            padding: 0 25px;
-            /* margin: 25px; */
-            font-size: 20px;
-        }
-        
-        .logo {
-            display: flex;
-            
-            flex: 65%;
-            font-size: 30px;
-            padding: 20px 0;
-            padding: 20px 0 20px 50px;
-            font-family: 'shrikhand';
-            font-weight: $gras;
-        }
-    }
-}
-
-@mixin coeur {
-    display: flex;
-    margin: 10px 0;
-    font-size: 23px;
-    
-}
-
-
-
-/* coeuract et @include coeuract a surveiller là en bas */
-@mixin coeuractif {
-    font-weight: 600;
-     font-size: 30px;
-     color: #ca72e7;
-     animation: full-heart 0.2s;
-     animation-timing-function: ease-in-out;
-}
-
-@mixin active {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    &:hover {
-        @include coeuractif();
-    }
-}
-
-@mixin entreegroupe   {
-    .entree__groupe {
-        @include entree;
-        @include appear;
-        @include entreecomposition;
-        /* Par securité je vais mettre deux fois en plus entreecompo vu qu'il est là deux fois.
-     mais posssiblement pas utile*/
-        @include entreecomposition;
-        @include entreecomposition;
-    
-    }
-}
-
-@mixin entree {
-    animation-name: appear;
-    animation-duration: 2000ms;
-    animation-timing-function: ease-in-out;
-    animation-delay: 0.3s;
-    animation-fill-mode: both;
-}
-
-@mixin appear {
-    @keyframes appear {
-
+/* en bas les mixin pour index*/
+@mixin full-heart {
+    @keyframes full-heart {
         0% {
-            transform: all;
-            transform: translateY(30%);
-            opacity:0;
+            opacity: 0;
+            font-size: 30px
         }
     
-        
+        25% {
+            transform-origin:center;
+            transform: scale(1.5);
+            opacity: 0.5;
+            font-size: 40px;
+        }
+    
+        50% {
+            opacity: 1;
+            font-size: 30px;
+            transform: scale(0.8)
+        }
+    
+        75% {
+            transform-origin:center;
+            transform: scale(1.5);
+            opacity: 0.5;
+            font-size: 40px;
+        }
+    
         100% {
-            transform: translateY(0%); 
-            opacity: 0.9;
+            opacity: 1;
+            font-size: 30px;
         }
+    
     }
-} 
-
-
-@mixin ok-icone {
-    transform: rotateZ(0deg);
-    transition: all 1000ms;
 }
 
-@mixin entreecomposition {
-    .entreecomposition {
-        display: flex;
-        flex-grow: 4;
-        justify-content: space-between;
-        flex-direction: row;
-        margin: 15px;
-        background-color: $white;
-        /* padding: 10px; */
-        border-radius: 15px;
-        cursor: grab;
-        transition: 1s;
+
+// /* Fin de code index ici*/
+
+// // @mixin heading-shadow($colour:lightness-shift($colour-primary), $offset: $heading-shadow-size){
+// //     text-shadow: $offset $offset $colour;
+// // }
+
+// // @mixin border($colour:$colour-primary) {
+// //     border: .1rem solid $colour;
+// // }
+
+// // @mixin img-ratio {
+// //     width: 100%;
+// //         display: block;
+// //         overflow: hidden;
+// //         padding-top: 56.25%;
+// //         position: relative;
+// //         & img {
+// //             position: absolute;
+// //             top: 50%;
+// //             left: 50%;
+// //             width: 100%;
+// //             transform: translate(-50%, -50%);
+// //         }
+// // }
+
+// // @mixin btn {
+// //     padding: $grid-gutter;
+// //     @include border;
+// //     color: $colour-primary;
+// //     background: $colour-secondary;
+// //     cursor: pointer;
+// //     &:hover{
+// //         background: $colour-primary;
+// //         color: $colour-accent;
+// //     }
+// //     &--full-width {
+// //         width: 100%;
+// //         margin: 0 auto;
+// //     }
+// // }
+
+// @mixin nav {
+//     nav {
+//         display: flex;
+//         flex: 100%;
+//         align-items: center;
+//         .fleche {
+//             flex: 10%;
+//             padding: 0 25px;
+//             /* margin: 25px; */
+//             font-size: 20px;
+//         }
+        
+//         .logo {
+//             display: flex;
+            
+//             flex: 65%;
+//             font-size: 30px;
+//             padding: 20px 0;
+//             padding: 20px 0 20px 50px;
+//             font-family: 'shrikhand';
+//             font-weight: $gras;
+//         }
+//     }
+// }
+
+// @mixin coeur {
+//     display: flex;
+//     margin: 10px 0;
+//     font-size: 23px;
     
-        .entree__choix {
-           margin: 5px;
-           flex: 75%;
-           transition: all 1000s;
+// }
+
+
+
+// /* coeuract et @include coeuract a surveiller là en bas */
+// @mixin coeuractif {
+//     font-weight: 600;
+//      font-size: 30px;
+//      color: #ca72e7;
+//      animation: full-heart 0.2s;
+//      animation-timing-function: ease-in-out;
+// }
+
+// @mixin active {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     &:hover {
+//         @include coeuractif();
+//     }
+// }
+
+// @mixin entreegroupe   {
+//     .entree__groupe {
+//         @include entree;
+//         @include appear;
+//         @include entreecomposition;
+//         /* Par securité je vais mettre deux fois en plus entreecompo vu qu'il est là deux fois.
+//      mais posssiblement pas utile*/
+//         @include entreecomposition;
+//         @include entreecomposition;
     
-           .choix__assiette {
-            margin: 5px;
-            font-size: 18px;
-            font-weight: $super-gras;
+//     }
+// }
+
+// @mixin entree {
+//     animation-name: appear;
+//     animation-duration: 2000ms;
+//     animation-timing-function: ease-in-out;
+//     animation-delay: 0.3s;
+//     animation-fill-mode: both;
+// }
+
+// @mixin appear {
+//     @keyframes appear {
+
+//         0% {
+//             transform: all;
+//             transform: translateY(30%);
+//             opacity:0;
+//         }
     
-            }
-            .choix__accompagnement {
-                margin: 5px;
-                font-size: 15px;
-            }
+        
+//         100% {
+//             transform: translateY(0%); 
+//             opacity: 0.9;
+//         }
+//     }
+// } 
+
+
+// @mixin ok-icone {
+//     transform: rotateZ(0deg);
+//     transition: all 1000ms;
+// }
+
+// @mixin entreecomposition {
+//     .entreecomposition {
+//         display: flex;
+//         flex-grow: 4;
+//         justify-content: space-between;
+//         flex-direction: row;
+//         margin: 15px;
+//         background-color: $white;
+//         /* padding: 10px; */
+//         border-radius: 15px;
+//         cursor: grab;
+//         transition: 1s;
     
-       }
+//         .entree__choix {
+//            margin: 5px;
+//            flex: 75%;
+//            transition: all 1000s;
+    
+//            .choix__assiette {
+//             margin: 5px;
+//             font-size: 18px;
+//             font-weight: $super-gras;
+    
+//             }
+//             .choix__accompagnement {
+//                 margin: 5px;
+//                 font-size: 15px;
+//             }
+    
+//        }
        
-    .prix {
-                display: flex;
-                align-items: flex-end;
-                margin: 0 20px 10px 0;
-                transition: all 500s;
+//     .prix {
+//                 display: flex;
+//                 align-items: flex-end;
+//                 margin: 0 20px 10px 0;
+//                 transition: all 500s;
         
-                font-weight: $super-gras;
-            }
+//                 font-weight: $super-gras;
+//             }
         
-            .ok {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 0;
-                background-color: $anim-color;
-                color: $blanc;
-                border-radius: 0 10px 10px 0;
-                font-size: 20px;
-                overflow: hidden;
+//             .ok {
+//                 display: flex;
+//                 justify-content: center;
+//                 align-items: center;
+//                 width: 0;
+//                 background-color: $anim-color;
+//                 color: $blanc;
+//                 border-radius: 0 10px 10px 0;
+//                 font-size: 20px;
+//                 overflow: hidden;
             
-                transform: translateX(10%), rotateX(-30deg);
+//                 transform: translateX(10%), rotateX(-30deg);
             
-                transition: all 1000ms cubic-bezier(0.63,-0.29, 0.46, 1.32);
+//                 transition: all 1000ms cubic-bezier(0.63,-0.29, 0.46, 1.32);
         
-                .ok-icone {
-                    @include ok-icone;
-                }
-            }
-    }
-}
+//                 .ok-icone {
+//                     @include ok-icone;
+//                 }
+//             }
+//     }
+// }
 
 

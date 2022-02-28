@@ -1,59 +1,75 @@
 @charset "UTF-8";
-/* en haut les variables pour index*/
 /* en bas les mixin pour index*/
-/* Fin des mixin en haut*/
 body {
   display: flex;
   flex-direction: column;
   width: 100%;
   margin: 0%;
   font-family: "Roboto", "Courier", "monospace";
-  /* ne pas depasser ce commentaire, 
-         le guillemet en bas est la toute fin, le body*/
 }
-body header {
+
+header {
   display: flex;
   justify-content: center;
   flex: 100%;
   margin: 10px;
 }
-body header .logo {
+header .logo {
+  display: flex;
+  flex: 65%;
+  font-size: 30px;
+  padding: 20px 0;
+  padding: 20px 0 20px 50px;
+  font-family: "Shrikhand";
+  font-weight: 500;
+}
+
+/* en haut les variables pour index*/
+/* Fin des mixin ci-dessus*/
+header {
+  display: flex;
+  justify-content: center;
+  flex: 100%;
+  margin: 10px;
+}
+header .logo {
   font-size: 30px;
 }
-body header .logo .shrikhand {
+header .logo .shrikhand {
   font-family: "Shrikhand";
 }
-body main {
+
+main {
   /* debt gamme Fontionnement */
 }
-body main .location {
+main .location {
   display: flex;
   justify-content: center;
   text-align: center;
   background-color: #e6e6e6;
   padding: 10px;
 }
-body main .location .location__icon {
+main .location .location__icon {
   margin: 10px;
 }
-body main .location .location__city {
+main .location .location__city {
   margin: 10px;
   font-weight: 600;
 }
-body main .explore {
+main .explore {
   text-align: center;
   background-color: #f0f0f0;
   padding: 20px;
 }
-body main .explore .explore__title {
+main .explore .explore__title {
   font-size: 25px;
   font-weight: 600;
 }
-body main .explore .explore__description {
+main .explore .explore__description {
   margin: 10px;
   font-size: 17px;
 }
-body main .explore .explore__button {
+main .explore .explore__button {
   background: linear-gradient(0deg, #9356DC, transparent);
   background-color: #FF79DA;
   /* ici la couleur que je vais mettre après le clic du explore__button signé .explore__button:active */
@@ -65,7 +81,7 @@ body main .explore .explore__button {
   box-shadow: 0px 2px 8px grey;
   font-weight: 600;
 }
-body main .fonctionnement {
+main .fonctionnement {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -75,12 +91,12 @@ body main .fonctionnement {
   Attention, fonctionement degustez egal fction choix, menu  */
   /* Le 2e des 2 "fonctionment degustez" ici en bas*/
 }
-body main .fonctionnement .fonctionnement__titre {
+main .fonctionnement .fonctionnement__titre {
   margin: 20px;
   font-size: 20px;
   font-weight: 600;
 }
-body main .fonctionnement .fonctionnement__degustez {
+main .fonctionnement .fonctionnement__degustez {
   display: flex;
   flex: 80%;
   align-items: center;
@@ -93,7 +109,7 @@ body main .fonctionnement .fonctionnement__degustez {
   background-color: #f0f0f0;
   box-shadow: 0px 5px 13px -4px #c1c1c1;
 }
-body main .fonctionnement .fonctionnement__degustez .fonctionnement__numero-choix {
+main .fonctionnement .fonctionnement__degustez .fonctionnement__numero-choix {
   color: white;
   margin: 10px;
   position: relative;
@@ -102,23 +118,23 @@ body main .fonctionnement .fonctionnement__degustez .fonctionnement__numero-choi
   padding: 5px 10px;
   border-radius: 20px;
 }
-body main .fonctionnement .fonctionnement__degustez .fonctionnement__i-resto {
+main .fonctionnement .fonctionnement__degustez .fonctionnement__i-resto {
   width: 15%;
   margin: 15px 0px 15px 10px;
   color: grey;
 }
-body main .fonctionnement .fonctionnement__degustez .fonctionnement__i-resto:hover {
+main .fonctionnement .fonctionnement__degustez .fonctionnement__i-resto:hover {
   color: #9356DC;
 }
-body main .fonctionnement .fonctionnement__degustez .fonctionnement__i-resto .phone {
+main .fonctionnement .fonctionnement__degustez .fonctionnement__i-resto .phone {
   color: grey;
   font-size: 20px;
 }
-body main .fonctionnement .fonctionnement__degustez .fonctionnement__phrase-degustez {
+main .fonctionnement .fonctionnement__degustez .fonctionnement__phrase-degustez {
   margin: 10px;
   font-weight: 600;
 }
-body main .fonctionnement .fonctionnement__degustez {
+main .fonctionnement .fonctionnement__degustez {
   display: flex;
   flex: 80%;
   align-items: center;
@@ -131,23 +147,23 @@ body main .fonctionnement .fonctionnement__degustez {
   background-color: #f0f0f0;
   box-shadow: 0px 5px 13px -4px #c1c1c1;
 }
-body main .fonctionnement .fonctionnement__degustez:hover {
+main .fonctionnement .fonctionnement__degustez:hover {
   background-color: #ece3f7;
 }
-body main .fonctionnement .fonctionnement__degustez:hover .phone {
+main .fonctionnement .fonctionnement__degustez:hover .phone {
   color: #9356DC;
 }
-body main .fonctionnement .fonctionnement__degustez:hover .ihover {
+main .fonctionnement .fonctionnement__degustez:hover .ihover {
   color: #9356DC;
 }
-body main .fonctionnement .fonctionnement__degustez:active {
+main .fonctionnement .fonctionnement__degustez:active {
   background-color: #FF79DA;
   opacity: 0.6;
 }
-body main .fonctionnement .fonctionnement__degustez:visited {
+main .fonctionnement .fonctionnement__degustez:visited {
   background-color: #9356DC;
 }
-body main .fonctionnement .fonctionnement__degustez .fonctionnement__numero-choix {
+main .fonctionnement .fonctionnement__degustez .fonctionnement__numero-choix {
   color: white;
   margin: 10px;
   position: relative;
@@ -156,14 +172,14 @@ body main .fonctionnement .fonctionnement__degustez .fonctionnement__numero-choi
   padding: 5px 10px;
   border-radius: 20px;
 }
-body main .fonctionnement .fonctionnement__degustez .fonctionnement__trois-points {
+main .fonctionnement .fonctionnement__degustez .fonctionnement__trois-points {
   display: flex;
   align-items: center;
   font-size: 17px;
   color: grey;
   margin: 0 3px;
 }
-body main .fonctionnement .fonctionnement__degustez .fonctionnement__icone-burger {
+main .fonctionnement .fonctionnement__degustez .fonctionnement__icone-burger {
   display: flex;
   align-items: center;
   width: 15%;
@@ -171,27 +187,27 @@ body main .fonctionnement .fonctionnement__degustez .fonctionnement__icone-burge
   font-size: 17px;
   color: grey;
 }
-body main .fonctionnement .fonctionnement__degustez .fonctionnement__choix-menu {
+main .fonctionnement .fonctionnement__degustez .fonctionnement__choix-menu {
   display: flex;
   align-items: center;
   margin: 10px;
   font-weight: 600;
 }
-body main .restaurants {
+main .restaurants {
   background-color: #f0f0f0;
   display: flex;
   flex-direction: column;
 }
-body main .restaurants__titre {
+main .restaurants__titre {
   margin: 60px 20px 20px 20px;
   font-size: 25px;
   font-weight: 600;
 }
-body main .restaurants__vitrine a {
+main .restaurants__vitrine a {
   text-decoration: none;
   color: black;
 }
-body main .restaurants__vitrine a .restaurants__nom {
+main .restaurants__vitrine a .restaurants__nom {
   display: flex;
   flex: 100%;
   flex-direction: column;
@@ -201,14 +217,14 @@ body main .restaurants__vitrine a .restaurants__nom {
   background-repeat: no-repeat;
   margin: 20px;
 }
-body main .restaurants__vitrine a .restaurants__nom img {
+main .restaurants__vitrine a .restaurants__nom img {
   display: flex;
   width: 100%;
   height: 175px;
   border-radius: 20px 20px 0 0;
   object-fit: cover;
 }
-body main .restaurants__vitrine a .restaurants__nom figcaption {
+main .restaurants__vitrine a .restaurants__nom figcaption {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -217,22 +233,22 @@ body main .restaurants__vitrine a .restaurants__nom figcaption {
   background-color: white;
   border-radius: 0 0 20px 20px;
 }
-body main .restaurants__vitrine a .restaurants__nom figcaption .restaurant__texte .restaurant__nom {
+main .restaurants__vitrine a .restaurants__nom figcaption .restaurant__texte .restaurant__nom {
   font-size: 18px;
   margin: 15px 0 5px 15px;
   font-weight: 600;
 }
-body main .restaurants__vitrine a .restaurants__nom figcaption .restaurant__texte .restaurant__lieu {
+main .restaurants__vitrine a .restaurants__nom figcaption .restaurant__texte .restaurant__lieu {
   margin: 5px 0 15px 15px;
   font-size: 18px;
 }
-body main .restaurants__vitrine a .restaurants__nom figcaption .caption__iconecoeur {
+main .restaurants__vitrine a .restaurants__nom figcaption .caption__iconecoeur {
   display: flex;
   margin: 5px 15px;
   align-items: center;
   font-size: 23px;
 }
-body main .restaurants__vitrine a .restaurants__nom figcaption .caption__iconecoeur .active {
+main .restaurants__vitrine a .restaurants__nom figcaption .caption__iconecoeur .active {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -240,7 +256,7 @@ body main .restaurants__vitrine a .restaurants__nom figcaption .caption__iconeco
       -webkit-background-clip: text;
       color: transparent;*/
 }
-body main .restaurants__vitrine a .restaurants__nom figcaption .caption__iconecoeur .active:hover {
+main .restaurants__vitrine a .restaurants__nom figcaption .caption__iconecoeur .active:hover {
   font-weight: 600;
   font-size: 30px;
   color: #ca72e7;
@@ -274,18 +290,19 @@ body main .restaurants__vitrine a .restaurants__nom figcaption .caption__iconeco
     font-size: 30px;
   }
 }
-body main .restaurants__vitrine a .restaurants__nom figcaption .caption__iconecoeur .active:active {
+main .restaurants__vitrine a .restaurants__nom figcaption .caption__iconecoeur .active:active {
   content: " \f004";
   font-weight: 600;
   font-size: 30px;
   color: #ca72e7;
 }
-body main .restaurants__vitrine a .restaurants__nom figcaption .caption__iconecoeur .active:visited {
+main .restaurants__vitrine a .restaurants__nom figcaption .caption__iconecoeur .active:visited {
   font-weight: 600;
   font-size: 30px;
   color: #ca72e7;
 }
-body .footer {
+
+.footer {
   display: flex;
   flex-direction: column;
   background-color: #393939;
@@ -293,48 +310,51 @@ body .footer {
   margin: 0;
   padding: 20px;
 }
-body .footer .footer__logo {
+.footer .footer__logo {
   margin: 20px 0;
   font-weight: 100;
   font-size: 18px;
   list-style: none;
   font-family: "Shrikhand";
 }
-body .footer .footer__proposition {
+.footer .footer__proposition {
   display: flex;
   flex-direction: row;
 }
-body .footer .footer__proposition .footer__icone {
+.footer .footer__proposition .footer__icone {
   margin: 5px;
 }
-body .footer .footer__proposition .footer__phrase-proposition {
+.footer .footer__proposition .footer__phrase-proposition {
   margin: 5px;
 }
-body .footer .footer__bepartner {
+.footer .footer__bepartner {
   display: flex;
   flex-direction: row;
 }
-body .footer .footer__bepartner .footer__icone {
+.footer .footer__bepartner .footer__icone {
   margin: 5px;
 }
-body .footer .footer__bepartner .footer__item {
+.footer .footer__bepartner .footer__item {
   margin: 5px;
 }
-body .footer .footer__legal {
+.footer .footer__legal {
   display: flex;
   margin: 5px;
 }
-body .footer .footer__contact {
+.footer .footer__contact {
   display: flex;
   margin: 5px 5px 25px 5px;
 }
-body .footer .footer__contact a {
+.footer .footer__contact a {
   text-decoration: none;
   color: black;
   /* je cherche ou est la place de ce <a> vu qu'il est ddissimilé un peur partout. */
 }
-body .footer .footer__contact a .footer__phrasecontakt {
+.footer .footer__contact a .footer__phrasecontakt {
   color: white;
 }
+
+/* ne pas depasser ce commentaire, 
+       le guillemet en bas est la toute fin, le body*/
 
 /*# sourceMappingURL=style.css.map */
