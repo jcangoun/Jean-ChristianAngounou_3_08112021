@@ -23,7 +23,11 @@ body header .logo .shrikhand {
 }
 body main {
   /* debt gamme Fontionnement */
-  /* Ici on aura 3fois le ".fonctionnement deguster" donc je je ferai une mixin en @include icic les trois fois avec la propriété de degustez*/
+  /* Ici on aura 2fois le ".fonctionnement deguster" donc je je ferai une mixin en @include icic les trois fois avec la propriété de degustez*/
+  /* Voici le 1er fonctionnement degustez 
+  Il manque les ihover et les autres hover 
+  Attention, fonctionement degustez egal fction choix, menu  */
+  /* Le 2e des 2 "fonctionment degustez" ici en bas*/
   /* ne pas depasser ce commentaire, 
   le guillemet en bas est la toute fin, le body*/
 }
@@ -76,6 +80,19 @@ body main .fonctionnement .fonctionnement__titre {
   font-size: 20px;
   font-weight: 600;
 }
+body main .fonctionnement__degustez {
+  display: flex;
+  flex: 80%;
+  align-items: center;
+  flex-direction: row;
+  text-align: center;
+  text-align-last: start;
+  border-radius: 20px;
+  margin: 15px;
+  padding: 15px;
+  background-color: #f0f0f0;
+  box-shadow: 0px 5px 13px -4px #c1c1c1;
+}
 body main .fonctionnement__degustez .fonctionnement__numero-choix {
   color: white;
   margin: 10px;
@@ -84,6 +101,62 @@ body main .fonctionnement__degustez .fonctionnement__numero-choix {
   background-color: #9356DC;
   padding: 5px 10px;
   border-radius: 20px;
+}
+body main .fonctionnement__degustez .fonctionnement__i-resto {
+  width: 15%;
+  margin: 15px 0px 15px 10px;
+  color: grey;
+}
+body main .fonctionnement__degustez .fonctionnement__i-resto .phone {
+  color: grey;
+  font-size: 20px;
+}
+body main .fonctionnement__degustez .fonctionnement__phrase-degustez {
+  margin: 10px;
+  font-weight: 600;
+}
+body main .fonctionnement__degustez {
+  display: flex;
+  flex: 80%;
+  align-items: center;
+  flex-direction: row;
+  text-align: center;
+  text-align-last: start;
+  border-radius: 20px;
+  margin: 15px;
+  padding: 15px;
+  background-color: #f0f0f0;
+  box-shadow: 0px 5px 13px -4px #c1c1c1;
+}
+body main .fonctionnement__degustez .fonctionnement__numero-choix {
+  color: white;
+  margin: 10px;
+  position: relative;
+  margin-left: -25px;
+  background-color: #9356DC;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+body main .fonctionnement__degustez .fonctionnement__trois-points {
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+  color: grey;
+  margin: 0 3px;
+}
+body main .fonctionnement__degustez .fonctionnement__icone-burger {
+  display: flex;
+  align-items: center;
+  width: 15%;
+  margin: 0;
+  font-size: 17px;
+  color: grey;
+}
+body main .fonctionnement__degustez .fonctionnement__choix-menu {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  font-weight: 600;
 }
 
 /*# sourceMappingURL=style.css.map */
