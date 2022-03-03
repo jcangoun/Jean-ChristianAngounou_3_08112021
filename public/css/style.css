@@ -28,9 +28,9 @@ header nav a .fleche {
 header nav .logo {
   display: flex;
   flex: 65%;
+  justify-content: center;
   font-size: 30px;
   padding: 20px 0;
-  padding: 20px 0 20px 50px;
   font-family: "Shrikhand";
   font-weight: 500;
 }
