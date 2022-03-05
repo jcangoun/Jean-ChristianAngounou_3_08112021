@@ -1,13 +1,6 @@
 @charset "UTF-8";
+/* Fin des propo de index.html et debt des rpops des pages restos*/
 /* en bas les mixin pour index*/
-body {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  margin: 0%;
-  font-family: "Roboto", "Courier", "monospace";
-}
-
 header {
   display: flex;
   justify-content: center;
@@ -37,6 +30,14 @@ header nav .logo {
 
 /* en haut les variables pour index*/
 /* Fin des mixin ci-dessus*/
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0%;
+  font-family: "Roboto", "Courier", "monospace";
+}
+
 header {
   display: flex;
   justify-content: center;
