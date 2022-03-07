@@ -14,7 +14,6 @@
 
 
 
-
 @mixin fleche() {
     a {
         .fleche {
@@ -268,9 +267,7 @@
                         object-fit: cover;
                     }
                 
-
                     figcaption {
-    
                         display: flex;
                         justify-content: space-between;
                         flex-direction: row;
@@ -316,8 +313,6 @@
                                     animation: full-heart 0.2s;
                                     animation-timing-function: ease-in-out; 
 
-                                    
-
                                 }
 
                                 @include  full-heart;
@@ -343,8 +338,6 @@
 
             }
         }
-
-
     }
 }
 
@@ -358,9 +351,7 @@
         margin: 0;
         padding: 20px;
 
-
         .footer__logo {
-
             margin: 20px 0;
             font-weight: 100;
             font-size: 18px;
@@ -368,8 +359,7 @@
             font-family: $shrikhand;
         }
 
-        .footer__proposition {
-            
+        .footer__proposition {           
             display: flex;
             flex-direction: row;
 
@@ -380,7 +370,6 @@
                 margin: 5px;
             }
         }
-
 
         .footer__bepartner {
             display: flex;
@@ -418,56 +407,13 @@
             
         }
 
-
-
-
-
-
-
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 /* en haut les mixin pour index*/
+         
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                
 @mixin full-heart {
     @keyframes full-heart {
         0% {

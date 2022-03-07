@@ -1,6 +1,28 @@
 @charset "UTF-8";
 /* Fin des propo de index.html et debt des rpops des pages restos*/
 /* en haut les mixin pour index*/
+nav {
+  display: flex;
+  flex: 100%;
+  align-items: center;
+}
+nav a .fleche {
+  flex: 10%;
+  padding: 0 25px;
+  /* margin: 25px; */
+  font-size: 20px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  flex: 65%;
+  font-size: 30px;
+  padding: 20px 0;
+  font-family: "Shrikhand";
+  font-weight: 500;
+}
+
 header {
   display: flex;
   justify-content: center;
@@ -17,8 +39,6 @@ header .logo {
   font-weight: 500;
 }
 
-/* en haut les variables pour index*/
-/* Fin des mixin ci-dessus*/
 body {
   display: flex;
   flex-direction: column;
@@ -351,8 +371,5 @@ footer .footer .footer__contact a {
 footer .footer .footer__contact a .footer__phrasecontakt {
   color: white;
 }
-
-/* ne pas depasser ce commentaire, 
-       le guillemet en bas est la toute fin, le body*/
 
 /*# sourceMappingURL=style.css.map */
