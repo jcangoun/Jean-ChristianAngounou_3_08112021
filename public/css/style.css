@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* Fin des propo de index.html et debt des rpops des pages restos*/
-/* en bas les mixin pour index*/
+/* en haut les mixin pour index*/
 header {
   display: flex;
   justify-content: center;
@@ -43,9 +43,6 @@ header .logo {
   font-weight: 500;
 }
 
-main {
-  /* debt gamme Fontionnement */
-}
 main .location {
   display: flex;
   justify-content: center;
@@ -89,10 +86,7 @@ main .fonctionnement {
   display: flex;
   flex-direction: column;
   width: 100%;
-  /* Ici on aura 2fois le ".fonctionnement deguster" donc je je ferai une mixin en @include icic les trois fois avec la propriété de degustez*/
-  /* Voici le 1er fonctionnement degustez 
-  Il manque les ihover et les autres hover 
-  Attention, fonctionement degustez egal fction choix, menu  */
+  /*  Attention, fonctionement degustez egal fction choix, menu  */
   /* Le 2e des 2 "fonctionment degustez" ici en bas*/
 }
 main .fonctionnement__titre {
@@ -306,7 +300,7 @@ main .restaurants__vitrine a .restaurants__nom figcaption .caption__iconecoeur .
   color: #ca72e7;
 }
 
-.footer {
+footer .footer {
   display: flex;
   flex-direction: column;
   background-color: #393939;
@@ -314,47 +308,47 @@ main .restaurants__vitrine a .restaurants__nom figcaption .caption__iconecoeur .
   margin: 0;
   padding: 20px;
 }
-.footer .footer__logo {
+footer .footer .footer__logo {
   margin: 20px 0;
   font-weight: 100;
   font-size: 18px;
   list-style: none;
   font-family: "Shrikhand";
 }
-.footer .footer__proposition {
+footer .footer .footer__proposition {
   display: flex;
   flex-direction: row;
 }
-.footer .footer__proposition .footer__icone {
+footer .footer .footer__proposition .footer__icone {
   margin: 5px;
 }
-.footer .footer__proposition .footer__phrase-proposition {
+footer .footer .footer__proposition .footer__phrase-proposition {
   margin: 5px;
 }
-.footer .footer__bepartner {
+footer .footer .footer__bepartner {
   display: flex;
   flex-direction: row;
 }
-.footer .footer__bepartner .footer__icone {
+footer .footer .footer__bepartner .footer__icone {
   margin: 5px;
 }
-.footer .footer__bepartner .footer__item {
+footer .footer .footer__bepartner .footer__item {
   margin: 5px;
 }
-.footer .footer__legal {
+footer .footer .footer__legal {
   display: flex;
   margin: 5px;
 }
-.footer .footer__contact {
+footer .footer .footer__contact {
   display: flex;
   margin: 5px 5px 25px 5px;
 }
-.footer .footer__contact a {
+footer .footer .footer__contact a {
   text-decoration: none;
   color: black;
   /* je cherche ou est la place de ce <a> vu qu'il est ddissimilé un peur partout. */
 }
-.footer .footer__contact a .footer__phrasecontakt {
+footer .footer .footer__contact a .footer__phrasecontakt {
   color: white;
 }
 
