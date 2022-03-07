@@ -15,14 +15,14 @@
 
 
 @mixin fleche() {
-    a {
-        .fleche {
-            flex: 10%;
-            padding: 0 25px;
-            /* margin: 25px; */
-            font-size: 20px;
-        }
-    }
+a {
+.fleche {
+    flex: 10%;
+    padding: 0 25px;
+    /* margin: 25px; */
+    font-size: 20px;
+}
+}
 }
 
 @mixin logo {
