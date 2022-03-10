@@ -1,0 +1,7 @@
+main {
+
+    @include location();
+    @include explore();
+    @include fonctionnement();
+    @include restaurants();
+}

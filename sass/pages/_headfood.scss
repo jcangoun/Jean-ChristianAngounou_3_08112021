@@ -1,0 +1,9 @@
+header {
+    display: flex;
+    justify-content: center;
+    flex: 100%;
+    margin: 10px;
+        
+    // @include nav;
+    @include logo;
+}

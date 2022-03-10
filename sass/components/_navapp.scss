@@ -1,0 +1,9 @@
+nav {
+    display: flex;
+    flex: 100%;
+    align-items: center;
+
+    @include fleche;
+    @include logo;
+
+}
