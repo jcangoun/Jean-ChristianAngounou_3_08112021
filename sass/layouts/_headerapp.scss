@@ -1,0 +1,15 @@
+nav {
+    display: flex;
+    flex: 100%;
+    align-items: center;
+
+    a {
+        .fleche {
+            flex: 10%;
+            padding: 0 25px;
+            /* margin: 25px; */
+            font-size: 20px;
+        }
+    }
+
+} 
