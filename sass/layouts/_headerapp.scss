@@ -4,12 +4,8 @@ nav {
     align-items: center;
 
     a {
-        .fleche {
-            flex: 10%;
-            padding: 0 25px;
-            /* margin: 25px; */
-            font-size: 20px;
-        }
+        @include fleche;
     }
 
+    @include logo;
 } 
