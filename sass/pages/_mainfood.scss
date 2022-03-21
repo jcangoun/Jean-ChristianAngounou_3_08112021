@@ -1,7 +1,257 @@
 main {
     flex-direction: column;
-    @include location();
-    @include explore();
-    @include fonctionnement();
-    @include restaurants();
+} 
+
+.location {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(230, 230, 230);
+    padding: 10px;
+
+    &__icon {
+        margin: $marge-min;
+    }
+
+    &__city {
+        margin: $marge-min;
+        font-weight: $super-gras;
+
+    }
 }
+
+.explore {
+    text-align: center;
+    background-color: $gris-fonce;
+    padding: 20px;
+
+    &__title {
+        font-size: 25px;
+        font-weight: $super-gras;
+    }
+
+    &__description {
+        margin: $marge-min;
+        font-size: 17px;
+    }
+
+    &__button {
+        background: linear-gradient(0deg, $primary-color, transparent);
+        background-color: $secondary-color;
+        /* ici la couleur que je vais mettre après le clic du explore__button signé .explore__button:active */
+        border-radius: 30px;
+        color: $blanc;
+        margin: 10px 20px;
+        padding: 15px 20px;
+        border: none;
+        box-shadow: 0px 2px 8px grey;
+        font-weight: $super-gras;
+    }
+
+}
+
+    /* ici  dbt fonctionnement */
+
+.fonctionnement {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    &__titre {
+        margin: 20px;
+        font-size: 20px;
+        font-weight: $super-gras;
+    }
+
+        /*  Attention, fonctionement degustez egal fction choix, menu  */
+    &__degustez {
+
+        @include fonctionnement__degustez;
+
+        .fonctionnement__numero-choix {
+            @include fonctionnement__numero-choix;
+        }
+
+        .fonctionnement__i-resto {
+            width: 15%;
+            margin: 15px 0px 15px 10px;
+            color: grey;   
+
+            &:hover {
+              color: $primary-color;
+            }
+
+            .phone {
+                color: grey;
+                font-size: 20px;
+            }          
+        }
+
+        .fonctionnement__phrase-degustez {
+            margin: $marge-min;
+            font-weight: $super-gras;
+        }
+    }
+        /* Le 2e des 2 "fonctionment degustez" ici en bas*/
+        /* Ici faut voir si je lui mets une esperluette */
+        .fonctionnement__degustez {
+            
+            @include fonctionnement__degustez;
+
+            &:hover {
+                background-color: #ece3f7;
+            }
+
+            &:hover .phone {
+                color: $primary-color;
+            } 
+            &:hover .ihover {
+                color: $primary-color;
+            }  
+            &:active {
+                background-color: $secondary-color;
+                opacity: 0.6;
+            }
+                    
+            &:visited {
+                background-color: $primary-color;
+            }                      
+            .fonctionnement__numero-choix {
+                @include fonctionnement__numero-choix;
+            }
+
+            .fonctionnement__trois-points {
+                display: flex;
+                align-items: center;
+                font-size: 17px;
+                color: grey;
+                margin: 0 3px;
+            }
+            .fonctionnement__icone-burger {
+                display: flex;
+                align-items: center;
+                width: 15%;
+                margin: 0;
+                font-size: 17px;
+                color: grey;                    
+            }                    
+            .fonctionnement__choix-menu {
+                display: flex;
+                align-items: center;
+                margin: $marge-min;
+                font-weight: $super-gras;
+            }
+                
+        }
+    
+    }
+    /* ici Fin fonctionnement */
+
+
+    /* Dbt restos*/
+.restaurants {
+    background-color: $gris-fonce;
+    display: flex;
+    flex-direction: column;
+
+    &__titre {
+        margin: 60px 20px 20px 20px;
+        font-size: 25px;
+        font-weight: $super-gras;
+    }
+
+    &__vitrine {
+        a{
+            @include lien-prop;
+
+        }
+    }
+/* esperluette ci dessous "Restaurants__nom", est enfant de "a {}"    */
+&__nom {
+    display: flex;
+    flex: 100%;
+    flex-direction: column;
+    min-height: 225px;
+    border-radius: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 20px;
+
+    & img {
+        display: flex;
+        width: 100%;
+        height: 175px;
+        border-radius: 20px 20px 0 0;
+        object-fit: cover;
+    }
+}    
+      
+
+figcaption {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex: 100%;
+    min-height: 65px;
+    background-color: $blanc;
+    border-radius: 0 0 20px 20px;
+}    
+
+.restaurant__texte {
+    .restaurant__nom {
+        font-size: 18px;
+        margin: 15px 0 5px 15px;
+        font-weight: $super-gras;
+    }                          
+    .restaurant__lieu {
+        margin: 5px 0 15px 15px;
+        font-size: 18px;
+    }                        
+}
+
+.caption__iconecoeur {        
+    display: flex;
+    margin: 5px 15px;
+    align-items: center;
+    font-size: 23px;
+    .active {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+                /*  background-clip: text;
+                    webkit-background-clip: text;
+                    color: transparent;*/
+        &:hover {
+            font-weight: 600;
+            font-size: 30px;
+            color: #ca72e7;
+            animation: full-heart 0.2s;
+            animation-timing-function: ease-in-out; 
+        }
+        @include  full-heart;
+        &:active {
+            content: " \f004";
+            font-weight: 600;
+            font-size: 30px;
+            color: #ca72e7;
+        }
+         &:visited {
+            font-weight: 600;
+            font-size: 30px;
+            color: #ca72e7;
+        }
+    }
+
+}   
+                    
+        
+
+
+
+}
+    
+
+
+    
+    /* Fin restos*/
+

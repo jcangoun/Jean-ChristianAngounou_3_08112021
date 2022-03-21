@@ -1,61 +1,11 @@
 @charset "UTF-8";
 /* Fin des propo de index.html et debt des rpops des pages restos*/
-/* en haut les mixin pour index*/
-/* Debut mixin les restos */
-/* Debut des entrees*/
-/* Dbt Mixin entreechoix*/
-/* Fin Mixin entreechoix*/
-/* Dbt Mixin entreecompo*/
-.ok {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 0;
-  background-color: #99E2D0;
-  color: white;
-  border-radius: 0 10px 10px 0;
-  font-size: 20px;
-  overflow: hidden;
-  transform: translateX(10%), rotateX(-30deg);
-  transition: all 1000ms cubic-bezier(0.63, -0.29, 0.46, 1.32);
-}
-.ok .ok-icone {
-  transform: rotateZ(0deg);
-  transition: all 1000ms;
-}
-.ok .ok-icone .entree__composition:hover .ok-icone {
-  animation: ok-turn 1700ms ease-in-out;
-  animation-fill-mode: both;
-  animation-direction: alternate-reverse;
-  animation-delay: 0.5s;
-}
-@keyframes ok-turn {
-  0% {
-    transform: all;
-  }
-  1% {
-    transform: rotateZ(0deg);
-  }
-  100% {
-    transform: rotateZ(180deg);
-  }
-}
-.ok .entree__composition:hover > .ok {
-  transition: all 2s ease-in-out;
-  animation-delay: 5s;
-  background-color: #99E2D0 1000ms;
-  width: 60px;
-}
+/*Ces 2 mixins juste en bas contiennent 
 
-/* Dbt Mixin entreegroup*/
-/* Fin Mixin entreegroup*/
-/* Fin des entrees*/
-/* debut plat-titre*/
-/* Fin plat-titre*/
-/*Debt plat-groupe*/
-/*Fin plat-groupe*/
-/* debut plat*/
-/* Fin plat*/
+des proprietes chacunes qui se repetent 2fois*/
+/* Fin des 2 mixins lourdes*/
+/* en haut les mixin pour index*/
+/*Fin des mixins de index tests */
 /* Fin min les restos*/
 body {
   display: flex;
@@ -71,12 +21,12 @@ nav {
   align-items: center;
   /* Ce mixin appartient aux restos*/
 }
-nav a .fleche {
+nav a a .fleche {
   flex: 10%;
-  padding: 0 15px;
-  /* margin: 25px; */
+  /*  padding: 0 25px;       
+      margin: 25px; */
+  padding: 0 50px 0 20px;
   font-size: 20px;
-  color: black;
 }
 nav .logo {
   display: flex;
@@ -91,18 +41,6 @@ nav .logo {
 main .nom-menu {
   flex-direction: column;
 }
-main .nom-menu .photo-affiche {
-  display: flex;
-  flex: 100%;
-  height: 275px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin: 0;
-}
-main .nom-menu .photo-affiche img {
-  width: 100%;
-  object-fit: cover;
-}
 main .nom-menu .menu {
   /* padding: 10px; */
   background-color: #f0f0f0;
@@ -110,144 +48,6 @@ main .nom-menu .menu {
   margin-top: -65px;
   padding: 0 5px;
   border-radius: 40px 40px 0 0;
-}
-main .nom-menu .presentation {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
-  margin: 10px;
-}
-main .nom-menu .presentation .nom-presentation .nom__titre {
-  font-size: 28px;
-  font-weight: 500;
-  font-family: "Shrikhand";
-}
-main .nom-menu .icone-coeur {
-  display: flex;
-  margin: 10px 0;
-  font-size: 23px;
-}
-main .nom-menu .icone-coeur .active {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /*  background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;*/
-}
-main .nom-menu .icone-coeur .active .active:active {
-  font-weight: 600;
-  font-size: 30px;
-  color: #ca72e7;
-  animation: full-heart 2.2s;
-  animation-timing-function: ease-in-out;
-}
-@keyframes full-heart {
-  0% {
-    transform-origin: center;
-  }
-  1% {
-    transform-origin: bottom;
-    transform: translateY(-50px);
-  }
-  25% {
-    transform: translateY(0px);
-  }
-  50% {
-    opacity: 1;
-    font-size: 30px;
-  }
-  75% {
-    transform-origin: bottom;
-    font-size: 40px;
-  }
-  100% {
-    opacity: 1;
-    font-size: 30px;
-  }
-}
-main .nom-menu .entree .entree__titre {
-  border-bottom: 3px solid #99E2D0;
-  margin: 10px;
-  width: 40px;
-}
-main .nom-menu .entree .entree__groupe {
-  animation-name: appear;
-  animation-duration: 2000ms;
-  animation-timing-function: ease-in-out;
-  animation-delay: 0.3s;
-  animation-fill-mode: both;
-}
-main .nom-menu .entree .entree__groupe .entree__composition {
-  display: flex;
-  flex-grow: 4;
-  justify-content: space-between;
-  flex-direction: row;
-  margin: 15px;
-  background-color: white;
-  /* padding: 10px; */
-  border-radius: 15px;
-  cursor: grab;
-  transition: 1s;
-}
-main .nom-menu .entree .entree__groupe .entree__composition .entree__choix {
-  margin: 5px;
-  /* background-color: white;
-   padding: 10px;
-   margin: 10px;
-   border-radius: 20px; */
-  flex: 75%;
-  transition: all 1000s;
-}
-main .nom-menu .entree .entree__groupe .entree__composition .entree__choix .choix__assiette {
-  margin: 5px;
-  font-size: 18px;
-  font-weight: 600;
-}
-main .nom-menu .entree .entree__groupe .entree__composition .entree__choix .choix__accompagnement {
-  margin: 5px;
-  font-size: 15px;
-}
-@keyframes appear {
-  0% {
-    transform: all;
-    transform: translateY(30%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0%);
-    opacity: 0.9;
-  }
-}
-main .nom-menu .entree .entree__composition {
-  display: flex;
-  flex-grow: 4;
-  justify-content: space-between;
-  flex-direction: row;
-  margin: 15px;
-  background-color: white;
-  /* padding: 10px; */
-  border-radius: 15px;
-  cursor: grab;
-  transition: 1s;
-}
-main .nom-menu .entree .entree__composition .entree__choix {
-  margin: 5px;
-  /* background-color: white;
-   padding: 10px;
-   margin: 10px;
-   border-radius: 20px; */
-  flex: 75%;
-  transition: all 1000s;
-}
-main .nom-menu .entree .entree__composition .entree__choix .choix__assiette {
-  margin: 5px;
-  font-size: 18px;
-  font-weight: 600;
-}
-main .nom-menu .entree .entree__composition .entree__choix .choix__accompagnement {
-  margin: 5px;
-  font-size: 15px;
 }
 
 .logo {
@@ -306,34 +106,36 @@ header .logo {
 main {
   flex-direction: column;
 }
-main .location {
+
+.location {
   display: flex;
   justify-content: center;
   text-align: center;
   background-color: #e6e6e6;
   padding: 10px;
 }
-main .location__icon {
+.location__icon {
   margin: 10px;
 }
-main .location__city {
+.location__city {
   margin: 10px;
   font-weight: 600;
 }
-main .explore {
+
+.explore {
   text-align: center;
   background-color: #f0f0f0;
   padding: 20px;
 }
-main .explore__title {
+.explore__title {
   font-size: 25px;
   font-weight: 600;
 }
-main .explore__description {
+.explore__description {
   margin: 10px;
   font-size: 17px;
 }
-main .explore__button {
+.explore__button {
   background: linear-gradient(0deg, #9356DC, transparent);
   background-color: #FF79DA;
   /* ici la couleur que je vais mettre après le clic du explore__button signé .explore__button:active */
@@ -345,19 +147,22 @@ main .explore__button {
   box-shadow: 0px 2px 8px grey;
   font-weight: 600;
 }
-main .fonctionnement {
+
+/* ici  dbt fonctionnement */
+.fonctionnement {
   display: flex;
   flex-direction: column;
   width: 100%;
   /*  Attention, fonctionement degustez egal fction choix, menu  */
   /* Le 2e des 2 "fonctionment degustez" ici en bas*/
+  /* Ici faut voir si je lui mets une esperluette */
 }
-main .fonctionnement__titre {
+.fonctionnement__titre {
   margin: 20px;
   font-size: 20px;
   font-weight: 600;
 }
-main .fonctionnement__degustez {
+.fonctionnement__degustez {
   display: flex;
   flex: 80%;
   align-items: center;
@@ -370,7 +175,7 @@ main .fonctionnement__degustez {
   background-color: #f0f0f0;
   box-shadow: 0px 5px 13px -4px #c1c1c1;
 }
-main .fonctionnement__degustez .fonctionnement__numero-choix {
+.fonctionnement__degustez .fonctionnement__numero-choix {
   color: white;
   margin: 10px;
   position: relative;
@@ -379,23 +184,23 @@ main .fonctionnement__degustez .fonctionnement__numero-choix {
   padding: 5px 10px;
   border-radius: 20px;
 }
-main .fonctionnement__degustez .fonctionnement__i-resto {
+.fonctionnement__degustez .fonctionnement__i-resto {
   width: 15%;
   margin: 15px 0px 15px 10px;
   color: grey;
 }
-main .fonctionnement__degustez .fonctionnement__i-resto:hover {
+.fonctionnement__degustez .fonctionnement__i-resto:hover {
   color: #9356DC;
 }
-main .fonctionnement__degustez .fonctionnement__i-resto .phone {
+.fonctionnement__degustez .fonctionnement__i-resto .phone {
   color: grey;
   font-size: 20px;
 }
-main .fonctionnement__degustez .fonctionnement__phrase-degustez {
+.fonctionnement__degustez .fonctionnement__phrase-degustez {
   margin: 10px;
   font-weight: 600;
 }
-main .fonctionnement .fonctionnement__degustez {
+.fonctionnement .fonctionnement__degustez {
   display: flex;
   flex: 80%;
   align-items: center;
@@ -408,23 +213,23 @@ main .fonctionnement .fonctionnement__degustez {
   background-color: #f0f0f0;
   box-shadow: 0px 5px 13px -4px #c1c1c1;
 }
-main .fonctionnement .fonctionnement__degustez:hover {
+.fonctionnement .fonctionnement__degustez:hover {
   background-color: #ece3f7;
 }
-main .fonctionnement .fonctionnement__degustez:hover .phone {
+.fonctionnement .fonctionnement__degustez:hover .phone {
   color: #9356DC;
 }
-main .fonctionnement .fonctionnement__degustez:hover .ihover {
+.fonctionnement .fonctionnement__degustez:hover .ihover {
   color: #9356DC;
 }
-main .fonctionnement .fonctionnement__degustez:active {
+.fonctionnement .fonctionnement__degustez:active {
   background-color: #FF79DA;
   opacity: 0.6;
 }
-main .fonctionnement .fonctionnement__degustez:visited {
+.fonctionnement .fonctionnement__degustez:visited {
   background-color: #9356DC;
 }
-main .fonctionnement .fonctionnement__degustez .fonctionnement__numero-choix {
+.fonctionnement .fonctionnement__degustez .fonctionnement__numero-choix {
   color: white;
   margin: 10px;
   position: relative;
@@ -433,14 +238,14 @@ main .fonctionnement .fonctionnement__degustez .fonctionnement__numero-choix {
   padding: 5px 10px;
   border-radius: 20px;
 }
-main .fonctionnement .fonctionnement__degustez .fonctionnement__trois-points {
+.fonctionnement .fonctionnement__degustez .fonctionnement__trois-points {
   display: flex;
   align-items: center;
   font-size: 17px;
   color: grey;
   margin: 0 3px;
 }
-main .fonctionnement .fonctionnement__degustez .fonctionnement__icone-burger {
+.fonctionnement .fonctionnement__degustez .fonctionnement__icone-burger {
   display: flex;
   align-items: center;
   width: 15%;
@@ -448,27 +253,32 @@ main .fonctionnement .fonctionnement__degustez .fonctionnement__icone-burger {
   font-size: 17px;
   color: grey;
 }
-main .fonctionnement .fonctionnement__degustez .fonctionnement__choix-menu {
+.fonctionnement .fonctionnement__degustez .fonctionnement__choix-menu {
   display: flex;
   align-items: center;
   margin: 10px;
   font-weight: 600;
 }
-main .restaurants {
+
+/* ici Fin fonctionnement */
+/* Dbt restos*/
+.restaurants {
   background-color: #f0f0f0;
   display: flex;
   flex-direction: column;
+  /* esperluette ci dessous "Restaurants__nom", est enfant de "a {}"    */
+  /* Ci dessous ne pas effacer tut de suite */
 }
-main .restaurants__titre {
+.restaurants__titre {
   margin: 60px 20px 20px 20px;
   font-size: 25px;
   font-weight: 600;
 }
-main .restaurants__vitrine a {
+.restaurants__vitrine a {
   text-decoration: none;
   color: black;
 }
-main .restaurants__vitrine a .restaurants__nom {
+.restaurants__nom {
   display: flex;
   flex: 100%;
   flex-direction: column;
@@ -478,14 +288,14 @@ main .restaurants__vitrine a .restaurants__nom {
   background-repeat: no-repeat;
   margin: 20px;
 }
-main .restaurants__vitrine a .restaurants__nom img {
+.restaurants__nom img {
   display: flex;
   width: 100%;
   height: 175px;
   border-radius: 20px 20px 0 0;
   object-fit: cover;
 }
-main .restaurants__vitrine a .restaurants__nom figcaption {
+.restaurants figcaption {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -494,30 +304,30 @@ main .restaurants__vitrine a .restaurants__nom figcaption {
   background-color: white;
   border-radius: 0 0 20px 20px;
 }
-main .restaurants__vitrine a .restaurants__nom figcaption .restaurant__texte .restaurant__nom {
+.restaurants .restaurant__texte .restaurant__nom {
   font-size: 18px;
   margin: 15px 0 5px 15px;
   font-weight: 600;
 }
-main .restaurants__vitrine a .restaurants__nom figcaption .restaurant__texte .restaurant__lieu {
+.restaurants .restaurant__texte .restaurant__lieu {
   margin: 5px 0 15px 15px;
   font-size: 18px;
 }
-main .restaurants__vitrine a .restaurants__nom figcaption .caption__iconecoeur {
+.restaurants .caption__iconecoeur {
   display: flex;
   margin: 5px 15px;
   align-items: center;
   font-size: 23px;
 }
-main .restaurants__vitrine a .restaurants__nom figcaption .caption__iconecoeur .active {
+.restaurants .caption__iconecoeur .active {
   display: flex;
   justify-content: center;
   align-items: center;
   /*  background-clip: text;
-      -webkit-background-clip: text;
+      webkit-background-clip: text;
       color: transparent;*/
 }
-main .restaurants__vitrine a .restaurants__nom figcaption .caption__iconecoeur .active:hover {
+.restaurants .caption__iconecoeur .active:hover {
   font-weight: 600;
   font-size: 30px;
   color: #ca72e7;
@@ -551,19 +361,20 @@ main .restaurants__vitrine a .restaurants__nom figcaption .caption__iconecoeur .
     font-size: 30px;
   }
 }
-main .restaurants__vitrine a .restaurants__nom figcaption .caption__iconecoeur .active:active {
+.restaurants .caption__iconecoeur .active:active {
   content: " \f004";
   font-weight: 600;
   font-size: 30px;
   color: #ca72e7;
 }
-main .restaurants__vitrine a .restaurants__nom figcaption .caption__iconecoeur .active:visited {
+.restaurants .caption__iconecoeur .active:visited {
   font-weight: 600;
   font-size: 30px;
   color: #ca72e7;
 }
 
-footer .footer {
+/* Fin restos*/
+.footer {
   display: flex;
   flex-direction: column;
   background-color: #393939;
@@ -571,47 +382,47 @@ footer .footer {
   margin: 0;
   padding: 20px;
 }
-footer .footer .footer__logo {
+.footer__logo {
   margin: 20px 0;
   font-weight: 100;
   font-size: 18px;
   list-style: none;
   font-family: "Shrikhand";
 }
-footer .footer .footer__proposition {
+.footer__proposition {
   display: flex;
   flex-direction: row;
 }
-footer .footer .footer__proposition .footer__icone {
+.footer__proposition .footer__icone {
   margin: 5px;
 }
-footer .footer .footer__proposition .footer__phrase-proposition {
+.footer__proposition .footer__phrase-proposition {
   margin: 5px;
 }
-footer .footer .footer__bepartner {
+.footer__bepartner {
   display: flex;
   flex-direction: row;
 }
-footer .footer .footer__bepartner .footer__icone {
+.footer__bepartner .footer__icone {
   margin: 5px;
 }
-footer .footer .footer__bepartner .footer__item {
+.footer__bepartner .footer__item {
   margin: 5px;
 }
-footer .footer .footer__legal {
+.footer__legal {
   display: flex;
   margin: 5px;
 }
-footer .footer .footer__contact {
+.footer__contact {
   display: flex;
   margin: 5px 5px 25px 5px;
 }
-footer .footer .footer__contact a {
+.footer__contact a {
   text-decoration: none;
   color: black;
   /* je cherche ou est la place de ce <a> vu qu'il est ddissimilé un peur partout. */
 }
-footer .footer .footer__contact a .footer__phrasecontakt {
+.footer__contact a .footer__phrasecontakt {
   color: white;
 }
 

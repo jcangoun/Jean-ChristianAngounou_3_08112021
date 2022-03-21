@@ -1,0 +1,23 @@
+main {
+    // display: flex;
+ 
+    .nom-menu {
+        flex-direction: column;
+        // @include photo-affiche;
+
+            .menu {
+                /* padding: 10px; */
+                background-color: rgb(240, 240, 240);
+                position: relative;
+                margin-top: -65px;
+                padding: 0 5px;
+                border-radius: 40px 40px 0 0;
+            }
+
+            // @include presentation;
+
+            // @include entree;
+            // @include plat;
+            // @include dessert;
+    }
+}

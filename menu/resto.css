@@ -13,24 +13,22 @@ nav {
     display: flex;
     flex: 100%;
     align-items: center;
-
 }
 
 .fleche {
     flex: 10%;
-    padding: 0 25px;
+    padding: 0 50px 0 20px;
     /* margin: 25px; */
     font-size: 20px;
+    color: black;
 }
 
 .logo {
-    display: flex;
-    
+    display: flex;    
     flex: 65%;
     font-size: 30px;
     padding: 20px 0;
-    padding: 20px 0 20px 50px;
-    
+    padding: 20px 0 20px 50px;   
 }
 .shrikhand {
     font-family: 'Shrikhand';
@@ -41,7 +39,9 @@ nav {
 main {
     flex-direction: column;
 }
-.nom-menu
+/* .nom-menu  {
+    
+            }        */
 
 
 .photo-affiche {
