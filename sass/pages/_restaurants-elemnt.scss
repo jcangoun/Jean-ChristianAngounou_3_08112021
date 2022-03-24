@@ -1,0 +1,60 @@
+figcaption {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex: 100%;
+    min-height: 65px;
+    background-color: $blanc;
+    border-radius: 0 0 20px 20px;
+               
+    .restaurant__texte {
+        .restaurant__nom {
+            font-size: 18px;
+            margin: 15px 0 5px 15px;
+            font-weight: $super-gras;
+        }                          
+        .restaurant__lieu {
+            margin: 5px 0 15px 15px;
+            font-size: 18px;
+        }
+                    
+    }
+    .caption__iconecoeur {        
+        display: flex;
+        margin: 5px 15px;
+        align-items: center;
+        font-size: 23px;
+        .active {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /*  background-clip: text;
+                webkit-background-clip: text;
+                color: transparent;*/
+            &:hover {
+                font-weight: 600;
+                font-size: 30px;
+                color: #ca72e7;
+                animation: full-heart 0.2s;
+                animation-timing-function: ease-in-out; 
+
+            }
+
+            @include  full-heart;
+
+            &:active {
+                content: " \f004";
+                font-weight: 600;
+                font-size: 30px;
+                color: #ca72e7;
+            }
+            &:visited {
+                font-weight: 600;
+                font-size: 30px;
+                color: #ca72e7;
+            }
+        }
+
+    }   
+                
+}

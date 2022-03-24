@@ -11,3 +11,20 @@
 }
 
 
+.bouton {
+    display: flex;
+    justify-content: center;
+
+    .bouton-commander {
+      background: linear-gradient(0deg, #9356dc, transparent);
+      background-color: #ff79da;
+      border-radius: 30px;
+      color: white;
+      margin: 35px 20px;
+      padding: 20px 50px;
+      border: none;
+      font-size: 17px;
+    }
+  }
+
+

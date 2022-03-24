@@ -2,13 +2,21 @@
 @import "./utils/mixins";
 
 
+@import "./base/typography";
+
+@import "./components/buttons";
+@import "./components/entree";
+@import "./components/plat";
+@import "./components/dessert";
+
+
+
 @import "./layouts/bodyapp";
 @import "./layouts/headerapp";
 @import "./layouts/mainapp";
 @import "./layouts/footerapp";
 
 
-@import "./components/buttons";
 
 
 @import "./pages/headfood";
@@ -23,7 +31,7 @@
  
 
 
-
+  
 
 
 
