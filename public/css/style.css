@@ -5,12 +5,21 @@ des proprietes chacunes qui se repetent 2fois*/
 /* Fin des 2 mixins lourdes*/
 /* en haut les mixin pour index*/
 /*Fin des mixins de index tests */
+a .fleche {
+  flex: 10%;
+  /*  padding: 0 25px;       
+    margin: 25px; */
+  padding: 0 20px 0 20px;
+  font-size: 20px;
+  color: black;
+}
+
 .logo {
   display: flex;
   justify-content: center;
   flex: 65%;
   font-size: 30px;
-  padding: 20px 0;
+  padding: 10px 0;
   font-family: "Shrikhand";
   font-weight: 500;
 }
