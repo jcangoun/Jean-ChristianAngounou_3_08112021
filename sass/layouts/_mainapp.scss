@@ -80,18 +80,20 @@ main {
           justify-content: center;
           align-items: center;
           /*  background-clip: text;
-                    -webkit-background-clip: text;
-                    color: transparent;*/
+              webkit-background-clip: text;
+              color: transparent;*/
                     
           &:active {
             font-weight: 600;
             font-size: 30px;
             color: #ca72e7;
-            animation: full-heart 2.2s;
+            animation: full-heart 0.5s;
             animation-timing-function: ease-in-out;
             
             
           }
+
+          /* Celui ci n'a pas l'air d'être utilisé*/
           @include full-heart;         
         }
         
