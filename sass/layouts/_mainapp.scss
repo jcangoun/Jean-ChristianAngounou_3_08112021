@@ -24,6 +24,7 @@
 
 main {
   display: flex;
+  flex: 100%;
   flex-direction: column;
 
   // .nom-menu  {
@@ -38,13 +39,16 @@ main {
     background-repeat: no-repeat;
     margin: 0;
 
-    .photo-affiche img {
+    & img {
       width: 100%;
       object-fit: cover;
+    
     }
   }
 
   .menu {
+    display: flex;
+    flex-direction: column;
     /* padding: 10px; */
     background-color: rgb(240, 240, 240);
     position: relative;
@@ -78,9 +82,8 @@ main {
           /*  background-clip: text;
                     -webkit-background-clip: text;
                     color: transparent;*/
-
                     
-          .active:active {
+          &:active {
             font-weight: 600;
             font-size: 30px;
             color: #ca72e7;
@@ -89,9 +92,7 @@ main {
             
             
           }
-        //   @include full-heart;
-
-          
+          @include full-heart;         
         }
         
       }

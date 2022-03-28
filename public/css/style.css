@@ -117,17 +117,6 @@ a .fleche {
     transform: rotateZ(180deg);
   }
 }
-@keyframes appear {
-  0% {
-    transform: all;
-    transform: translateY(30%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0%);
-    opacity: 0.9;
-  }
-}
 .entree__groupe .entree__composition:hover > .ok {
   transition: all 2s ease-in-out;
   animation-delay: 5s;
@@ -139,6 +128,17 @@ a .fleche {
   animation-fill-mode: both;
   animation-direction: alternate-reverse;
   animation-delay: 0.5s;
+}
+@keyframes appear {
+  0% {
+    transform: all;
+    transform: translateY(30%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 0.9;
+  }
 }
 
 .plat__titre {
@@ -219,17 +219,6 @@ a .fleche {
     transform: rotateZ(180deg);
   }
 }
-@keyframes appear {
-  0% {
-    transform: all;
-    transform: translateY(30%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0%);
-    opacity: 0.9;
-  }
-}
 .plat__groupe .entree__composition:hover > .ok {
   transition: all 2s ease-in-out;
   animation-delay: 5s;
@@ -241,6 +230,17 @@ a .fleche {
   animation-fill-mode: both;
   animation-direction: alternate-reverse;
   animation-delay: 0.5s;
+}
+@keyframes appear {
+  0% {
+    transform: all;
+    transform: translateY(30%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 0.9;
+  }
 }
 
 .dessert__titre {
@@ -321,17 +321,6 @@ a .fleche {
     transform: rotateZ(180deg);
   }
 }
-@keyframes appear {
-  0% {
-    transform: all;
-    transform: translateY(30%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0%);
-    opacity: 0.9;
-  }
-}
 .dessert__groupe .entree__composition:hover > .ok {
   transition: all 2s ease-in-out;
   animation-delay: 5s;
@@ -343,6 +332,17 @@ a .fleche {
   animation-fill-mode: both;
   animation-direction: alternate-reverse;
   animation-delay: 0.5s;
+}
+@keyframes appear {
+  0% {
+    transform: all;
+    transform: translateY(30%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 0.9;
+  }
 }
 
 body {
@@ -378,6 +378,7 @@ nav .logo {
 
 main {
   display: flex;
+  flex: 100%;
   flex-direction: column;
 }
 main .photo-affiche {
@@ -388,11 +389,13 @@ main .photo-affiche {
   background-repeat: no-repeat;
   margin: 0;
 }
-main .photo-affiche .photo-affiche img {
+main .photo-affiche img {
   width: 100%;
   object-fit: cover;
 }
 main .menu {
+  display: flex;
+  flex-direction: column;
   /* padding: 10px; */
   background-color: #f0f0f0;
   position: relative;
@@ -424,12 +427,39 @@ main .menu .presentation .icone-coeur .active {
             -webkit-background-clip: text;
             color: transparent;*/
 }
-main .menu .presentation .icone-coeur .active .active:active {
+main .menu .presentation .icone-coeur .active:active {
   font-weight: 600;
   font-size: 30px;
   color: #ca72e7;
   animation: full-heart 2.2s;
   animation-timing-function: ease-in-out;
+}
+@keyframes full-heart {
+  0% {
+    opacity: 0;
+    font-size: 30px;
+  }
+  25% {
+    transform-origin: center;
+    transform: scale(1.5);
+    opacity: 0.5;
+    font-size: 40px;
+  }
+  50% {
+    opacity: 1;
+    font-size: 30px;
+    transform: scale(0.8);
+  }
+  75% {
+    transform-origin: center;
+    transform: scale(1.5);
+    opacity: 0.5;
+    font-size: 40px;
+  }
+  100% {
+    opacity: 1;
+    font-size: 30px;
+  }
 }
 
 header {

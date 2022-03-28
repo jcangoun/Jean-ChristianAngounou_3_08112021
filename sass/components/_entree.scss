@@ -85,6 +85,21 @@
       }
       
     }
+
+    &:hover > .ok {
+      transition: all 2s ease-in-out;
+      animation-delay: 5s;
+      background-color: #99e2d0 1000ms;
+      width: 60px;
+    }
+  
+      &:hover .ok-icone {
+        animation: ok-turn 1700ms ease-in-out;
+        animation-fill-mode: both;
+        animation-direction: alternate-reverse;
+        animation-delay: 0.5s;
+      }
+
   }
   @keyframes appear {
     0% {
@@ -98,17 +113,4 @@
     }
   }
 
-  .entree__composition:hover > .ok {
-    transition: all 2s ease-in-out;
-    animation-delay: 5s;
-    background-color: #99e2d0 1000ms;
-    width: 60px;
-  }
-
-    .entree__composition:hover .ok-icone {
-      animation: ok-turn 1700ms ease-in-out;
-      animation-fill-mode: both;
-      animation-direction: alternate-reverse;
-      animation-delay: 0.5s;
-    }
 }
