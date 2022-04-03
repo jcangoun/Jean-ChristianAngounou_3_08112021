@@ -7,5 +7,89 @@ body {
 
     }
 
+    .header-spinner {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: row;
+        padding: 20px 0;
+        flex: 100%;
+        width: 100%;
+        height: 300%;
+        padding: 10px 5px;
+        background-color: white;
+        z-index: 1;
+        position: absolute;
+        /* ca ce sera  nommé plutotloader*/
+      
+      
+        &__page {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0.75;
+        flex: 50%;
+        width: 50%;
+        height: 500px;
+        margin: 10px;
+        background-color: pink;
+        position: relative;
+        border-radius: 170px 20px 170px 20px;
+        box-shadow: 3px 1px 20px 0px grey;
+
+        }
+        .tete {
+            text-align: center;
+            
+            flex: 55px;
+            height: 100px;
+            background-color: red;
+            margin: 1px;
+            padding: 5px;
+            position: relative;
+            bottom: 50px;
+            left: 20px;
+            border-radius: 30px;
+        }
+        .torse {
+            
+            background-color: rebeccapurple;
+            margin: 1px;
+        }
+
+        .avt-bras-g {
+            background-color: greenyellow;
+            margin: 1px;
+        }
+
+        .avt-bras-d {
+            background-color: greenyellow;
+            margin: 1px;
+        }
+        
+
+        .bras-g {
+            background-color:blue;
+            margin: 1px;
+        }
+
+        .bras-d {
+            background-color:blue;
+            margin: 1px;
+        }   
+        
+        .main-g {
+            background-color:orange;
+            margin: 1px;
+        }
+
+        .main-d {
+            background-color:orange;
+            margin: 1px;
+        }
+      }
+      
+      
+
 /* Je vais essayer plus tard de faire que ce body d index soit le meme que les body de resto c est a dire prit a partir de layout  "@include bodyapp;" */
     
