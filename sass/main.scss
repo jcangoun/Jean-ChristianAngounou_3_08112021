@@ -1,17 +1,31 @@
 @import "./utils/variables";
-@import "./utils/functions";
 @import "./utils/mixins";
-@import "./utils/extensions";
 
-@import "./base/base";
+
 @import "./base/typography";
 
+@import "./components/loading-spinner";
 @import "./components/buttons";
+@import "./components/entree";
+@import "./components/plat";
+@import "./components/dessert";
 
-@import "./layouts/header";
-@import "./layouts/nav";
-@import "./layouts/container";
 
 
-@import "./pages/work";
-@import "./pages/resto";
+@import "./layouts/bodyapp";
+@import "./layouts/headerapp";
+@import "./layouts/mainapp";
+@import "./layouts/footerapp";
+
+
+
+
+@import "./pages/headfood";
+@import "./pages/body";
+// @import "./pages/loading-spinner";
+@import "./pages/headfood";
+@import "./pages/mainfood";
+@import "./pages/footer";
+
+
+

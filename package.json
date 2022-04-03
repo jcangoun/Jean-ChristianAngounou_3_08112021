@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": { 
     "@comment test": "ici en bas on va remettre main en bas, a la fin  ce lien de sas enbas qui suit    sass --watch ./sass/main.scss:./public/css/style.css apres fin resto ou apres rect du prof.. on fait d abord resto",
-    "sass": "sass --watch ./sass/style.scss:./public/css/style.css"
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
   },
   "repository": {
     "type": "git",

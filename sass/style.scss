@@ -4,6 +4,7 @@
 
 @import "./base/typography";
 
+@import "./components/loading-spinner";
 @import "./components/buttons";
 @import "./components/entree";
 @import "./components/plat";
@@ -21,6 +22,7 @@
 
 @import "./pages/headfood";
 @import "./pages/body";
+// @import "./pages/loading-spinner";
 @import "./pages/headfood";
 @import "./pages/mainfood";
 @import "./pages/footer";
