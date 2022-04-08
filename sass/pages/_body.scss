@@ -1,7 +1,5 @@
 body {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+    display: flex; 
     margin: 0%;
     font-family: 'Roboto', 'Courier', 'monospace'; 
 
@@ -10,11 +8,11 @@ body {
     .header-spinner {
         display: flex;
         justify-content: center;
-        align-items: flex-start;
-        flex-direction: row;
+        align-items: center;
+        flex-direction: column;
         padding: 20px 0;
         flex: 100%;
-        width: 100%;
+        min-width: 375px;
         height: 300%;
         padding: 10px 5px;
         background-color: white;
@@ -27,9 +25,10 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-direction: column;
         opacity: 0.75;
-        flex: 50%;
-        width: 50%;
+        flex: 90%;
+        width: 90%;
         height: 500px;
         margin: 10px;
         background-color: pink;
@@ -41,7 +40,7 @@ body {
         .tete {
             text-align: center;
             
-            flex: 55px;
+            width: 50px;
             height: 100px;
             background-color: red;
             margin: 1px;
@@ -54,17 +53,30 @@ body {
         .torse {
             
             background-color: rebeccapurple;
+            width: 200px;
+            height: 200px;
             margin: 1px;
+            border-radius: 20px 20px;
+            padding: 5px;
         }
 
         .avt-bras-g {
             background-color: greenyellow;
             margin: 1px;
+            position: relative;
+            bottom: 100px;
+            left: -100px;
+            border-radius: 30px;
+            
         }
 
         .avt-bras-d {
             background-color: greenyellow;
             margin: 1px;
+            position: relative;
+            bottom: 100px;
+            left: 100px;
+            border-radius: 30px;
         }
         
 
