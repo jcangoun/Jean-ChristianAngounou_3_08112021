@@ -1,4 +1,7 @@
 @charset "UTF-8";
+/* ICi c est la page de loadingqui qui,
+dans l'ordre est juste avant la page index.html */
+/* Fin de mixin page loading */
 /* Fin des propo de index.html et debt des rpops des pages restos*/
 /*Ces 2 gros mixins CI DESSOUS contiennent 
 des proprietes chacunes qui se repetent 2fois*/
@@ -521,14 +524,13 @@ body {
 
 .header-spinner {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
   padding: 20px 0;
   flex: 100%;
   min-width: 375px;
   height: 300%;
-  padding: 10px 5px;
   background-color: white;
   z-index: 1;
   position: absolute;
@@ -537,7 +539,7 @@ body {
 .header-spinner__page {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
   opacity: 0.75;
   flex: 90%;
@@ -546,60 +548,110 @@ body {
   margin: 10px;
   background-color: pink;
   position: relative;
-  border-radius: 170px 20px 170px 20px;
+  border-radius: 170px 170px 170px 170px;
   box-shadow: 3px 1px 20px 0px grey;
 }
 .header-spinner .tete {
   text-align: center;
-  width: 50px;
-  height: 100px;
   background-color: red;
   margin: 1px;
+  width: 50px;
+  height: 50px;
   padding: 5px;
   position: relative;
-  bottom: 50px;
-  left: 20px;
-  border-radius: 30px;
+  bottom: -50px;
+  border-radius: 80px 80px 80px 80px;
 }
 .header-spinner .torse {
   background-color: rebeccapurple;
-  width: 200px;
-  height: 200px;
   margin: 1px;
+  width: 100px;
+  height: 220px;
   border-radius: 20px 20px;
   padding: 5px;
+  position: relative;
 }
 .header-spinner .avt-bras-g {
   background-color: greenyellow;
   margin: 1px;
   position: relative;
   bottom: 100px;
-  left: -100px;
+  left: -90px;
+  height: 20px;
   border-radius: 30px;
 }
 .header-spinner .avt-bras-d {
   background-color: greenyellow;
   margin: 1px;
+  transform-origin: left;
   position: relative;
-  bottom: 100px;
-  left: 100px;
+  bottom: 120px;
+  left: 90px;
+  height: 20px;
   border-radius: 30px;
 }
 .header-spinner .bras-g {
-  background-color: blue;
+  background-color: #aaaada;
   margin: 1px;
+  transform-origin: right;
+  transform: rotateZ(30deg);
+  position: relative;
+  left: -160px;
+  bottom: 100px;
+  border-radius: 20px;
 }
 .header-spinner .bras-d {
-  background-color: blue;
+  background-color: #aaaada;
   margin: 1px;
+  transform-origin: left;
+  transform: rotateZ(-30deg);
+  position: relative;
+  left: 160px;
+  bottom: 120px;
+  border-radius: 20px;
 }
 .header-spinner .main-g {
   background-color: orange;
+  height: 50px;
   margin: 1px;
+  position: relative;
+  left: -220px;
+  bottom: 180px;
+  border-radius: 50px;
 }
 .header-spinner .main-d {
   background-color: orange;
+  height: 50px;
   margin: 1px;
+  position: relative;
+  left: 220px;
+  bottom: 200px;
+  border-radius: 50px;
+}
+.header-spinner .table {
+  background-color: gray;
+  width: 300px;
+  position: relative;
+  top: 100px;
+}
+.header-spinner .header-spinner-font {
+  position: relative;
+  top: 200px;
+  z-index: 1;
+  transform: rotateZ(20deg);
+  animation: rotation-load 8s infinite linear;
+  /* hover d abord */
+  /* hover finshed*/
+  /* keyframes*/
+  /* fin keyframes*/
+}
+@keyframes rotation-load {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /* Je vais essayer plus tard de faire que ce body d index soit le meme que les body de resto c est a dire prit a partir de layout  "@include bodyapp;" */
