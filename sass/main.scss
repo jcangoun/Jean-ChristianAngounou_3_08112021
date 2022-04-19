@@ -1,10 +1,11 @@
 @import "./utils/variables";
 @import "./utils/mixins";
+@import "./utils/placeholders";
 
 
 @import "./base/typography";
 
-@import "./components/loading-spinner";
+
 @import "./components/buttons";
 @import "./components/entree";
 @import "./components/plat";

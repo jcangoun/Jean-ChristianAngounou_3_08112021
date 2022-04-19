@@ -8,84 +8,6 @@ des proprietes chacunes qui se repetent 2fois*/
 /* Fin des 2 mixins lourdes*/
 /* en haut les mixin pour index*/
 /*Fin des mixins de index tests */
-/* Ca ne marche pas pour une raison inconnue */
-.header-spinner {
-  /* pour cacher la page je mets en bas "display none".. mais c est en vrai en flex*/
-  display: none;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: column;
-  padding: 20px 0;
-  width: 100%;
-  min-width: 375px;
-  height: 300%;
-  background-color: white;
-  z-index: 1;
-  position: absolute;
-  /* ca ce sera  nommé plutotloader*/
-  transform: translateY(0px);
-  animation: page-up 2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-}
-@keyframes page-up {
-  0% {
-    opacity: 0;
-    position: absolute;
-    transform: translateY(100px);
-  }
-  75% {
-    transform: translateY(0px);
-  }
-  100% {
-    opacity: 1;
-  }
-}
-.header-spinner__page {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-direction: column;
-  opacity: 0.75;
-  flex: 90%;
-  width: 90%;
-  height: 500px;
-  margin: 10px;
-  background-color: pink;
-  border-radius: 170px 170px 170px 170px;
-  box-shadow: 3px 1px 20px 0px grey;
-}
-.header-spinner .header-spinner-font {
-  font-size: 40px;
-  position: relative;
-  top: 200px;
-  z-index: 1;
-  transform: rotateZ(0deg);
-  animation: rotation-load 3s infinite linear;
-  /* hover d abord */
-  /* hover finshed*/
-  /* keyframes*/
-  /* fin keyframes*/
-}
-@keyframes rotation-load {
-  0% {
-    opacity: 0;
-    transform: rotate(0deg);
-  }
-  10% {
-    opacity: 1;
-  }
-  55% {
-    opacity: 1;
-  }
-  60% {
-    opacity: 0;
-    transform: rotate(360deg);
-  }
-  100% {
-    opacity: 0;
-    transform: rotate(0deg);
-  }
-}
-
 a .fleche {
   flex: 10%;
   /*  padding: 0 25px;       
@@ -430,7 +352,6 @@ a .fleche {
   }
 }
 
-/* Ca ne marche pas pour une raison inconnue */
 .header-spinner {
   /* pour cacher la page je mets en bas "display none".. mais c est en vrai en flex*/
   display: none;
@@ -446,7 +367,7 @@ a .fleche {
   position: absolute;
   /* ca ce sera  nommé plutotloader*/
   transform: translateY(0px);
-  animation: page-up 2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: page-up 3.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 @keyframes page-up {
   0% {
@@ -454,11 +375,17 @@ a .fleche {
     position: absolute;
     transform: translateY(100px);
   }
-  75% {
+  50% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  80% {
+    opacity: 1;
     transform: translateY(0px);
   }
   100% {
-    opacity: 1;
+    opacity: 0;
+    transform: translateY(200px);
   }
 }
 .header-spinner__page {
@@ -471,8 +398,6 @@ a .fleche {
   width: 90%;
   height: 500px;
   margin: 10px;
-  background-color: pink;
-  border-radius: 170px 170px 170px 170px;
   box-shadow: 3px 1px 20px 0px grey;
 }
 .header-spinner .header-spinner-font {
