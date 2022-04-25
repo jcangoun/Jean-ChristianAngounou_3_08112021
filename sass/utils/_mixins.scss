@@ -25,10 +25,13 @@ dans l'ordre est juste avant la page index.html */
             opacity: 1;      
             transform: translateY(0px);       
         }
-        75% {
-            opacity: 0.9;
+        71% {
+            opacity: 1;
         }
 
+        90% {
+            opacity: 0.4;
+        }
         100% {
             opacity: 0;
             transform: translateY(100px);

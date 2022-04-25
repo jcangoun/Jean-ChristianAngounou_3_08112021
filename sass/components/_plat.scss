@@ -1,5 +1,5 @@
 .plat__titre {
-    border-bottom: 3px solid#99E2D0;
+    border-bottom: 3px solid $anim-color;
     margin: 10px;
     width: 40px;
   }
@@ -57,7 +57,7 @@
         justify-content: center;
         align-items: center;
         width: 0;
-        background-color: #99e2d0;
+        background-color: $anim-color;
         color: white;
         border-radius: 0 10px 10px 0;
         font-size: 20px;
@@ -89,7 +89,7 @@
       &:hover > .ok {
         transition: all 2s ease-in-out;
         animation-delay: 5s;
-        background-color: #99e2d0 1000ms;
+        background-color: $anim-color 1000ms;
         width: 60px;
       }
     

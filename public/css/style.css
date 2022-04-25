@@ -32,8 +32,8 @@ a .fleche {
   justify-content: center;
 }
 .bouton .bouton-commander {
-  background: linear-gradient(0deg, #9356dc, transparent);
-  background-color: #ff79da;
+  background: linear-gradient(0deg, #9356DC, transparent);
+  background-color: #FF79DA;
   border-radius: 30px;
   color: white;
   margin: 35px 20px;
@@ -101,7 +101,7 @@ a .fleche {
   justify-content: center;
   align-items: center;
   width: 0;
-  background-color: #99e2d0;
+  background-color: #99E2D0;
   color: white;
   border-radius: 0 10px 10px 0;
   font-size: 20px;
@@ -127,7 +127,7 @@ a .fleche {
 .entree__groupe .entree__composition:hover > .ok {
   transition: all 2s ease-in-out;
   animation-delay: 5s;
-  background-color: #99e2d0 1000ms;
+  background-color: #99E2D0 1000ms;
   width: 60px;
 }
 .entree__groupe .entree__composition:hover .ok-icone {
@@ -203,7 +203,7 @@ a .fleche {
   justify-content: center;
   align-items: center;
   width: 0;
-  background-color: #99e2d0;
+  background-color: #99E2D0;
   color: white;
   border-radius: 0 10px 10px 0;
   font-size: 20px;
@@ -229,7 +229,7 @@ a .fleche {
 .plat__groupe .entree__composition:hover > .ok {
   transition: all 2s ease-in-out;
   animation-delay: 5s;
-  background-color: #99e2d0 1000ms;
+  background-color: #99E2D0 1000ms;
   width: 60px;
 }
 .plat__groupe .entree__composition:hover .ok-icone {
@@ -277,10 +277,6 @@ a .fleche {
 }
 .dessert__groupe .entree__composition .dessert__choix {
   margin: 5px;
-  /* background-color: white;
-        padding: 10px;
-        margin: 10px;
-        border-radius: 20px; */
   flex: 75%;
   transition: all 1000s;
 }
@@ -305,7 +301,7 @@ a .fleche {
   justify-content: center;
   align-items: center;
   width: 0;
-  background-color: #99e2d0;
+  background-color: #99E2D0;
   color: white;
   border-radius: 0 10px 10px 0;
   font-size: 20px;
@@ -331,7 +327,7 @@ a .fleche {
 .dessert__groupe .entree__composition:hover > .ok {
   transition: all 2s ease-in-out;
   animation-delay: 5s;
-  background-color: #99e2d0 1000ms;
+  background-color: #99E2D0 1000ms;
   width: 60px;
 }
 .dessert__groupe .entree__composition:hover .ok-icone {
@@ -354,7 +350,7 @@ a .fleche {
 
 .header-spinner {
   /* pour cacher la page je mets en bas "display none".. mais c est en vrai en flex*/
-  display: flex;
+  display: none;
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
@@ -389,8 +385,11 @@ a .fleche {
     opacity: 1;
     transform: translateY(0px);
   }
-  75% {
-    opacity: 0.9;
+  71% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0.4;
   }
   100% {
     opacity: 0;
