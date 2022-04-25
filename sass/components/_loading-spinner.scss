@@ -1,7 +1,7 @@
 
 .header-spinner {
     /* pour cacher la page je mets en bas "display none".. mais c est en vrai en flex*/
-    display: none;
+    display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
@@ -15,7 +15,7 @@
     position: absolute;
     /* ca ce sera  nommé plutotloader*/
     transform: translateY(0px);
-    animation: page-up 3.5s cubic-bezier(.39,.575,.565,1.000) both;
+    animation: page-up 10s cubic-bezier(.39,.575,.565,1.000) both;
     
 
 

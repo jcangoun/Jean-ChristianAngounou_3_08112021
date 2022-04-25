@@ -3,24 +3,35 @@ dans l'ordre est juste avant la page index.html */
 
 @mixin page-up {
     @keyframes page-up {
+
         0% {
             opacity: 0;
             position: absolute;
-            transform: translateY(100px);                   
+            transform: translateY(150px);                   
+        }
+
+        10% {
+            opacity: 1;
+        }
+        15% {
+            transform: translateY(0px);
         }
 
         50% {
             opacity: 1;
             transform: translateY(0px);
         }
-        80% {
+        70% {
             opacity: 1;      
             transform: translateY(0px);       
+        }
+        75% {
+            opacity: 0.9;
         }
 
         100% {
             opacity: 0;
-            transform: translateY(200px);
+            transform: translateY(100px);
         }
         
     }
