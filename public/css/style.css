@@ -8,6 +8,19 @@ des proprietes chacunes qui se repetent 2fois*/
 /* Fin des 2 mixins lourdes*/
 /* en haut les mixin pour index*/
 /*Fin des mixins de index tests */
+.explore__button, .bouton .bouton-commander {
+  background: linear-gradient(0deg, #9356DC, transparent);
+  background-color: #FF79DA;
+  border-radius: 30px;
+  color: white;
+  border: none;
+}
+
+.explore__button:hover, .bouton .bouton-commander:hover {
+  background-color: #ffa2e5;
+  box-shadow: 0px 2px 12px #343434;
+}
+
 a .fleche {
   flex: 10%;
   /*  padding: 0 25px;       
@@ -32,20 +45,10 @@ a .fleche {
   justify-content: center;
 }
 .bouton .bouton-commander {
-  background: linear-gradient(0deg, #9356DC, transparent);
-  background-color: #FF79DA;
-  border-radius: 30px;
-  color: white;
   margin: 35px 20px;
   padding: 20px 50px;
-  border: none;
   font-size: 17px;
 }
-.bouton .bouton-commander:hover {
-  background-color: #ffa2e5;
-  box-shadow: 0px 2px 12px #343434;
-}
-
 .entree__titre {
   border-bottom: 3px solid #99E2D0;
   margin: 10px;
@@ -633,22 +636,11 @@ main {
   font-size: 17px;
 }
 .explore__button {
-  background: linear-gradient(0deg, #9356DC, transparent);
-  background-color: #FF79DA;
-  /* ici la couleur que je vais mettre après le clic du explore__button signé .explore__button:active */
-  border-radius: 30px;
-  color: white;
   margin: 10px 20px;
   padding: 15px 20px;
-  border: none;
   box-shadow: 0px 2px 8px grey;
   font-weight: 600;
 }
-.explore__button:hover {
-  background-color: #ffa2e5;
-  box-shadow: 0px 2px 12px #343434;
-}
-
 /* ici  dbt fonctionnement */
 .fonctionnement {
   display: flex;

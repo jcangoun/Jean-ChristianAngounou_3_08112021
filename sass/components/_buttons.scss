@@ -27,23 +27,19 @@ a {
     justify-content: center;
 
     .bouton-commander {
-      background: linear-gradient(0deg, $primary-color, transparent);
-      background-color: $secondary-color;
-      border-radius: 30px;
-      color: white;
+
+      @extend %bouton-colors;
+
       margin: 35px 20px;
-      padding: 20px 50px;
-      border: none;
+      padding: 20px 50px;      
       font-size: 17px;
 
       &:hover {
-            
-      // @extend %bouton-hover ne marche pas encore je vais voir pourquoi ....;
-      background-color: lighten($secondary-color, 8%);
-      box-shadow: 0px 2px 12px darken(grey, 30%);
+      // @extend %bouton-hover marche enfin ....;
+
+        @extend %bouton-hover;
         }
     }
-
     
   }
 

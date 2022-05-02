@@ -1,4 +1,13 @@
+%bouton-colors {
+    background: linear-gradient(0deg, $primary-color, transparent);
+      background-color: $secondary-color;
+      border-radius: 30px;
+      color: $blanc;
+      border: none;
+}
+
+
 %bouton-hover {
-    background-color: lighten($secondary-color, 5%);
+    background-color: lighten($secondary-color, 8%);
     box-shadow: 0px 2px 12px darken(grey, 30%);
 }
