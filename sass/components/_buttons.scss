@@ -39,7 +39,7 @@ a {
       &:hover {
             
       // @extend %bouton-hover ne marche pas encore je vais voir pourquoi ....;
-      background-color: lighten($secondary-color, 5%);
+      background-color: lighten($secondary-color, 8%);
       box-shadow: 0px 2px 12px darken(grey, 30%);
         }
     }

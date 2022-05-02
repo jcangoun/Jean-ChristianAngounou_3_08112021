@@ -42,7 +42,7 @@ a .fleche {
   font-size: 17px;
 }
 .bouton .bouton-commander:hover {
-  background-color: #ff93e1;
+  background-color: #ffa2e5;
   box-shadow: 0px 2px 12px #343434;
 }
 
@@ -645,7 +645,7 @@ main {
   font-weight: 600;
 }
 .explore__button:hover {
-  background-color: #ff93e1;
+  background-color: #ffa2e5;
   box-shadow: 0px 2px 12px #343434;
 }
 
@@ -818,14 +818,18 @@ main {
   margin: 5px 15px;
   align-items: center;
   font-size: 23px;
+  /* fin du text overflow*/
 }
 .restaurants .caption__iconecoeur .active {
   display: flex;
   justify-content: center;
   align-items: center;
-  /*  background-clip: text;
-      webkit-background-clip: text;
-      color: transparent;*/
+  background-color: red;
+  background: no-repeat center;
+  background-size: contain;
+  display: block;
+  position: relative;
+  border: 1px solid white;
 }
 .restaurants .caption__iconecoeur .active:hover {
   font-weight: 600;
@@ -833,6 +837,29 @@ main {
   color: #ca72e7;
   animation: full-heart 0.2s;
   animation-timing-function: ease-in-out;
+}
+.restaurants .caption__iconecoeur .active:before, .restaurants .caption__iconecoeur .active:after {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  transform-origin: bottom;
+  transition: transform 0.3s;
+}
+.restaurants .caption__iconecoeur .active:after {
+  background-image: linear-gradient(#9356DC, #FF79DA);
+  transform: scaleY(0);
+}
+.restaurants .caption__iconecoeur .active:before {
+  background: white;
+  transform-origin: top;
+}
+.restaurants .caption__iconecoeur .active:hover:before {
+  transform: scaleY(0);
+}
+.restaurants .caption__iconecoeur .active:hover:after {
+  transform: scaleY(1);
 }
 @keyframes full-heart {
   0% {
@@ -872,7 +899,6 @@ main {
   font-size: 30px;
   color: #ca72e7;
 }
-
 /* Fin restos*/
 .footer {
   display: flex;
