@@ -11,3 +11,11 @@
     background-color: lighten($secondary-color, 8%);
     box-shadow: 0px 2px 12px darken(grey, 30%);
 }
+
+
+%text-hidden {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+

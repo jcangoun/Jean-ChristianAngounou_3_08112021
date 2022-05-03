@@ -31,16 +31,26 @@
               border-radius: 20px; */
         flex: 75%;
         transition: all 1000s;
+
+        @extend %text-hidden;
+
+        
+
+       
   
         .plat__assiette {
           margin: 5px;
           font-size: 18px;
           font-weight: $super-gras;
+
+          @extend %text-hidden;
         }
   
         .plat__accompagnement {
           margin: 5px;
           font-size: 15px;
+
+          @extend %text-hidden;
         }
       }
   

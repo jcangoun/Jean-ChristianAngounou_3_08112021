@@ -32,15 +32,22 @@
       flex: 75%;
       transition: all 1000s;
 
+      @extend %text-hidden;
+
       .choix__assiette {
         margin: 5px;
         font-size: 18px;
         font-weight: $super-gras;
+
+        @extend %text-hidden;
+
       }
 
       .choix__accompagnement {
         margin: 5px;
         font-size: 15px;
+        
+        @extend %text-hidden;
       }
     }
 
@@ -50,6 +57,8 @@
       margin: 0 20px 10px 0;
       transition: all 500s;
       font-weight: $super-gras;
+      
+      @extend %text-hidden;
     }
 
     .ok {

@@ -63,10 +63,13 @@ main {
       margin: 10px;
 
       .nom__presentation {
+        
         .nom__titre {
           font-size: 28px;
           font-family: $shrikhand;
           font-weight: $gras;
+
+          @extend %text-hidden;
         }
       }
 
@@ -82,12 +85,20 @@ main {
           /*  background-clip: text;
               webkit-background-clip: text;
               color: transparent;*/
-                    
+
+              font-weight: 700;
+                    // font-weight: 700;
+
+          background:linear-gradient(0deg, $primary-color, transparent);
+          background-clip: text;
+          -webkit-background-clip: text;
+          color: transparent;
+
           &:active {
             font-weight: 600;
             font-size: 30px;
             color: #ca72e7;
-            animation: full-heart 0.5s;
+            animation: full-heart 1.5s;
             animation-timing-function: ease-in-out;
             
             

@@ -31,6 +31,8 @@
         //       border-radius: 20px; 
         flex: 75%;
         transition: all 1000s;
+
+        @extend %text-hidden;
   
         .dessert__assiette {
           margin: 5px;
