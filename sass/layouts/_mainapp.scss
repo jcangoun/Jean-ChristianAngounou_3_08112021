@@ -1,26 +1,3 @@
-// main {
-//     // display: flex;
-
-//     .nom-menu {
-//         flex-direction: column;
-//         // @include photo-affiche;
-
-//             .menu {
-//                 /* padding: 10px; */
-//                 background-color: rgb(240, 240, 240);
-//                 position: relative;
-//                 margin-top: -65px;
-//                 padding: 0 5px;
-//                 border-radius: 40px 40px 0 0;
-//             }
-
-//             // @include presentation;
-
-//             // @include entree;
-//             // @include plat;
-//             // @include dessert;
-//     }
-// }
 
 main {
   display: flex;
@@ -85,46 +62,39 @@ main {
           /*  background-clip: text;
               webkit-background-clip: text;
               color: transparent;*/
+                    font-weight: 500;
+          &:active {
 
-              font-weight: 700;
-                    // font-weight: 700;
+            font-size: 30px;
+            color: #ca72e7;
+            animation: full-heart 1s;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: both;
+
 
           background:linear-gradient(0deg, $primary-color, transparent);
           background-clip: text;
           -webkit-background-clip: text;
           color: transparent;
-
-          &:active {
-            font-weight: 600;
-            font-size: 30px;
-            color: #ca72e7;
-            animation: full-heart 1.5s;
-            animation-timing-function: ease-in-out;
             
             
           }
 
-          /* Celui ci n'a pas l'air d'être utilisé*/
-          @include full-heart;         
+          @include full-heart; 
+          
+          // &:after {
+          //   background:linear-gradient(0deg, $primary-color, $primary-color);
+          // }
+
         }
         
+        .test {
+          background-color: red;
+        }
+
       }
     }
 
-    // .bouton {
-    //   display: flex;
-    //   justify-content: center;
-
-    //   .bouton-commander {
-    //     background: linear-gradient(0deg, #9356dc, transparent);
-    //     background-color: #ff79da;
-    //     border-radius: 30px;
-    //     color: white;
-    //     margin: 35px 20px;
-    //     padding: 20px 50px;
-    //     border: none;
-    //     font-size: 17px;
-    //   }
-    // }
+    
   }
 }

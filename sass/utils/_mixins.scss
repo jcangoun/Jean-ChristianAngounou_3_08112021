@@ -175,45 +175,41 @@ dans l'ordre est juste avant la page index.html */
 @mixin full-heart {
     @keyframes full-heart {
         0% {
+            font-weight: 500;
             background-clip: text;
--webkit-background-clip: text;
-color: transparent;
+            -webkit-background-clip: text;
+            color: transparent;
             transform-origin:bottom;
             opacity: 0;
             font-size: 30px;
-            transform: translateY(0);
-            
+            transform: translateY(0);                    
         }
     
         25% {
             transform-origin:bottom;
-            // transform: scale(1.1);
-            // opacity: 0.5;
-            // font-size: 40px;
-            opacity: 1;
+            opacity: 0.25;
         }
     
         50% {
-            opacity: 1;
+            opacity: 0.4;
             font-size: 30px;
-            // transform: scale(0.8)
+
         }
     
         75% {
             transform-origin:bottom;
-            // transform: scale(1.3);
-            // opacity: 0.5;
-            // font-size: 40px;
+            opacity: 0.85;
         }
-    
+
         100% {
             background-clip: text;
--webkit-background-clip: text;
-// color: transparent;
+            -webkit-background-clip: text;
+            color: $primary-color;
             opacity: 1;
             font-size: 30px;
             font-weight: 700;
-            transform: translateY(100px);
+            filter: brightness(1.30);
+            
         }
     
     }
