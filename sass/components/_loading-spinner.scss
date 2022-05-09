@@ -15,7 +15,10 @@
     position: absolute;
     /* ca ce sera  nommé plutotloader*/
     transform: translateY(0px);
-    animation: page-up 10s cubic-bezier(.39,.575,.565,1.000) both;
+
+
+
+    // animation: page-up 10s cubic-bezier(.39,.575,.565,1.000) both;
     
 
 
@@ -31,7 +34,8 @@
         width: 90%;
         height: 500px;
         margin: 10px;
-        box-shadow: 3px 1px 20px 0px grey;   
+        box-shadow: 3px 1px 20px 0px grey;  
+         
     }
 
     
@@ -43,20 +47,13 @@
             z-index: 1;
             transform: rotateZ(0deg);
             animation: rotation-load 3s infinite linear;
-
+            /* Principe ci dessous important */
             /* hover d abord */
             /* hover finshed*/
-
-            /* keyframes*/
-
-            @include rotation-load;
-                
-            /* fin keyframes*/
+            /* puis keyframes*/
+            @include rotation-load;                
         }
-
-
-  
-        
-
-
+        .text-chargement {
+            background-color: red;
+        }
 }

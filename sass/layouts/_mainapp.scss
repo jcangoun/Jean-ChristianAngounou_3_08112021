@@ -3,11 +3,8 @@ main {
   display: flex;
   flex: 100%;
   flex-direction: column;
-
   // .nom-menu  {
-
   // }
-
   .photo-affiche {
     display: flex;
     flex: 100%;
@@ -15,14 +12,11 @@ main {
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0;
-
     & img {
       width: 100%;
-      object-fit: cover;
-    
+      object-fit: cover;   
     }
   }
-
   .menu {
     display: flex;
     flex-direction: column;
@@ -32,69 +26,44 @@ main {
     margin-top: -65px;
     padding: 0 5px;
     border-radius: 40px 40px 0 0;
-
     .presentation {
       display: flex;
       justify-content: space-between;
       padding: 20px;
       margin: 10px;
-
       .nom__presentation {
-        
         .nom__titre {
           font-size: 28px;
           font-family: $shrikhand;
           font-weight: $gras;
-
           @extend %text-hidden;
         }
       }
-
       .icone-coeur {
         display: flex;
         margin: 10px 0;
-        font-size: 23px;
-
+        font-size: 25px;
         .active {
           display: flex;
           justify-content: center;
           align-items: center;
-          /*  background-clip: text;
-              webkit-background-clip: text;
-              color: transparent;*/
-                    font-weight: 500;
+          font-weight: 500;
           &:active {
-
-            font-size: 30px;
+            font-size: 25px;
             color: #ca72e7;
             animation: full-heart 1s;
             animation-timing-function: ease-in-out;
             animation-fill-mode: both;
-
-
-          background:linear-gradient(0deg, $primary-color, transparent);
-          background-clip: text;
-          -webkit-background-clip: text;
-          color: transparent;
-            
-            
+            background:linear-gradient(0deg, $primary-color, transparent);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            transition: all;
+            @include full-heart;
           }
-
           @include full-heart; 
-          
-          // &:after {
-          //   background:linear-gradient(0deg, $primary-color, $primary-color);
-          // }
-
         }
-        
-        .test {
-          background-color: red;
-        }
-
       }
-    }
-
-    
+    } 
   }
 }
