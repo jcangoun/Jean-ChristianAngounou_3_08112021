@@ -80,11 +80,125 @@ dans l'ordre est juste avant la page index.html */
             }
     }
 }
+
+@mixin test-anim {
+            @keyframes test-anim {
+                0% {
+                    transform-origin: center;
+                    transform: rotateX(0deg);
+                    font-weight: 400;
+                    
+                    transform: translateY(150px);
+                    
+                    
+                    opacity: 0;
+                    // background-color: purple;
+                }
+
+                20% {
+                    opacity: 0.2;
+                    transform: translateY(30px);
+                    // background-color: red;
+
+                    
+                }
+                28% {
+                    transform: translateY(35px);
+                }
+                30% {
+                    transform: rotateX(0deg);
+                    color: greenyellow;
+
+
+                    transform: translateY(40px);
+                    opacity: 1;
+                                        
+                }
+                31% {
+                    transform: rotateZ(10deg);
+                }
+
+                32% {
+                    transform: rotateY(40deg);
+                }
+
+                33% {
+                    transform: rotateY(10deg);
+                }
+                34% {
+                    transform: rotateZ(-10deg);
+                }
+
+                37% {
+                    transform: rotateZ(10deg);
+                }
+
+                38% {
+                    transform: rotateZ(-10deg);
+                }
+                41% {
+                    transform: rotateZ(0deg);
+                }
+
+
+                50%{
+                    box-shadow: 8 8 0 #a1a1a1;
+                    color: greenyellow;
+                }
+
+                55% {
+                    box-shadow: 8 8 5px orange;
+                    color: black;
+                }
+                
+                60% {
+                    box-shadow: 8 8 0 #a1a1a1;
+                    color: greenyellow;
+                    
+                }
+
+                65% {
+                    box-shadow: 0 0 5px black;
+                    color: black;
+                }
+                
+                70% {
+                    font-weight: 600;
+                }
+
+                75% {
+                    // transform: translateY(135px);
+                    font-weight: 600;
+                }
+                89% {
+                    transform-origin: center;
+                }
+                90% {
+                    transform: translateX(0px);
+                    transform-origin: right;
+                    transform: rotateZ(20deg);
+                }
+                92% {
+                    transform: translateX(20px);
+                }
+                100% {
+                    transform: translateX(3000px);
+                    
+                    
+                    
+                }
+            }
+        }
 /* Fin de mixin page loading */
+
+// debut des mixins de index 
+
+
 @mixin nav {
     /* Verifier l'utilité de ce mixin*/
     @include logo();
 }
+
 /* Fin des propo de index.html et debt des rpops des pages restos*/
 @mixin fleche() {
     a {
@@ -107,7 +221,16 @@ dans l'ordre est juste avant la page index.html */
         // margin: 10px 0;
         padding: 10px 20px 10px 0;
         font-family: $shrikhand;
-        font-weight: $gras;            
+        font-weight: $gras;      
+        
+        @media (min-width: 320px) {
+            padding: 10px 20px 10px 30px;
+            
+        }
+        @media (min-width: 376px) and (max-width: 768px) {
+            padding: 10px 20px 10px 10px;
+            
+        }
     }  
 }
 @mixin fonctionnement__degustez {
@@ -137,7 +260,8 @@ dans l'ordre est juste avant la page index.html */
     text-decoration: none;
     color: black;
 }
-/* en haut les mixin pour index*/
+
+
 @mixin full-heart {
     @keyframes full-heart {
         0% {
@@ -168,7 +292,12 @@ dans l'ordre est juste avant la page index.html */
         }   
     }
 }
-/*Fin des mixins de index tests */
+
+
+@mixin justify-center {
+    justify-content: center;
+}
+/*Fin des mixins de index */
 
 // /* FIN DE CODE INDEX ici*///////////////////////////////////////////
 // Dbut du domaine restos 

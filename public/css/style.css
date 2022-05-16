@@ -4,8 +4,7 @@ dans l'ordre est juste avant la page index.html */
 /* Fin de mixin page loading */
 /* Fin des propo de index.html et debt des rpops des pages restos*/
 /* Fin des 2 mixins lourdes*/
-/* en haut les mixin pour index*/
-/*Fin des mixins de index tests */
+/*Fin des mixins de index */
 .explore__button, .bouton .bouton-commander {
   background: linear-gradient(0deg, #9356DC, transparent);
   background-color: #FF79DA;
@@ -367,8 +366,8 @@ a .fleche {
   background-color: white;
   z-index: 1;
   position: absolute;
-  /* ca ce sera  nommé plutotloader*/
   transform: translateY(0px);
+  animation: page-up 10s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 @keyframes page-up {
   0% {
@@ -446,7 +445,94 @@ a .fleche {
   }
 }
 .header-spinner .text-chargement {
-  background-color: red;
+  font-weight: 500;
+  background-color: transparent;
+  border: 1px solid palevioletred;
+  border-radius: 20px;
+  box-shadow: 8px 8px 20px 0px #a1a1a1;
+  padding: 5px 10px;
+  transform: all;
+  animation: test-anim 5s cubic-bezier(0.39, 0.575, 0.565, 1) 0.5s infinite normal both;
+  animation-iteration-count: 5;
+}
+@keyframes test-anim {
+  0% {
+    transform-origin: center;
+    transform: rotateX(0deg);
+    font-weight: 400;
+    transform: translateY(150px);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.2;
+    transform: translateY(30px);
+  }
+  28% {
+    transform: translateY(35px);
+  }
+  30% {
+    transform: rotateX(0deg);
+    color: greenyellow;
+    transform: translateY(40px);
+    opacity: 1;
+  }
+  31% {
+    transform: rotateZ(10deg);
+  }
+  32% {
+    transform: rotateY(40deg);
+  }
+  33% {
+    transform: rotateY(10deg);
+  }
+  34% {
+    transform: rotateZ(-10deg);
+  }
+  37% {
+    transform: rotateZ(10deg);
+  }
+  38% {
+    transform: rotateZ(-10deg);
+  }
+  41% {
+    transform: rotateZ(0deg);
+  }
+  50% {
+    box-shadow: 8 8 0 #a1a1a1;
+    color: greenyellow;
+  }
+  55% {
+    box-shadow: 8 8 5px orange;
+    color: black;
+  }
+  60% {
+    box-shadow: 8 8 0 #a1a1a1;
+    color: greenyellow;
+  }
+  65% {
+    box-shadow: 0 0 5px black;
+    color: black;
+  }
+  70% {
+    font-weight: 600;
+  }
+  75% {
+    font-weight: 600;
+  }
+  89% {
+    transform-origin: center;
+  }
+  90% {
+    transform: translateX(0px);
+    transform-origin: right;
+    transform: rotateZ(20deg);
+  }
+  92% {
+    transform: translateX(20px);
+  }
+  100% {
+    transform: translateX(3000px);
+  }
 }
 
 body {
@@ -478,6 +564,16 @@ nav .logo {
   padding: 10px 20px 10px 0;
   font-family: "Shrikhand";
   font-weight: 500;
+}
+@media (min-width: 320px) {
+  nav .logo {
+    padding: 10px 20px 10px 30px;
+  }
+}
+@media (min-width: 376px) and (max-width: 768px) {
+  nav .logo {
+    padding: 10px 20px 10px 10px;
+  }
 }
 
 main {
@@ -614,6 +710,16 @@ header .logo {
   font-family: "Shrikhand";
   font-weight: 500;
 }
+@media (min-width: 320px) {
+  header .logo {
+    padding: 10px 20px 10px 30px;
+  }
+}
+@media (min-width: 376px) and (max-width: 768px) {
+  header .logo {
+    padding: 10px 20px 10px 10px;
+  }
+}
 
 body {
   display: flex;
@@ -637,6 +743,16 @@ header .logo {
   padding: 10px 20px 10px 0;
   font-family: "Shrikhand";
   font-weight: 500;
+}
+@media (min-width: 320px) {
+  header .logo {
+    padding: 10px 20px 10px 30px;
+  }
+}
+@media (min-width: 376px) and (max-width: 768px) {
+  header .logo {
+    padding: 10px 20px 10px 10px;
+  }
 }
 
 main {
@@ -920,6 +1036,11 @@ main {
   list-style: none;
   font-family: "Shrikhand";
 }
+@media (min-width: 425px) and (max-width: 1440px) {
+  .footer__logo {
+    text-align: center;
+  }
+}
 .footer__proposition {
   display: flex;
   flex-direction: row;
@@ -929,6 +1050,11 @@ main {
 }
 .footer__proposition .footer__phrase-proposition {
   margin: 5px;
+}
+@media (min-width: 425px) and (max-width: 1440px) {
+  .footer__proposition {
+    justify-content: center;
+  }
 }
 .footer__bepartner {
   display: flex;
@@ -940,9 +1066,19 @@ main {
 .footer__bepartner .footer__item {
   margin: 5px;
 }
+@media (min-width: 425px) and (max-width: 1440px) {
+  .footer__bepartner {
+    justify-content: center;
+  }
+}
 .footer__legal {
   display: flex;
   margin: 5px;
+}
+@media (min-width: 425px) and (max-width: 1440px) {
+  .footer__legal {
+    justify-content: center;
+  }
 }
 .footer__contact {
   display: flex;
@@ -955,6 +1091,11 @@ main {
 }
 .footer__contact a .footer__phrasecontakt {
   color: white;
+}
+@media (min-width: 425px) and (max-width: 1440px) {
+  .footer__contact {
+    justify-content: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

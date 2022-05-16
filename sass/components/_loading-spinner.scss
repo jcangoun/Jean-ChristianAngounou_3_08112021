@@ -13,12 +13,12 @@
     background-color: white;
     z-index: 1;
     position: absolute;
-    /* ca ce sera  nommé plutotloader*/
     transform: translateY(0px);
 
 
+            //  En bas demuter l'animation ci dessous. Elle fait disparaître la page de spinn loader
 
-    // animation: page-up 10s cubic-bezier(.39,.575,.565,1.000) both;
+    animation: page-up 10s cubic-bezier(.39,.575,.565,1.000) both;
     
 
 
@@ -45,6 +45,7 @@
             position: relative;
             top: 200px;
             z-index: 1;
+            // text-shadow:0px -20px 8px black;
             transform: rotateZ(0deg);
             animation: rotation-load 3s infinite linear;
             /* Principe ci dessous important */
@@ -54,6 +55,23 @@
             @include rotation-load;                
         }
         .text-chargement {
-            background-color: red;
+            // font-size: 15px;
+            font-weight: 500;
+            background-color: transparent;
+            border: 1px solid palevioletred;
+            border-radius: 20px;
+            box-shadow: 8px 8px 20px 0px #a1a1a1;
+            padding: 5px 10px;
+
+            transform: all;
+
+            animation: test-anim 5s cubic-bezier(.39,.575,.565,1.000) 0.5s infinite normal both;
+            animation-iteration-count:5;
+            
+
+
+
+            @include test-anim;
+            
         }
 }
