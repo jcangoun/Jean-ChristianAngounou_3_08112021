@@ -81,6 +81,13 @@ main {
             margin: $marge-min;
             font-weight: $super-gras;
             @extend %text-hidden;
+            @media (min-width:320px) {
+                margin: 5px;
+            }
+            @media (min-width:635px) and (max-width:768px) {
+                margin:5px 0 5px 130px;
+                
+            }
         }
     }
         .fonctionnement__degustez {            
@@ -172,11 +179,14 @@ main {
             font-size: 18px;
             margin: 15px 0 5px 15px;
             font-weight: $super-gras;
+            @extend %text-hidden;
         }                             
         .restaurant__lieu {
             margin: 5px 0 15px 15px;
             font-size: 18px;
-        }                        
+            @extend %text-hidden;
+        }    
+        @extend %text-hidden;                    
     }
     .caption__iconecoeur {        
         display: flex;
