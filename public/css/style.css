@@ -939,6 +939,12 @@ main {
   font-size: 25px;
   font-weight: 600;
 }
+@media (min-width: 1024px) {
+  .restaurants__titre {
+    display: flex;
+    justify-content: center;
+  }
+}
 .restaurants__vitrine a {
   text-decoration: none;
   color: black;
@@ -1057,7 +1063,7 @@ main {
   list-style: none;
   font-family: "Shrikhand";
 }
-@media (min-width: 425px) and (max-width: 1440px) {
+@media (min-width: 425px) {
   .footer__logo {
     text-align: center;
   }
@@ -1072,7 +1078,7 @@ main {
 .footer__proposition .footer__phrase-proposition {
   margin: 5px;
 }
-@media (min-width: 425px) and (max-width: 1440px) {
+@media (min-width: 425px) {
   .footer__proposition {
     justify-content: center;
   }
@@ -1087,7 +1093,7 @@ main {
 .footer__bepartner .footer__item {
   margin: 5px;
 }
-@media (min-width: 425px) and (max-width: 1440px) {
+@media (min-width: 425px) {
   .footer__bepartner {
     justify-content: center;
   }
@@ -1096,7 +1102,7 @@ main {
   display: flex;
   margin: 5px;
 }
-@media (min-width: 425px) and (max-width: 1440px) {
+@media (min-width: 425px) {
   .footer__legal {
     justify-content: center;
   }
@@ -1113,7 +1119,7 @@ main {
 .footer__contact a .footer__phrasecontakt {
   color: white;
 }
-@media (min-width: 425px) and (max-width: 1440px) {
+@media (min-width: 425px) {
   .footer__contact {
     justify-content: center;
   }

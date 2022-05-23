@@ -2,10 +2,8 @@ nav {
     display: flex;
     flex: 100%;
     align-items: center;
-
     a {
         @include fleche;
     }
-
     @include logo;
 } 
