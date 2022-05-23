@@ -223,10 +223,10 @@ dans l'ordre est juste avant la page index.html */
         font-family: $shrikhand;
         font-weight: $gras;      
         
-        @media (min-width: 320px) {
-            padding: 10px 20px 10px 30px;
+        // @media (min-width: 320px) {
+        //     padding: 10px 20px 10px 30px;
             
-        }
+        // }
         @media (min-width: 376px) and (max-width: 768px) {
             padding: 10px 20px 10px 10px;
             

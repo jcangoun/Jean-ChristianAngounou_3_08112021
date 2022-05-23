@@ -18,7 +18,7 @@ dans l'ordre est juste avant la page index.html */
   box-shadow: 0px 2px 12px #343434;
 }
 
-.restaurants .restaurant__texte, .restaurants .restaurant__texte .restaurant__lieu, .restaurants .restaurant__texte .restaurant__nom, .restaurants__titre, .fonctionnement__degustez .fonctionnement__phrase-degustez, .fonctionnement__titre, .explore__description, .explore__title, .location__city, main .menu .presentation .nom__presentation .nom__titre, .dessert__groupe .entree__composition .dessert__choix, .plat__groupe .entree__composition .plat__choix .plat__accompagnement, .plat__groupe .entree__composition .plat__choix .plat__assiette, .plat__groupe .entree__composition .plat__choix, .entree__groupe .entree__composition .prix, .entree__groupe .entree__composition .entree__choix .choix__accompagnement, .entree__groupe .entree__composition .entree__choix .choix__assiette, .entree__groupe .entree__composition .entree__choix {
+.restaurants .restaurant__texte, .restaurants .restaurant__texte .restaurant__lieu, .restaurants .restaurant__texte .restaurant__nom, .restaurants__titre, .fonctionnement .fonctionnement__degustez .fonctionnement__phrase-degustez, .fonctionnement .fonctionnement__titre, .explore__description, .explore__title, .location__city, main .menu .presentation .nom__presentation .nom__titre, .dessert__groupe .entree__composition .dessert__choix, .plat__groupe .entree__composition .plat__choix .plat__accompagnement, .plat__groupe .entree__composition .plat__choix .plat__assiette, .plat__groupe .entree__composition .plat__choix, .entree__groupe .entree__composition .prix, .entree__groupe .entree__composition .entree__choix .choix__accompagnement, .entree__groupe .entree__composition .entree__choix .choix__assiette, .entree__groupe .entree__composition .entree__choix {
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -565,11 +565,6 @@ nav .logo {
   font-family: "Shrikhand";
   font-weight: 500;
 }
-@media (min-width: 320px) {
-  nav .logo {
-    padding: 10px 20px 10px 30px;
-  }
-}
 @media (min-width: 376px) and (max-width: 768px) {
   nav .logo {
     padding: 10px 20px 10px 10px;
@@ -710,11 +705,6 @@ header .logo {
   font-family: "Shrikhand";
   font-weight: 500;
 }
-@media (min-width: 320px) {
-  header .logo {
-    padding: 10px 20px 10px 30px;
-  }
-}
 @media (min-width: 376px) and (max-width: 768px) {
   header .logo {
     padding: 10px 20px 10px 10px;
@@ -743,11 +733,6 @@ header .logo {
   padding: 10px 20px 10px 0;
   font-family: "Shrikhand";
   font-weight: 500;
-}
-@media (min-width: 320px) {
-  header .logo {
-    padding: 10px 20px 10px 30px;
-  }
 }
 @media (min-width: 376px) and (max-width: 768px) {
   header .logo {
@@ -806,14 +791,30 @@ main {
   display: flex;
   flex-direction: column;
   width: 100%;
+  /*ci dessous temporaire nommé test */
+  /* temporairement &__titre sera redevenu .fonctionnement__titre*/
   /*  Attention, fonctionement degustez egal fction choix, menu  */
+  /* temporairement &__degustez sera redevenu .fonctionnement__degustez*/
 }
-.fonctionnement__titre {
+@media (min-width: 768px) {
+  .fonctionnement .fonctionnement__test {
+    display: flex;
+    justify-content: center;
+  }
+}
+.fonctionnement .fonctionnement__titre {
   margin: 20px;
   font-size: 20px;
   font-weight: 600;
 }
-.fonctionnement__degustez {
+@media (min-width: 1024px) {
+  .fonctionnement .fonctionnement__test2 {
+    display: flex;
+    flex: 100%;
+    flex-direction: row;
+  }
+}
+.fonctionnement .fonctionnement__degustez {
   display: flex;
   flex: 80%;
   align-items: center;
@@ -826,7 +827,7 @@ main {
   background-color: #f0f0f0;
   box-shadow: 0px 5px 13px -4px #c1c1c1;
 }
-.fonctionnement__degustez .fonctionnement__numero-choix {
+.fonctionnement .fonctionnement__degustez .fonctionnement__numero-choix {
   color: white;
   margin: 10px;
   position: relative;
@@ -835,30 +836,40 @@ main {
   padding: 5px 10px;
   border-radius: 20px;
 }
-.fonctionnement__degustez .fonctionnement__i-resto {
+.fonctionnement .fonctionnement__degustez .fonctionnement__i-resto {
   width: 15%;
   margin: 15px 0px 15px 10px;
   color: grey;
 }
-.fonctionnement__degustez .fonctionnement__i-resto:hover {
+.fonctionnement .fonctionnement__degustez .fonctionnement__i-resto:hover {
   color: #9356DC;
 }
-.fonctionnement__degustez .fonctionnement__i-resto .phone {
+.fonctionnement .fonctionnement__degustez .fonctionnement__i-resto .phone {
   color: grey;
   font-size: 20px;
 }
-.fonctionnement__degustez .fonctionnement__phrase-degustez {
+.fonctionnement .fonctionnement__degustez .fonctionnement__phrase-degustez {
   margin: 10px;
   font-weight: 600;
 }
 @media (min-width: 320px) {
-  .fonctionnement__degustez .fonctionnement__phrase-degustez {
+  .fonctionnement .fonctionnement__degustez .fonctionnement__phrase-degustez {
     margin: 5px;
   }
 }
-@media (min-width: 635px) and (max-width: 768px) {
-  .fonctionnement__degustez .fonctionnement__phrase-degustez {
+@media (min-width: 375px) {
+  .fonctionnement .fonctionnement__degustez .fonctionnement__phrase-degustez {
+    margin: 5px 0 5px 20px;
+  }
+}
+@media (min-width: 635px) {
+  .fonctionnement .fonctionnement__degustez .fonctionnement__phrase-degustez {
     margin: 5px 0 5px 130px;
+  }
+}
+@media (min-width: 1024px) {
+  .fonctionnement .fonctionnement__degustez .fonctionnement__phrase-degustez {
+    margin: 0;
   }
 }
 .fonctionnement .fonctionnement__degustez {

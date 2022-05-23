@@ -53,14 +53,41 @@ main {
     display: flex;
     flex-direction: column;
     width: 100%;
-    &__titre {
+
+    // @media (min-width:1024px) {
+            
+            
+    //     }
+
+        
+/*ci dessous temporaire nommé test */
+    .fonctionnement__test {
+        @media  (min-width:768px) {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+     /* temporairement &__titre sera redevenu .fonctionnement__titre*/   
+     .fonctionnement__titre {
         margin: 20px;
         font-size: 20px;
         font-weight: $super-gras;
-        @extend %text-hidden;
+        @extend %text-hidden;        
     }
+
+    .fonctionnement__test2 {
+        @media (min-width:1024px) {
+            display: flex;
+            flex: 100%;
+            flex-direction: row;
+        }
+    }
+
         /*  Attention, fonctionement degustez egal fction choix, menu  */
-    &__degustez {
+
+        /* temporairement &__degustez sera redevenu .fonctionnement__degustez*/
+        .fonctionnement__degustez {
         @include fonctionnement__degustez;
         .fonctionnement__numero-choix {
             @include fonctionnement__numero-choix;
@@ -84,9 +111,15 @@ main {
             @media (min-width:320px) {
                 margin: 5px;
             }
-            @media (min-width:635px) and (max-width:768px) {
+            @media (min-width:375px) {
+                margin: 5px 0 5px 20px;
+            }
+            @media (min-width:635px) {
                 margin:5px 0 5px 130px;
                 
+            }
+            @media (min-width:1024px) {
+                margin: 0;
             }
         }
     }
