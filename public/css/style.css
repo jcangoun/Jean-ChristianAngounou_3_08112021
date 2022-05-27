@@ -362,7 +362,7 @@ a .fleche {
   padding: 20px 0;
   width: 100%;
   min-width: 375px;
-  height: 300%;
+  height: 100%;
   background-color: white;
   z-index: 1;
   position: absolute;
@@ -689,57 +689,14 @@ main .menu .presentation .icone-coeur .active:active {
   }
 }
 
-header {
-  display: flex;
-  justify-content: center;
-  flex: 100%;
-  margin: 0;
-  /* Ce mixin appartient aux restos*/
-}
-header .logo {
-  display: flex;
-  flex: 65%;
-  justify-content: center;
-  font-size: 30px;
-  padding: 10px 20px 10px 0;
-  font-family: "Shrikhand";
-  font-weight: 500;
-}
-@media (min-width: 376px) and (max-width: 768px) {
-  header .logo {
-    padding: 10px 20px 10px 10px;
-  }
-}
-
 body {
   display: flex;
   margin: 0%;
   font-family: "Roboto", "Courier", "monospace";
+  max-width: 1920px;
 }
 
 /* Je vais essayer plus tard de faire que ce body d index soit le meme que les body de resto c est a dire prit a partir de layout  "@include bodyapp;" */
-header {
-  display: flex;
-  justify-content: center;
-  flex: 100%;
-  margin: 0;
-  /* Ce mixin appartient aux restos*/
-}
-header .logo {
-  display: flex;
-  flex: 65%;
-  justify-content: center;
-  font-size: 30px;
-  padding: 10px 20px 10px 0;
-  font-family: "Shrikhand";
-  font-weight: 500;
-}
-@media (min-width: 376px) and (max-width: 768px) {
-  header .logo {
-    padding: 10px 20px 10px 10px;
-  }
-}
-
 main {
   flex-direction: column;
 }
@@ -793,7 +750,6 @@ main {
   width: 100%;
   /*ci dessous temporaire nommé test */
   /* temporairement &__titre sera redevenu .fonctionnement__titre*/
-  /*  Attention, fonctionement degustez egal fction choix, menu  */
   /* temporairement &__degustez sera redevenu .fonctionnement__degustez*/
 }
 @media (min-width: 768px) {

@@ -54,12 +54,7 @@ main {
     flex-direction: column;
     width: 100%;
 
-    // @media (min-width:1024px) {
-            
-            
-    //     }
-
-        
+       
 /*ci dessous temporaire nommé test */
     .fonctionnement__test {
         @media  (min-width:768px) {
@@ -67,7 +62,6 @@ main {
             justify-content: center;
         }
     }
-
      /* temporairement &__titre sera redevenu .fonctionnement__titre*/   
      .fonctionnement__titre {
         margin: 20px;
@@ -75,7 +69,6 @@ main {
         font-weight: $super-gras;
         @extend %text-hidden;        
     }
-
     .fonctionnement__test2 {
         @media (min-width:1024px) {
             display: flex;
@@ -83,8 +76,6 @@ main {
             flex-direction: row;
         }
     }
-
-        /*  Attention, fonctionement degustez egal fction choix, menu  */
 
         /* temporairement &__degustez sera redevenu .fonctionnement__degustez*/
         .fonctionnement__degustez {
@@ -172,9 +163,7 @@ main {
         margin: 60px 20px 20px 20px;
         font-size: 25px;
         font-weight: $super-gras;
-
         @extend %text-hidden;
-
         @media (min-width:1024px) {
             display: flex;
             justify-content: center;
@@ -241,9 +230,7 @@ main {
             display: block;
             position: relative;
             border: 1px solid white;
-
-            background: linear-gradient(0deg, $primary-color, transparent);
-                
+            background: linear-gradient(0deg, $primary-color, transparent);                
             background-clip: text;    
             -webkit-background-clip: text;       
             &:active {

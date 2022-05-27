@@ -2,9 +2,7 @@
 @import "./utils/mixins";
 @import "./utils/placeholders";
 
-
 @import "./base/typography";
-
 
 @import "./components/buttons";
 @import "./components/entree";
@@ -12,20 +10,12 @@
 @import "./components/dessert";
 @import "./components/loading-spinner";
 
-
-
 @import "./layouts/bodyapp";
 @import "./layouts/headerapp";
 @import "./layouts/mainapp";
 @import "./layouts/footerapp";
 
-
-
-
-@import "./pages/headfood";
 @import "./pages/body";
-
-@import "./pages/headfood";
 @import "./pages/mainfood";
 @import "./pages/footer";
 
