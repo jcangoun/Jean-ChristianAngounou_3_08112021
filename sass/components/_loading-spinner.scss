@@ -8,22 +8,15 @@
     padding: 20px 0;
     width: 100%;
     min-width: 375px;
-    height: 300%;
+    height: 100%;
     
     background-color: white;
     z-index: 1;
     position: absolute;
     transform: translateY(0px);
-
-
-            //  En bas demuter l'animation ci dessous. Elle fait disparaître la page de spinn loader
-
     animation: page-up 10s cubic-bezier(.39,.575,.565,1.000) both;
     
-
-
-    @include page-up;
-  
+    @include page-up; 
     &__page {
         display: flex;
         align-items: center;
@@ -36,11 +29,8 @@
         margin: 10px;
         box-shadow: 3px 1px 20px 0px grey;  
          
-    }
-
-    
-        .header-spinner-font {
-            
+    }    
+        .header-spinner-font {            
             font-size: 40px;
             position: relative;
             top: 200px;
@@ -62,16 +52,10 @@
             border-radius: 20px;
             box-shadow: 8px 8px 20px 0px #a1a1a1;
             padding: 5px 10px;
-
             transform: all;
-
             animation: test-anim 5s cubic-bezier(.39,.575,.565,1.000) 0.5s infinite normal both;
             animation-iteration-count:5;
             
-
-
-
-            @include test-anim;
-            
+            @include test-anim;            
         }
 }
