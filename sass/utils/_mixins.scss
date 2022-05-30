@@ -35,31 +35,7 @@ dans l'ordre est juste avant la page index.html */
     }   
 }
 @mixin rotation-load {
-    @keyframes rotation-load {
-        // 0% {
-        //     opacity: 0.2;
-        //     transform: rotate(0deg);
-        // }
-        // 10% {
-        //     opacity: 1;
-        // }
-        // 50% {
-        //     transform: rotate(180deg);
-        // }
-        // 75% {
-        //     opacity: 1;
-        //     transform: rotate(270deg);
-        // }
-        // 90% {
-        //     opacity: 0.8;       
-        // }
-        // 95% {
-        //     opacity: 0;
-        //     transform:rotate(360deg);    
-        // }
-        // 100% {
-        //     transform: rotate(0deg);
-        // }        
+    @keyframes rotation-load {     
             0% {
                 opacity: 0;
                 transform: rotate(0deg); 
@@ -80,27 +56,18 @@ dans l'ordre est juste avant la page index.html */
             }
     }
 }
-
-@mixin test-anim {
+@mixin text-anim {
             @keyframes test-anim {
                 0% {
                     transform-origin: center;
                     transform: rotateX(0deg);
-                    font-weight: 400;
-                    
-                    transform: translateY(150px);
-                    
-                    
+                    font-weight: 400;                    
+                    transform: translateY(150px);                    
                     opacity: 0;
-                    // background-color: purple;
                 }
-
                 20% {
                     opacity: 0.2;
-                    transform: translateY(30px);
-                    // background-color: red;
-
-                    
+                    transform: translateY(30px);                    
                 }
                 28% {
                     transform: translateY(35px);
@@ -108,66 +75,50 @@ dans l'ordre est juste avant la page index.html */
                 30% {
                     transform: rotateX(0deg);
                     color: greenyellow;
-
-
                     transform: translateY(40px);
-                    opacity: 1;
-                                        
+                    opacity: 1;                                        
                 }
                 31% {
                     transform: rotateZ(10deg);
                 }
-
                 32% {
                     transform: rotateY(40deg);
                 }
-
                 33% {
                     transform: rotateY(10deg);
                 }
                 34% {
                     transform: rotateZ(-10deg);
                 }
-
                 37% {
                     transform: rotateZ(10deg);
                 }
-
                 38% {
                     transform: rotateZ(-10deg);
                 }
                 41% {
                     transform: rotateZ(0deg);
                 }
-
-
                 50%{
-                    box-shadow: 8 8 0 #a1a1a1;
+                    box-shadow: 8px 8px 0px #a1a1a1;
                     color: greenyellow;
                 }
-
                 55% {
-                    box-shadow: 8 8 5px orange;
+                    box-shadow: 8px 8px 5px orange;
                     color: black;
-                }
-                
+                }                
                 60% {
-                    box-shadow: 8 8 0 #a1a1a1;
-                    color: greenyellow;
-                    
+                    box-shadow: 8px 8px 0px #a1a1a1;
+                    color: greenyellow;                    
                 }
-
                 65% {
-                    box-shadow: 0 0 5px black;
+                    box-shadow: 0px 0px 5px black;
                     color: black;
-                }
-                
+                }                
                 70% {
                     font-weight: 600;
                 }
-
                 75% {
-                    // transform: translateY(135px);
                     font-weight: 600;
                 }
                 89% {
@@ -182,10 +133,7 @@ dans l'ordre est juste avant la page index.html */
                     transform: translateX(20px);
                 }
                 100% {
-                    transform: translateX(3000px);
-                    
-                    
-                    
+                    transform: translateX(3000px);                                       
                 }
             }
         }
@@ -218,18 +166,11 @@ dans l'ordre est juste avant la page index.html */
         flex: 65%;
         justify-content: center;
         font-size: 30px;
-        // margin: 10px 0;
         padding: 10px 20px 10px 0;
         font-family: $shrikhand;
-        font-weight: $gras;      
-        
-        // @media (min-width: 320px) {
-        //     padding: 10px 20px 10px 30px;
-            
-        // }
+        font-weight: $gras;         
         @media (min-width: 376px) and (max-width: 768px) {
-            padding: 10px 20px 10px 10px;
-            
+            padding: 10px 20px 10px 10px;           
         }
     }  
 }
@@ -260,8 +201,6 @@ dans l'ordre est juste avant la page index.html */
     text-decoration: none;
     color: black;
 }
-
-
 @mixin full-heart {
     @keyframes full-heart {
         0% {
@@ -292,12 +231,10 @@ dans l'ordre est juste avant la page index.html */
         }   
     }
 }
-
-
 @mixin justify-center {
     justify-content: center;
 }
 /*Fin des mixins de index */
 
 // /* FIN DE CODE INDEX ici*///////////////////////////////////////////
-// Dbut du domaine restos 
+ 

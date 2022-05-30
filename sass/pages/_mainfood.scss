@@ -225,22 +225,19 @@ main {
             display: flex;
             justify-content: center;
             align-items: center;        
-            background: no-repeat center;
-            background-size: contain;
-            display: block;
+            // background: no-repeat center;
+            // background-size: contain;
             position: relative;
             border: 1px solid white;
-            background: linear-gradient(0deg, $primary-color, transparent);                
-            background-clip: text;    
-            -webkit-background-clip: text;       
+            background: linear-gradient(0deg, $primary-color, transparent); 
+            -webkit-background-clip: text;               
+            background-clip: text;                       
             &:active {
                 content: " \f004";
                 font-weight: 600;
                 font-size: 30px;
                 color: #ca72e7;
-                animation: full-heart 1s;
-                animation-timing-function: ease-in-out;
-                animation-fill-mode: both;
+                animation: full-heart 1s ease-in-out 1 normal both;
                 @include  full-heart;
             }
             &:visited {

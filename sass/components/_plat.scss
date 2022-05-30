@@ -2,15 +2,9 @@
     border-bottom: 3px solid $anim-color;
     margin: 10px;
     width: 40px;
-  }
-  
+  }  
   .plat__groupe {
-    animation-name: appear;
-    animation-duration: 2000ms;
-    animation-timing-function: ease-in-out;
-    animation-delay: 0.3s;
-    animation-fill-mode: both;
-  
+    animation: appear 2000ms ease-in-out 0.3s both;  
     .entree__composition {
       display: flex;
       flex-grow: 4;
@@ -21,47 +15,31 @@
       /* padding: 10px; */
       border-radius: 15px;
       cursor: grab;
-      transition: 1s;
-  
+      transition: 1s;  
       .plat__choix {
         margin: 5px;
-        /* background-color: white;
-              padding: 10px;
-              margin: 10px;
-              border-radius: 20px; */
         flex: 75%;
         transition: all 1000s;
-
-        @extend %text-hidden;
-
-        
-
-       
-  
+        @extend %text-hidden;  
         .plat__assiette {
           margin: 5px;
           font-size: 18px;
           font-weight: $super-gras;
-
           @extend %text-hidden;
-        }
-  
+        } 
         .plat__accompagnement {
           margin: 5px;
           font-size: 15px;
-
           @extend %text-hidden;
         }
-      }
-  
+      }  
       .prix {
         display: flex;
         align-items: flex-end;
         margin: 0 20px 10px 0;
         transition: all 500s;
         font-weight: $super-gras;
-      }
-  
+      }  
       .ok {
         display: flex;
         justify-content: center;
@@ -72,22 +50,14 @@
         border-radius: 0 10px 10px 0;
         font-size: 20px;
         overflow: hidden;
-        transform: translateX(10%), rotateX(-30deg);
-        transition: all 1000ms cubic-bezier(0.63, -0.29, 0.46, 1.32);
-  
+        transition: all 1000ms cubic-bezier(0.63, -0.29, 0.46, 1.32);  
         .ok-icone {
           transform: rotateZ(0deg);
-          transition: all 1000ms;
-  
-          @keyframes ok-turn {
+          transition: all 1000ms; 
+          @keyframes ok-turn { 
             0% {
-              transform: all;
-            }
-  
-            1% {
               transform: rotateZ(0deg);
-            }
-  
+            } 
             100% {
               transform: rotateZ(180deg);
             }
@@ -95,25 +65,18 @@
         }
         
       }
-
       &:hover > .ok {
         transition: all 2s ease-in-out;
         animation-delay: 5s;
-        background-color: $anim-color 1000ms;
+        background-color: $anim-color;
         width: 60px;
-      }
-    
+      }    
         &:hover .ok-icone {
-          animation: ok-turn 1700ms ease-in-out;
-          animation-fill-mode: both;
-          animation-direction: alternate-reverse;
-          animation-delay: 0.5s;
+          animation: ok-turn 1700ms ease-in-out 0.5s 1 alternate-reverse both;
         }
-
     }
     @keyframes appear {
       0% {
-        transform: all;
         transform: translateY(30%);
         opacity: 0;
       }
@@ -122,6 +85,5 @@
         opacity: 0.9;
       }
     }
-
   }
   

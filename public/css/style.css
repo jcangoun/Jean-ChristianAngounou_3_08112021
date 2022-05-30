@@ -58,11 +58,7 @@ a .fleche {
 }
 
 .entree__groupe {
-  animation-name: appear;
-  animation-duration: 2000ms;
-  animation-timing-function: ease-in-out;
-  animation-delay: 0.3s;
-  animation-fill-mode: both;
+  animation: appear 2000ms ease-in-out 0.3s both;
 }
 .entree__groupe .entree__composition {
   display: flex;
@@ -111,7 +107,6 @@ a .fleche {
   border-radius: 0 10px 10px 0;
   font-size: 20px;
   overflow: hidden;
-  transform: translateX(10%), rotateX(-30deg);
   transition: all 1000ms cubic-bezier(0.63, -0.29, 0.46, 1.32);
 }
 .entree__groupe .entree__composition .ok .ok-icone {
@@ -120,9 +115,6 @@ a .fleche {
 }
 @keyframes ok-turn {
   0% {
-    transform: all;
-  }
-  1% {
     transform: rotateZ(0deg);
   }
   100% {
@@ -132,18 +124,14 @@ a .fleche {
 .entree__groupe .entree__composition:hover > .ok {
   transition: all 2s ease-in-out;
   animation-delay: 5s;
-  background-color: #99E2D0 1000ms;
+  background-color: #99E2D0;
   width: 60px;
 }
 .entree__groupe .entree__composition:hover .ok-icone {
-  animation: ok-turn 1700ms ease-in-out;
-  animation-fill-mode: both;
-  animation-direction: alternate-reverse;
-  animation-delay: 0.5s;
+  animation: ok-turn 1700ms ease-in-out 0.5s alternate-reverse both;
 }
 @keyframes appear {
   0% {
-    transform: all;
     transform: translateY(30%);
     opacity: 0;
   }
@@ -160,11 +148,7 @@ a .fleche {
 }
 
 .plat__groupe {
-  animation-name: appear;
-  animation-duration: 2000ms;
-  animation-timing-function: ease-in-out;
-  animation-delay: 0.3s;
-  animation-fill-mode: both;
+  animation: appear 2000ms ease-in-out 0.3s both;
 }
 .plat__groupe .entree__composition {
   display: flex;
@@ -180,10 +164,6 @@ a .fleche {
 }
 .plat__groupe .entree__composition .plat__choix {
   margin: 5px;
-  /* background-color: white;
-        padding: 10px;
-        margin: 10px;
-        border-radius: 20px; */
   flex: 75%;
   transition: all 1000s;
 }
@@ -213,7 +193,6 @@ a .fleche {
   border-radius: 0 10px 10px 0;
   font-size: 20px;
   overflow: hidden;
-  transform: translateX(10%), rotateX(-30deg);
   transition: all 1000ms cubic-bezier(0.63, -0.29, 0.46, 1.32);
 }
 .plat__groupe .entree__composition .ok .ok-icone {
@@ -222,9 +201,6 @@ a .fleche {
 }
 @keyframes ok-turn {
   0% {
-    transform: all;
-  }
-  1% {
     transform: rotateZ(0deg);
   }
   100% {
@@ -234,18 +210,14 @@ a .fleche {
 .plat__groupe .entree__composition:hover > .ok {
   transition: all 2s ease-in-out;
   animation-delay: 5s;
-  background-color: #99E2D0 1000ms;
+  background-color: #99E2D0;
   width: 60px;
 }
 .plat__groupe .entree__composition:hover .ok-icone {
-  animation: ok-turn 1700ms ease-in-out;
-  animation-fill-mode: both;
-  animation-direction: alternate-reverse;
-  animation-delay: 0.5s;
+  animation: ok-turn 1700ms ease-in-out 0.5s 1 alternate-reverse both;
 }
 @keyframes appear {
   0% {
-    transform: all;
     transform: translateY(30%);
     opacity: 0;
   }
@@ -261,13 +233,6 @@ a .fleche {
   width: 40px;
 }
 
-.dessert__groupe {
-  animation-name: appear;
-  animation-duration: 2000ms;
-  animation-timing-function: ease-in-out;
-  animation-delay: 0.3s;
-  animation-fill-mode: both;
-}
 .dessert__groupe .entree__composition {
   display: flex;
   flex-grow: 4;
@@ -311,7 +276,6 @@ a .fleche {
   border-radius: 0 10px 10px 0;
   font-size: 20px;
   overflow: hidden;
-  transform: translateX(10%), rotateX(-30deg);
   transition: all 1000ms cubic-bezier(0.63, -0.29, 0.46, 1.32);
 }
 .dessert__groupe .entree__composition .ok .ok-icone {
@@ -320,9 +284,6 @@ a .fleche {
 }
 @keyframes ok-turn {
   0% {
-    transform: all;
-  }
-  1% {
     transform: rotateZ(0deg);
   }
   100% {
@@ -332,18 +293,14 @@ a .fleche {
 .dessert__groupe .entree__composition:hover > .ok {
   transition: all 2s ease-in-out;
   animation-delay: 5s;
-  background-color: #99E2D0 1000ms;
+  background-color: #99E2D0;
   width: 60px;
 }
 .dessert__groupe .entree__composition:hover .ok-icone {
-  animation: ok-turn 1700ms ease-in-out;
-  animation-fill-mode: both;
-  animation-direction: alternate-reverse;
-  animation-delay: 0.5s;
+  animation: ok-turn 1700ms ease-in-out 0.5s alternate-reverse both;
 }
 @keyframes appear {
   0% {
-    transform: all;
     transform: translateY(30%);
     opacity: 0;
   }
@@ -451,9 +408,7 @@ a .fleche {
   border-radius: 20px;
   box-shadow: 8px 8px 20px 0px #a1a1a1;
   padding: 5px 10px;
-  transform: all;
-  animation: test-anim 5s cubic-bezier(0.39, 0.575, 0.565, 1) 0.5s infinite normal both;
-  animation-iteration-count: 5;
+  animation: text-anim 5s cubic-bezier(0.39, 0.575, 0.565, 1) 0.5s 5 normal both;
 }
 @keyframes test-anim {
   0% {
@@ -498,19 +453,19 @@ a .fleche {
     transform: rotateZ(0deg);
   }
   50% {
-    box-shadow: 8 8 0 #a1a1a1;
+    box-shadow: 8px 8px 0px #a1a1a1;
     color: greenyellow;
   }
   55% {
-    box-shadow: 8 8 5px orange;
+    box-shadow: 8px 8px 5px orange;
     color: black;
   }
   60% {
-    box-shadow: 8 8 0 #a1a1a1;
+    box-shadow: 8px 8px 0px #a1a1a1;
     color: greenyellow;
   }
   65% {
-    box-shadow: 0 0 5px black;
+    box-shadow: 0px 0px 5px black;
     color: black;
   }
   70% {
@@ -951,23 +906,18 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: no-repeat center;
-  background-size: contain;
-  display: block;
   position: relative;
   border: 1px solid white;
   background: linear-gradient(0deg, #9356DC, transparent);
-  background-clip: text;
   -webkit-background-clip: text;
+  background-clip: text;
 }
 .restaurants .caption__iconecoeur .active:active {
   content: " \f004";
   font-weight: 600;
   font-size: 30px;
   color: #ca72e7;
-  animation: full-heart 1s;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: both;
+  animation: full-heart 1s ease-in-out 1 normal both;
 }
 @keyframes full-heart {
   0% {
