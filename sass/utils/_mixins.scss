@@ -141,7 +141,6 @@ dans l'ordre est juste avant la page index.html */
 
 // debut des mixins de index 
 
-
 @mixin nav {
     /* Verifier l'utilité de ce mixin*/
     @include logo();
