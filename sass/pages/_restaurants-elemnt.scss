@@ -5,8 +5,7 @@ figcaption {
     flex: 100%;
     min-height: 65px;
     background-color: $blanc;
-    border-radius: 0 0 20px 20px;
-               
+    border-radius: 0 0 20px 20px;               
     .restaurant__texte {
         .restaurant__nom {
             font-size: 18px;
@@ -16,8 +15,7 @@ figcaption {
         .restaurant__lieu {
             margin: 5px 0 15px 15px;
             font-size: 18px;
-        }
-                    
+        }                    
     }
     .caption__iconecoeur {        
         display: flex;
@@ -35,13 +33,9 @@ figcaption {
                 font-weight: 600;
                 font-size: 30px;
                 color: #ca72e7;
-                animation: full-heart 0.2s;
-                animation-timing-function: ease-in-out; 
-
+                animation: full-heart 0.2s ease-in-out;
             }
-
             @include  full-heart;
-
             &:active {
                 content: " \f004";
                 font-weight: 600;
@@ -54,7 +48,5 @@ figcaption {
                 color: #ca72e7;
             }
         }
-
-    }   
-                
+    }                  
 }
