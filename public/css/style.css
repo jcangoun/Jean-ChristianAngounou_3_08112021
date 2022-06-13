@@ -5,6 +5,7 @@ dans l'ordre est juste avant la page index.html */
 /* Fin des propo de index.html et debt des rpops des pages restos*/
 /* Fin des 2 mixins lourdes*/
 /*Fin des mixins de index */
+/* */
 .explore__button, .bouton .bouton-commander {
   background: linear-gradient(0deg, #9356DC, transparent);
   background-color: #FF79DA;
@@ -18,9 +19,36 @@ dans l'ordre est juste avant la page index.html */
   box-shadow: 0px 2px 12px #343434;
 }
 
-.restaurants .restaurant__texte, .restaurants .restaurant__texte .restaurant__lieu, .restaurants .restaurant__texte .restaurant__nom, .restaurants__titre, .fonctionnement .fonctionnement__degustez .fonctionnement__phrase-degustez, .fonctionnement .fonctionnement__titre, .explore__description, .explore__title, .location__city, main .menu .presentation .nom__presentation .nom__titre, .dessert__groupe .entree__composition .dessert__choix, .plat__groupe .entree__composition .plat__choix .plat__accompagnement, .plat__groupe .entree__composition .plat__choix .plat__assiette, .plat__groupe .entree__composition .plat__choix, .entree__groupe .entree__composition .prix, .entree__groupe .entree__composition .entree__choix .choix__accompagnement, .entree__groupe .entree__composition .entree__choix .choix__assiette, .entree__groupe .entree__composition .entree__choix {
+.restaurants .restaurant__texte, .restaurants .restaurant__texte .restaurant__lieu, .restaurants .restaurant__texte .restaurant__nom, .restaurants__titre, .fonctionnement .fonctionnement__degustez .fonctionnement__phrase-degustez, .fonctionnement .fonctionnement__titre, .explore__description, .explore__title, .location__city, main .menu .presentation .nom__presentation .nom__titre, .dessert__groupe .entree__composition .prix, .dessert__groupe .entree__composition .dessert__choix .dessert__accompagnement, .dessert__groupe .entree__composition .dessert__choix .dessert__assiette, .dessert__groupe .entree__composition .dessert__choix, .plat__groupe .entree__composition .plat__choix .plat__accompagnement, .plat__groupe .entree__composition .plat__choix .plat__assiette, .plat__groupe .entree__composition .plat__choix, .entree__groupe .entree__composition .prix, .entree__groupe .entree__composition .entree__choix .choix__accompagnement, .entree__groupe .entree__composition .entree__choix .choix__assiette, .entree__groupe .entree__composition .entree__choix {
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+/* Placeholders pours les pages menu*/
+.dessert__titre, .plat__titre, .entree__titre {
+  border-bottom: 3px solid #99E2D0;
+  margin: 10px;
+  width: 40px;
+}
+
+.dessert__groupe .entree__composition, .plat__groupe .entree__composition, .entree__groupe .entree__composition {
+  display: flex;
+  flex-grow: 4;
+  justify-content: space-between;
+  flex-direction: row;
+  margin: 15px;
+  background-color: white;
+  border-radius: 15px;
+  cursor: grab;
+  transition: 1s;
+}
+
+/* A voir si j'ai le droit de mettre entree-composition et autres,  en placeholder*/
+body {
+  display: flex;
+  margin: 0%;
+  font-family: "Roboto", "Courier", "monospace";
+  max-width: 1920px;
 }
 
 a .fleche {
@@ -51,33 +79,11 @@ a .fleche {
   padding: 20px 50px;
   font-size: 17px;
 }
-.entree__titre {
-  border-bottom: 3px solid #99E2D0;
-  margin: 10px;
-  width: 40px;
-}
-
 .entree__groupe {
   animation: appear 2000ms ease-in-out 0.3s both;
 }
-.entree__groupe .entree__composition {
-  display: flex;
-  flex-grow: 4;
-  justify-content: space-between;
-  flex-direction: row;
-  margin: 15px;
-  background-color: white;
-  /* padding: 10px; */
-  border-radius: 15px;
-  cursor: grab;
-  transition: 1s;
-}
 .entree__groupe .entree__composition .entree__choix {
   margin: 5px;
-  /* background-color: white;
-        padding: 10px;
-        margin: 10px;
-        border-radius: 20px; */
   flex: 75%;
   transition: all 1000s;
 }
@@ -141,26 +147,8 @@ a .fleche {
   }
 }
 
-.plat__titre {
-  border-bottom: 3px solid #99E2D0;
-  margin: 10px;
-  width: 40px;
-}
-
 .plat__groupe {
-  animation: appear 2000ms ease-in-out 0.3s both;
-}
-.plat__groupe .entree__composition {
-  display: flex;
-  flex-grow: 4;
-  justify-content: space-between;
-  flex-direction: row;
-  margin: 15px;
-  background-color: white;
-  /* padding: 10px; */
-  border-radius: 15px;
-  cursor: grab;
-  transition: 1s;
+  animation: appear 2500ms ease-in-out 0.5s both;
 }
 .plat__groupe .entree__composition .plat__choix {
   margin: 5px;
@@ -227,23 +215,8 @@ a .fleche {
   }
 }
 
-.dessert__titre {
-  border-bottom: 3px solid #99E2D0;
-  margin: 10px;
-  width: 40px;
-}
-
-.dessert__groupe .entree__composition {
-  display: flex;
-  flex-grow: 4;
-  justify-content: space-between;
-  flex-direction: row;
-  margin: 15px;
-  background-color: white;
-  /* padding: 10px; */
-  border-radius: 15px;
-  cursor: grab;
-  transition: 1s;
+.dessert__groupe {
+  animation: appear 3000ms ease-in-out 0.7s both;
 }
 .dessert__groupe .entree__composition .dessert__choix {
   margin: 5px;
@@ -312,7 +285,7 @@ a .fleche {
 
 .header-spinner {
   /* pour cacher la page je mets en bas "display none".. mais c est en vrai en flex*/
-  display: flex;
+  display: none;
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
@@ -502,12 +475,9 @@ nav {
   display: flex;
   flex: 100%;
   align-items: center;
-  /* Ce mixin appartient aux restos*/
 }
 nav a a .fleche {
   flex: 10%;
-  /*  padding: 0 25px;       
-      margin: 25px; */
   padding: 0 50px 0 20px;
   font-size: 20px;
 }
@@ -644,10 +614,85 @@ main .menu .presentation .icone-coeur .active:active {
   }
 }
 
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #393939;
+  color: white;
+  margin: 0;
+  padding: 20px;
+}
+.footer__logo {
+  margin: 20px 0;
+  font-weight: 100;
+  font-size: 18px;
+  list-style: none;
+  font-family: "Shrikhand";
+}
+@media (min-width: 425px) {
+  .footer__logo {
+    text-align: center;
+  }
+}
+.footer__proposition {
+  display: flex;
+  flex-direction: row;
+}
+.footer__proposition .footer__icone {
+  margin: 5px;
+}
+.footer__proposition .footer__phrase-proposition {
+  margin: 5px;
+}
+@media (min-width: 425px) {
+  .footer__proposition {
+    justify-content: center;
+  }
+}
+.footer__bepartner {
+  display: flex;
+  flex-direction: row;
+}
+.footer__bepartner .footer__icone {
+  margin: 5px;
+}
+.footer__bepartner .footer__item {
+  margin: 5px;
+}
+@media (min-width: 425px) {
+  .footer__bepartner {
+    justify-content: center;
+  }
+}
+.footer__legal {
+  display: flex;
+  margin: 5px;
+}
+@media (min-width: 425px) {
+  .footer__legal {
+    justify-content: center;
+  }
+}
+.footer__contact {
+  display: flex;
+  margin: 5px 5px 25px 5px;
+}
+.footer__contact a {
+  text-decoration: none;
+  color: black;
+  /* je cherche ou est la place de ce <a> vu qu'il est ddissimilé un peur partout. */
+}
+.footer__contact a .footer__phrasecontakt {
+  color: white;
+}
+@media (min-width: 425px) {
+  .footer__contact {
+    justify-content: center;
+  }
+}
+
 body {
   display: flex;
-  margin: 0%;
-  font-family: "Roboto", "Courier", "monospace";
   max-width: 1920px;
 }
 
@@ -843,7 +888,6 @@ main {
   background-color: #f0f0f0;
   display: flex;
   flex-direction: column;
-  /* esperluette ci dessous "Restaurants__nom", est enfant de "a {}"    */
 }
 .restaurants__titre {
   margin: 60px 20px 20px 20px;
@@ -954,81 +998,5 @@ main {
 }
 
 /* Fin restos*/
-.footer {
-  display: flex;
-  flex-direction: column;
-  background-color: #393939;
-  color: white;
-  margin: 0;
-  padding: 20px;
-}
-.footer__logo {
-  margin: 20px 0;
-  font-weight: 100;
-  font-size: 18px;
-  list-style: none;
-  font-family: "Shrikhand";
-}
-@media (min-width: 425px) {
-  .footer__logo {
-    text-align: center;
-  }
-}
-.footer__proposition {
-  display: flex;
-  flex-direction: row;
-}
-.footer__proposition .footer__icone {
-  margin: 5px;
-}
-.footer__proposition .footer__phrase-proposition {
-  margin: 5px;
-}
-@media (min-width: 425px) {
-  .footer__proposition {
-    justify-content: center;
-  }
-}
-.footer__bepartner {
-  display: flex;
-  flex-direction: row;
-}
-.footer__bepartner .footer__icone {
-  margin: 5px;
-}
-.footer__bepartner .footer__item {
-  margin: 5px;
-}
-@media (min-width: 425px) {
-  .footer__bepartner {
-    justify-content: center;
-  }
-}
-.footer__legal {
-  display: flex;
-  margin: 5px;
-}
-@media (min-width: 425px) {
-  .footer__legal {
-    justify-content: center;
-  }
-}
-.footer__contact {
-  display: flex;
-  margin: 5px 5px 25px 5px;
-}
-.footer__contact a {
-  text-decoration: none;
-  color: black;
-  /* je cherche ou est la place de ce <a> vu qu'il est ddissimilé un peur partout. */
-}
-.footer__contact a .footer__phrasecontakt {
-  color: white;
-}
-@media (min-width: 425px) {
-  .footer__contact {
-    justify-content: center;
-  }
-}
 
 /*# sourceMappingURL=style.css.map */

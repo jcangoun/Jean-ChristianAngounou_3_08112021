@@ -2,6 +2,7 @@
 @import "./utils/mixins";
 @import "./utils/placeholders";
 
+@import "./base/base";
 @import "./base/typography";
 
 @import "./components/buttons";
@@ -17,7 +18,7 @@
 
 @import "./pages/body";
 @import "./pages/mainfood";
-@import "./pages/footer";
+
 
 
 

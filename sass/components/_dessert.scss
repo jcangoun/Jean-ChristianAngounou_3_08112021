@@ -1,20 +1,19 @@
 .dessert__titre {
-    border-bottom: 3px solid $anim-color;
-    margin: 10px;
-    width: 40px;
+    @extend %proprietes-titre;
   } 
   .dessert__groupe {
+    animation: appear 3000ms ease-in-out 0.7s both;
     .entree__composition {
-      display: flex;
-      flex-grow: 4;
-      justify-content: space-between;
-      flex-direction: row;
-      margin: 15px;
-      background-color: white;
-      /* padding: 10px; */
-      border-radius: 15px;
-      cursor: grab;
-      transition: 1s;  
+      // display: flex;
+      // flex-grow: 4;
+      // justify-content: space-between;
+      // flex-direction: row;
+      // margin: 15px;
+      // background-color: white;
+      // border-radius: 15px;
+      // cursor: grab;
+      // transition: 1s;  
+      @extend %proprietes-composition;
       .dessert__choix {
         margin: 5px;
         flex: 75%;
@@ -24,10 +23,12 @@
           margin: 5px;
           font-size: 18px;
           font-weight: $super-gras;
+          @extend %text-hidden;
         }  
         .dessert__accompagnement {
           margin: 5px;
           font-size: 15px;
+          @extend %text-hidden;
         }
       }  
       .prix {
@@ -36,6 +37,7 @@
         margin: 0 20px 10px 0;
         transition: all 500s;
         font-weight: $super-gras;
+        @extend %text-hidden;
       }  
       .ok {
         display: flex;
@@ -71,6 +73,7 @@
         animation: ok-turn 1700ms ease-in-out 0.5s alternate-reverse both;
       }     
     }
+    
     @keyframes appear {
       0% {
         transform: translateY(30%);

@@ -146,20 +146,19 @@ dans l'ordre est juste avant la page index.html */
     @include logo();
 }
 
+
 /* Fin des propo de index.html et debt des rpops des pages restos*/
 @mixin fleche() {
     a {
         .fleche {
         flex: 10%;
-    /*  padding: 0 25px;       
-        margin: 25px; */
         padding: 0 50px 0 20px;
         font-size: 20px;
         }
     }
 }
 @mixin logo {
-    /* Ce mixin appartient aux restos*/
+
     .logo {
         display: flex;        
         flex: 65%;
@@ -234,6 +233,9 @@ dans l'ordre est juste avant la page index.html */
     justify-content: center;
 }
 /*Fin des mixins de index */
+
+
+/* */
 
 // /* FIN DE CODE INDEX ici*///////////////////////////////////////////
  

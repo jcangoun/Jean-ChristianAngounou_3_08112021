@@ -1,3 +1,4 @@
+
 %bouton-colors {
     background: linear-gradient(0deg, $primary-color, transparent);
       background-color: $secondary-color;
@@ -19,4 +20,25 @@
 }
 
 
+/* Placeholders pours les pages menu*/
 
+
+%proprietes-titre {
+    border-bottom: 3px solid $anim-color;
+    margin: 10px;
+    width: 40px;
+}
+
+%proprietes-composition {
+  display: flex;
+    flex-grow: 4;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 15px;
+    background-color: white;
+    border-radius: 15px;
+    cursor: grab;
+    transition: 1s;
+}
+
+/* A voir si j'ai le droit de mettre entree-composition et autres,  en placeholder*/

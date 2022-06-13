@@ -1,28 +1,22 @@
 .entree__titre {
-  border-bottom: 3px solid $anim-color;
-  margin: 10px;
-  width: 40px;
+  @extend %proprietes-titre;
 }
 
 .entree__groupe {
   animation: appear 2000ms ease-in-out 0.3s both;
   .entree__composition {
-    display: flex;
-    flex-grow: 4;
-    justify-content: space-between;
-    flex-direction: row;
-    margin: 15px;
-    background-color: white;
-    /* padding: 10px; */
-    border-radius: 15px;
-    cursor: grab;
-    transition: 1s;
+    // display: flex;
+    // flex-grow: 4;
+    // justify-content: space-between;
+    // flex-direction: row;
+    // margin: 15px;
+    // background-color: white;
+    // border-radius: 15px;
+    // cursor: grab;
+    // transition: 1s;
+    @extend %proprietes-composition;
     .entree__choix {
       margin: 5px;
-      /* background-color: white;
-            padding: 10px;
-            margin: 10px;
-            border-radius: 20px; */
       flex: 75%;
       transition: all 1000s;
       @extend %text-hidden;

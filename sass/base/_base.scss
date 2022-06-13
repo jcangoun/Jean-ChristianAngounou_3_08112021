@@ -1,7 +1,6 @@
-// *,
-// *::after,
-// *::before {
-//     margin: 0;
-//     padding: 0;
-//     box-sizing: inherit;
-// }
+body {
+    display: flex; 
+    margin: 0%;
+    font-family: 'Roboto', 'Courier', 'monospace'; 
+    max-width: 1920px;
+    }

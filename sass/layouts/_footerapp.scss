@@ -1,0 +1,71 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #393939;
+    color: $blanc;
+    margin: 0;
+    padding: 20px;
+    &__logo {
+        margin: 20px 0;
+        font-weight: 100;
+        font-size: 18px;
+        list-style: none;
+        font-family: $shrikhand;
+
+        @media (min-width: 425px) {
+            text-align: center;       
+        }
+    }
+    &__proposition {           
+        display: flex;
+        flex-direction: row;        
+        .footer__icone {
+            margin: 5px;
+         }
+         .footer__phrase-proposition {
+            margin: 5px;
+        }
+
+        @media (min-width: 425px) {
+                    @include justify-center;
+                }        
+    }
+    &__bepartner {
+        display: flex;
+        flex-direction: row;        
+        .footer__icone {
+            margin: 5px;
+         }
+         .footer__item {
+            margin: 5px;
+        }
+
+        @media (min-width: 425px) {
+            @include justify-center;
+        }
+    }
+    &__legal {
+        display: flex;
+        margin: 5px;
+        // .footer__phraselegale { }
+
+        @media (min-width: 425px) {
+            @include justify-center;
+        }
+    }
+    &__contact {
+        display: flex;
+        margin: 5px 5px 25px 5px;
+        a {
+            @include lien-prop;
+
+            .footer__phrasecontakt {
+                color: $blanc;
+            }                     /* je cherche ou est la place de ce <a> vu qu'il est ddissimilé un peur partout. */
+        }
+
+        @media (min-width: 425px) {
+            @include justify-center;
+        }        
+    }
+}

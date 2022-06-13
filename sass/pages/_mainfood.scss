@@ -52,9 +52,7 @@ main {
 .fonctionnement {
     display: flex;
     flex-direction: column;
-    width: 100%;
-
-       
+    width: 100%;       
 /*ci dessous temporaire nommé test */
     .fonctionnement__test {
         @media  (min-width:768px) {
@@ -76,7 +74,6 @@ main {
             flex-direction: row;
         }
     }
-
         /* temporairement &__degustez sera redevenu .fonctionnement__degustez*/
         .fonctionnement__degustez {
         @include fonctionnement__degustez;
@@ -174,7 +171,6 @@ main {
             @include lien-prop;
         }
     }
-    /* esperluette ci dessous "Restaurants__nom", est enfant de "a {}"    */
     &__nom {
         display: flex;
         flex: 100%;
@@ -225,8 +221,6 @@ main {
             display: flex;
             justify-content: center;
             align-items: center;        
-            // background: no-repeat center;
-            // background-size: contain;
             position: relative;
             border: 1px solid white;
             background: linear-gradient(0deg, $primary-color, transparent); 
@@ -249,6 +243,5 @@ main {
     }                       
         
 }
-
 /* Fin restos*/
 
