@@ -5,6 +5,7 @@ dans l'ordre est juste avant la page index.html */
     @keyframes page-up {
         0% {
             opacity: 0;
+            z-index: 1;
             position: absolute;
             transform: translateY(150px);                   
         }
@@ -27,9 +28,11 @@ dans l'ordre est juste avant la page index.html */
         }
         90% {
             opacity: 0.4;
+            z-index: 1;
         }
         100% {
             opacity: 0;
+            z-index: -1;
             transform: translateY(100px);
         }    
     }   

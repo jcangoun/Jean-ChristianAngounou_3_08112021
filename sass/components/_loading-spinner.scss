@@ -1,6 +1,6 @@
 .header-spinner {
     /* pour cacher la page je mets en bas "display none".. mais c est en vrai en flex*/
-    display: none;
+    display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;

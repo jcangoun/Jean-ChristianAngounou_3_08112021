@@ -285,7 +285,7 @@ a .fleche {
 
 .header-spinner {
   /* pour cacher la page je mets en bas "display none".. mais c est en vrai en flex*/
-  display: none;
+  display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
@@ -302,6 +302,7 @@ a .fleche {
 @keyframes page-up {
   0% {
     opacity: 0;
+    z-index: 1;
     position: absolute;
     transform: translateY(150px);
   }
@@ -324,9 +325,11 @@ a .fleche {
   }
   90% {
     opacity: 0.4;
+    z-index: 1;
   }
   100% {
     opacity: 0;
+    z-index: -1;
     transform: translateY(100px);
   }
 }
@@ -691,12 +694,6 @@ main .menu .presentation .icone-coeur .active:active {
   }
 }
 
-body {
-  display: flex;
-  max-width: 1920px;
-}
-
-/* Je vais essayer plus tard de faire que ce body d index soit le meme que les body de resto c est a dire prit a partir de layout  "@include bodyapp;" */
 main {
   flex-direction: column;
 }
