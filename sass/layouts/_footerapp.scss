@@ -1,7 +1,7 @@
 .footer {
     display: flex;
     flex-direction: column;
-    background-color: #393939;
+    background-color: $footer-color;
     color: $blanc;
     margin: 0;
     padding: 20px;
@@ -25,7 +25,6 @@
          .footer__phrase-proposition {
             margin: 5px;
         }
-
         @media (min-width: 425px) {
                     @include justify-center;
                 }        
@@ -63,7 +62,6 @@
                 color: $blanc;
             }                     /* je cherche ou est la place de ce <a> vu qu'il est ddissimilé un peur partout. */
         }
-
         @media (min-width: 425px) {
             @include justify-center;
         }        
