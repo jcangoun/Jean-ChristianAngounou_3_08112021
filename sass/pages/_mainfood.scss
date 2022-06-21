@@ -54,7 +54,7 @@ main {
     flex-direction: column;
     width: 100%;       
 /*ci dessous temporaire nommé test */
-    .fonctionnement__test {
+    .fonctionnement__premier-bloc {
         @media  (min-width:768px) {
             display: flex;
             justify-content: center;
@@ -67,7 +67,7 @@ main {
         font-weight: $super-gras;
         @extend %text-hidden;        
     }
-    .fonctionnement__test2 {
+    .fonctionnement__etapes {
         @media (min-width:1024px) {
             display: flex;
             flex: 100%;

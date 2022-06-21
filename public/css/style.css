@@ -750,7 +750,7 @@ main {
   /* temporairement &__degustez sera redevenu .fonctionnement__degustez*/
 }
 @media (min-width: 768px) {
-  .fonctionnement .fonctionnement__test {
+  .fonctionnement .fonctionnement__premier-bloc {
     display: flex;
     justify-content: center;
   }
@@ -761,7 +761,7 @@ main {
   font-weight: 600;
 }
 @media (min-width: 1024px) {
-  .fonctionnement .fonctionnement__test2 {
+  .fonctionnement .fonctionnement__etapes {
     display: flex;
     flex: 100%;
     flex-direction: row;
