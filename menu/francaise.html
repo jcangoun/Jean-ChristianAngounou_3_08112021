@@ -6,9 +6,8 @@
     <!-- ici les polices -->
     <!-- Ci dessous roboto -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;600;900&family=Shrikhand&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;600;900&family=Shrikhand&display=swap" rel="stylesheet">
     <!-- fin des polices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A la française</title>
@@ -33,141 +32,131 @@
         
     </header>
     <main>
-        <section class="nom-menu">
+        <div class="nom-menu">
             <figure class="photo-affiche">
                 <img src="../public/assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="" class="">
             </figure>
-
             <div class="menu">
                 <div class="presentation">
-                                <div class="nom__presentation">
-                                    <div class="nom__titre gras shrikhand">A la française</div>
-                                </div>
-                                <span class="icone-coeur">
-                                    <i class="far fa-heart active"></i>
-                                </span>
+                    <div class="nom__presentation">
+                        <div class="nom__titre gras shrikhand">A la française</div>
+                    </div>
+                    <span class="icone-coeur">
+                        <i class="far fa-heart active"></i>
+                    </span>
+                </div>
+                <!-- Pour la validation je remplace ma "section" par "div"-->
+                <div class="entree">
+                    <div class="entree__titre">ENTREES</div>        
+                    <div class="entree__groupe">                                        
+                        <div class="entree__composition">
+                            <div class="entree__choix">
+                                <div class="choix__assiette super-gras">Tartare de poulpe alcidulée</div>
+                                <div class="choix__accompagnement">Aux zest d'orange</div>
                             </div>
-                            <section class="entree">
-                                <div class="entree__titre">ENTREES</div>        
-                                <div class="entree__groupe">
-                                        <!-- Ici en bas entree__composition est ajoutée et est testée . si bon, il échangera son nom avec son enfant direct   -->
-                                    <div class="entree__composition">
-                                        <div class="entree__choix">
-                                            <div class="choix__assiette super-gras">Tartare de poulpe alcidulée</div>
-                                            <div class="choix__accompagnement">Aux zest d'orange</div>
-                                        </div>
-                                        <div class="prix super-gras">25€</div>
-                                        <div class="ok">
-                                            <i class="fas fa-check-circle ok-icone"></i>
-                                        </div>
-                                    </div>
-
-                                    <div class="entree__composition">
-                                        <div class="entree__choix">
-                                            <div class="choix__assiette super-gras">Velouté de légumes d'antan</div>
-                                            <div class="choix__accompagnement">Carotte, panais, topinambour</div>
-                                        </div>
-                                        <div class="prix super-gras">35€</div>
-                                        <div class="ok">
-                                            <i class="fas fa-check-circle ok-icone"></i>
-                                        </div>
-                                    </div>
-
-                                    <div class="entree__composition">
-                                        <div class="entree__choix">
-                                            <div class="choix__assiette super-gras">Soupe à l'oignon</div>
-                                            <div class="choix__accompagnement">Revisitée</div>
-                                        </div>
-                                        <div class="prix super-gras">20€</div>
-                                        <div class="ok">
-                                            <i class="fas fa-check-circle ok-icone"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>    
-                                <section class="plat">
-                                    <div class="plat__titre">PLATS</div>
-                                    <div class="plat__groupe">
-                                        <!-- je dois trouver un nom a tous les "entree__composition" -->
-                                        <div class="entree__composition">
-                                            <div class="plat__choix">
-                                                <div class="plat__assiette super-gras">Coquilles Saint-Jacques</div>
-                                                <div class="plat__accompagnement">Accompagnées d'une purée de panais</div>
-                                            </div>
-                                            <div class="prix super-gras">40€</div>
-                                            <div class="ok">
-                                                <i class="fas fa-check-circle ok-icone"></i>
-                                            </div>
-                                        </div>
-
-
-                                        <div class="entree__composition">
-                                            <div class="plat__choix">
-                                                <div class="plat__assiette super-gras">MAgret de canard</div>
-                                                <div class="plat__accompagnement">Et parmentier de pommes de terres</div>
-                                            </div>
-                                            <div class="prix super-gras">35€</div>
-                                            <div class="ok">
-                                                <i class="fas fa-check-circle ok-icone"></i>
-                                            </div>
-                                        </div>
-
-                                        <div class="entree__composition">
-                                            <div class="plat__choix">
-                                                <div class="plat__assiette super-gras">Pigeonnau d'Ille-et-Vilaine</div>
-                                                <div class="plat__accompagnement">Sur son lit de gnocchis aux légumes</div>
-                                            </div>
-                                            <div class="prix super-gras">44€</div>
-                                            <div class="ok">
-                                                <i class="fas fa-check-circle ok-icone"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </section>
-                                <section class="dessert">
-                                    <div class="dessert__titre">DESSERTS</div>
-                                    <div class="dessert__groupe">
-
-                                        <div class="entree__composition">
-                                            <div class="dessert__choix">
-                                                <div class="dessert__assiette super-gras">Pétales de violettes glacées</div>
-                                                <div class="dessert__accompagnement">Et purée de noisettes</div>
-                                            </div>
-                                            <div class="prix super-gras">18€</div>
-                                            <div class="ok">
-                                                <i class="fas fa-check-circle ok-icone"></i>
-                                            </div>
-                                        </div>
-
-                                        <div class="entree__composition">
-                                            <div class="dessert__choix">
-                                                <div class="dessert__assiette super-gras">Fondant au chocolat</div>
-                                                <div class="dessert__accompagnement">Revisité</div>
-                                            </div>
-                                            <div class="prix super-gras">22€</div>
-                                            <div class="ok">
-                                                <i class="fas fa-check-circle ok-icone"></i>
-                                            </div>
-                                        </div>
-
-                                        <div class="entree__composition">
-                                            <div class="dessert__choix">
-                                                <div class="dessert__assiette super-gras">Millefeuille croustillant</div>
-                                                <div class="dessert__accompagnement">Myrtilles et pâte d'amande</div>
-                                            </div>
-                                            <div class="prix super-gras">23€</div>
-                                            <div class="ok">
-                                                <i class="fas fa-check-circle ok-icone"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </section>
-                                <div class="bouton">
-                                    <button class="bouton-commander">Commander</button>
-                                </div>
-                                
+                            <div class="prix super-gras">25€</div>
+                            <div class="ok">
+                                <i class="fas fa-check-circle ok-icone"></i>
+                            </div>
+                        </div>
+                        <div class="entree__composition">
+                            <div class="entree__choix">
+                                <div class="choix__assiette super-gras">Velouté de légumes d'antan</div>
+                                <div class="choix__accompagnement">Carotte, panais, topinambour</div>
+                            </div>
+                            <div class="prix super-gras">35€</div>
+                            <div class="ok">
+                                <i class="fas fa-check-circle ok-icone"></i>
+                            </div>
+                        </div>
+                        <div class="entree__composition">
+                            <div class="entree__choix">
+                                <div class="choix__assiette super-gras">Soupe à l'oignon</div>
+                                <div class="choix__accompagnement">Revisitée</div>
+                            </div>
+                            <div class="prix super-gras">20€</div>
+                            <div class="ok">
+                                <i class="fas fa-check-circle ok-icone"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+                <div class="plat">
+                    <div class="plat__titre">PLATS</div>
+                    <div class="plat__groupe">
+                    <!-- je dois trouver un nom a tous les "entree__composition" -->
+                        <div class="entree__composition">
+                            <div class="plat__choix">
+                                <div class="plat__assiette super-gras">Coquilles Saint-Jacques</div>
+                                <div class="plat__accompagnement">Accompagnées d'une purée de panais</div>
+                            </div>
+                            <div class="prix super-gras">40€</div>
+                            <div class="ok">
+                                <i class="fas fa-check-circle ok-icone"></i>
+                            </div>
+                        </div>
+                        <div class="entree__composition">
+                            <div class="plat__choix">
+                                <div class="plat__assiette super-gras">MAgret de canard</div>
+                                <div class="plat__accompagnement">Et parmentier de pommes de terres</div>
+                            </div>
+                            <div class="prix super-gras">35€</div>
+                            <div class="ok">
+                                <i class="fas fa-check-circle ok-icone"></i>
+                            </div>
+                        </div>
+                        <div class="entree__composition">
+                            <div class="plat__choix">
+                                <div class="plat__assiette super-gras">Pigeonnau d'Ille-et-Vilaine</div>
+                                <div class="plat__accompagnement">Sur son lit de gnocchis aux légumes</div>
+                            </div>
+                            <div class="prix super-gras">44€</div>
+                            <div class="ok">
+                                <i class="fas fa-check-circle ok-icone"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dessert">
+                    <div class="dessert__titre">DESSERTS</div>
+                    <div class="dessert__groupe">
+                        <div class="entree__composition">
+                            <div class="dessert__choix">
+                                <div class="dessert__assiette super-gras">Pétales de violettes glacées</div>
+                                <div class="dessert__accompagnement">Et purée de noisettes</div>
+                            </div>
+                            <div class="prix super-gras">18€</div>
+                            <div class="ok">
+                                <i class="fas fa-check-circle ok-icone"></i>
+                            </div>
+                        </div>
+                        <div class="entree__composition">
+                            <div class="dessert__choix">
+                                <div class="dessert__assiette super-gras">Fondant au chocolat</div>
+                                <div class="dessert__accompagnement">Revisité</div>
+                            </div>
+                            <div class="prix super-gras">22€</div>
+                            <div class="ok">
+                                <i class="fas fa-check-circle ok-icone"></i>
+                            </div>
+                        </div>
+                        <div class="entree__composition">
+                            <div class="dessert__choix">
+                                <div class="dessert__assiette super-gras">Millefeuille croustillant</div>
+                                <div class="dessert__accompagnement">Myrtilles et pâte d'amande</div>
+                            </div>
+                            <div class="prix super-gras">23€</div>
+                            <div class="ok">
+                                <i class="fas fa-check-circle ok-icone"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bouton">
+                    <button class="bouton-commander">Commander</button>
+                </div>                                
             </div>
-        </section>
+        </div>
     </main>
     <footer>          
         <ul class="footer"> 
