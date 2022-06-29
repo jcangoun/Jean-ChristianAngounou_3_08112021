@@ -297,35 +297,29 @@ a .fleche {
   z-index: 1;
   position: absolute;
   transform: translateY(0px);
-  animation: page-up 10s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: page-up 3s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 @keyframes page-up {
   0% {
     opacity: 0;
     z-index: 1;
     position: absolute;
-    transform: translateY(150px);
+    transform: translateY(50px);
   }
   10% {
     opacity: 1;
   }
-  15% {
-    transform: translateY(0px);
-  }
-  50% {
+  40% {
     opacity: 1;
     transform: translateY(0px);
   }
-  70% {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-  71% {
+  75% {
     opacity: 1;
   }
   90% {
-    opacity: 0.4;
+    opacity: 0;
     z-index: 1;
+    transform: translateY(0px);
   }
   100% {
     opacity: 0;
@@ -351,7 +345,7 @@ a .fleche {
   top: 200px;
   z-index: 1;
   transform: rotateZ(0deg);
-  animation: rotation-load 3s infinite linear;
+  animation: rotation-load 1300ms infinite linear;
   /* Principe ci dessous important */
   /* hover d abord */
   /* hover finshed*/
@@ -384,7 +378,7 @@ a .fleche {
   border-radius: 20px;
   box-shadow: 8px 8px 20px 0px #a1a1a1;
   padding: 5px 10px;
-  animation: text-anim 5s cubic-bezier(0.39, 0.575, 0.565, 1) 0.5s 5 normal both;
+  animation: text-anim 3s cubic-bezier(0.39, 0.575, 0.565, 1) 0.5s 5 normal both;
 }
 @keyframes test-anim {
   0% {
@@ -392,7 +386,8 @@ a .fleche {
     transform: rotateX(0deg);
     font-weight: 400;
     transform: translateY(150px);
-    opacity: 0;
+    opacity: 1;
+    color: blue;
   }
   20% {
     opacity: 0.2;
@@ -403,7 +398,7 @@ a .fleche {
   }
   30% {
     transform: rotateX(0deg);
-    color: greenyellow;
+    background-color: greenyellow;
     transform: translateY(40px);
     opacity: 1;
   }

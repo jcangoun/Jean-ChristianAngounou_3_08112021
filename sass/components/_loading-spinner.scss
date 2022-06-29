@@ -12,7 +12,7 @@
     z-index: 1;
     position: absolute;
     transform: translateY(0px);
-    animation: page-up 10s cubic-bezier(.39,.575,.565,1.000) both;    
+    animation: page-up 3s cubic-bezier(.39,.575,.565,1.000) both;    
     @include page-up; 
     &__page {
         display: flex;
@@ -33,7 +33,7 @@
             z-index: 1;
             // text-shadow:0px -20px 8px black;
             transform: rotateZ(0deg);
-            animation: rotation-load 3s infinite linear;
+            animation: rotation-load 1300ms infinite linear;
             /* Principe ci dessous important */
             /* hover d abord */
             /* hover finshed*/
@@ -48,7 +48,7 @@
             border-radius: 20px;
             box-shadow: 8px 8px 20px 0px #a1a1a1;
             padding: 5px 10px;
-            animation: text-anim 5s cubic-bezier(.39,.575,.565,1.000) 0.5s 5 normal both;            
+            animation: text-anim 3s cubic-bezier(.39,.575,.565,1.000) 0.5s 5 normal both;            
             @include text-anim;            
         }
 }
